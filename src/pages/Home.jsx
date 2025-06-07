@@ -6,12 +6,12 @@ const Home = () => (
             <img
                 src="/images/ring-1.jpg"
                 alt="Orestis"
-                className="w-2/3 h-full object-cover"
+                className="w-full md:w-2/3 h-full object-cover"
             />
             <img
                 src="/images/ring-2.jpg"
                 alt="Marina"
-                className="w-1/3 h-full object-cover"
+                className="hidden md:block md:w-1/3 h-full object-cover"
             />
         </div>
         <h1 className="mt-8">Welcome to Our Wedding</h1>
