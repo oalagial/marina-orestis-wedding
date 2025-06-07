@@ -12,13 +12,15 @@ export default function Header() {
       </div>
       <header className="bg-neutral-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-          <div className="text-sm text-gray-700">
-            <span className="block md:hidden">
-              June 27, 2026 · Thessaloniki, Greece
+          <div className="text-sm text-gray-700 font-serif">
+            <span className="block md:hidden text-base font-semibold tracking-wide">
+              <span className="text-pink-400">June 27, 2026</span>
+              <span className="mx-2 text-gray-400">·</span>
+              <span className="text-gray-700">Thessaloniki, Greece</span>
             </span>
-            <span className="hidden md:block">
-              <div>June 27, 2026</div>
-              <div>Thessaloniki, Greece</div>
+            <span className="hidden md:block text-lg font-semibold tracking-wide leading-tight">
+              <div className="text-pink-400">June 27, 2026</div>
+              <div className="text-gray-700">Thessaloniki, Greece</div>
             </span>
           </div>
           <div className="flex-1 text-center">
