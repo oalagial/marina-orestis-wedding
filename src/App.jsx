@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="min-h-screen flex flex-col bg-white text-gray-800 font-sans">
         <Header />
-        <main className="flex-1 p-8 text-center max-w-2xl mx-auto">
+        <main className="flex-1 text-center">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/schedule" element={<Schedule />} />
