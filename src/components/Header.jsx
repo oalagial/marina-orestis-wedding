@@ -11,7 +11,7 @@ export default function Header() {
         Please don't forget to RSVP by May 1st, 2026!
       </div>
       <header className="bg-neutral-50 border-b border-gray-200">
-        <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+        <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-4 md:px-6">
           <div className="text-sm text-gray-700 font-serif">
             <span className="block md:hidden text-base font-semibold tracking-wide">
               <span className="text-pink-400">June 27, 2026</span>
