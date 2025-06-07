@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <>
       {/* Announcement Bar */}
@@ -20,12 +22,40 @@ export default function Header() {
               ORESTIS & MARINA
             </h1>
           </div>
-          <div className="w-32" /> {/* Spacer for symmetry */}
+          {/* Burger Icon */}
+          <button
+            className="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-300"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Open menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 8h16M4 16h16"
+              />
+            </svg>
+          </button>
+          <div className="hidden md:block w-10" /> {/* Spacer for symmetry */}
         </div>
         {/* Navigation */}
         <nav className="border-t border-gray-200">
-          <div className="mt-4 flex justify-center py-2 text-lg font-serif space-x-8">
-            <NavLink to="/" className={({ isActive }) => isActive ? "border-b-2 border-black pb-1" : ""}>Home</NavLink>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex justify-center py-2 text-lg font-serif space-x-8">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "border-b-2 border-black pb-1" : ""
+              }
+            >
+              Home
+            </NavLink>
             <NavLink to="/schedule">Schedule</NavLink>
             <NavLink to="/travel">Travel</NavLink>
             <NavLink to="/gallery">Gallery</NavLink>
@@ -33,6 +63,38 @@ export default function Header() {
             <NavLink to="/faqs">FAQs</NavLink>
             <NavLink to="/rsvp">RSVP</NavLink>
           </div>
+          {/* Mobile Menu */}
+          {menuOpen && (
+            <div className="md:hidden flex flex-col items-center py-4 text-lg font-serif space-y-4 bg-neutral-50 shadow">
+              <NavLink
+                to="/"
+                onClick={() => setMenuOpen(false)}
+                className={({ isActive }) =>
+                  isActive ? "border-b-2 border-black pb-1" : ""
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink to="/schedule" onClick={() => setMenuOpen(false)}>
+                Schedule
+              </NavLink>
+              <NavLink to="/travel" onClick={() => setMenuOpen(false)}>
+                Travel
+              </NavLink>
+              <NavLink to="/gallery" onClick={() => setMenuOpen(false)}>
+                Gallery
+              </NavLink>
+              <NavLink to="/things-to-do" onClick={() => setMenuOpen(false)}>
+                Things To Do
+              </NavLink>
+              <NavLink to="/faqs" onClick={() => setMenuOpen(false)}>
+                FAQs
+              </NavLink>
+              <NavLink to="/rsvp" onClick={() => setMenuOpen(false)}>
+                RSVP
+              </NavLink>
+            </div>
+          )}
         </nav>
       </header>
     </>
