@@ -20,8 +20,8 @@ const Home = () => (
         <p className="mt-4 text-lg md:text-xl text-gray-600 font-light italic">
             We are delighted to invite you to celebrate our special day with us!
         </p>
-        <h2 className="mt-8 text-2xl md:text-3xl font-serif font-semibold text-pink-700 tracking-wide">
-            Marina <span className="text-gray-500">&amp;</span> Orestis
+        <h2 className="mt-8 text-2xl md:text-3xl font-cursive font-semibold text-gray-500 tracking-wide">
+            <span className="italic">Marina</span> <span className="text-gray-400">&amp;</span> <span className="italic">Orestis</span>
         </h2>
         <p className="mt-4 text-base md:text-lg text-gray-700 font-medium">
             <span className="font-serif">Date:</span>{' '}
