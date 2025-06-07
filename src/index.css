@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 @import "tailwindcss";
 
 @layer base {
@@ -18,3 +18,8 @@
   }
 }
 
+
+.custom-dancing-font {
+  font-family: 'Rouge Script', cursive;
+  font-size: 4rem;
+}
