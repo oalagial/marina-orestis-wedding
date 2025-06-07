@@ -8,17 +8,21 @@ export default function Header() {
     <>
       {/* Announcement Bar */}
       <div className="bg-gray-800 text-white text-sm py-2 text-center">
-        Welcome Party details posted! Please join us at 7:30pm on June 18th at
-        Anestis Restaurant
+        Please don't forget to RSVP by May 1st, 2026!
       </div>
       <header className="bg-neutral-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
           <div className="text-sm text-gray-700">
-            <div>June 27, 2026</div>
-            <div>Athens, Greece</div>
+            <span className="block md:hidden">
+              June 27, 2026 · Thessaloniki, Greece
+            </span>
+            <span className="hidden md:block">
+              <div>June 27, 2026</div>
+              <div>Thessaloniki, Greece</div>
+            </span>
           </div>
           <div className="flex-1 text-center">
-            <h1 className="text-4xl font-serif font-bold tracking-wide">
+            <h1 className="hidden md:block text-4xl font-serif font-bold tracking-wide">
               ORESTIS & MARINA
             </h1>
           </div>
