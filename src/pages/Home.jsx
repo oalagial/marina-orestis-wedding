@@ -14,10 +14,11 @@ const Home = () => (
                 className="hidden md:block md:w-1/3 h-full object-cover"
             />
         </div>
-        <h1 className="mt-8 text-3xl md:text-5xl font-serif font-bold text-gray-800 tracking-wide">
+                {/* <h1 className="mt-8 text-3xl md:text-5xl font-serif font-bold text-gray-800 tracking-wide"> */}
+        <h1 className="font-cursive">
             Welcome to Our Wedding
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-gray-600 font-light italic">
+        <p className="mt-4 text-lg md:text-xl text-gray-600 font-light italic font-extrabold">
             We are delighted to invite you to celebrate our special day with us!
         </p>
         <h2 className="mt-8 text-2xl md:text-3xl font-cursive font-semibold text-gray-500 tracking-wide">
