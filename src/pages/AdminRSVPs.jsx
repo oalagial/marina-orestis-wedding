@@ -62,6 +62,7 @@ const AdminRSVPs = () => {
             'Attending',
             'Plus One Name',
             'Plus One Attending',
+            'Plus One Age Category',
             'Dietary Restrictions',
             'Message',
             'Submitted At'
@@ -76,6 +77,7 @@ const AdminRSVPs = () => {
                 rsvp.attending ? 'Yes' : 'No',
                 `"${rsvp.plusOneName || ''}"`,
                 rsvp.plusOneAttending ? 'Yes' : 'No',
+                `"${rsvp.plusOneAgeCategory || ''}"`,
                 `"${rsvp.dietaryRestrictions || ''}"`,
                 `"${rsvp.message || ''}"`,
                 `"${rsvp.timestamp ? new Date(rsvp.timestamp).toLocaleString() : ''}"`
@@ -195,7 +197,12 @@ const AdminRSVPs = () => {
                                     <td className="px-6 py-4 whitespace-nowrap">
                                         {rsvp.plusOneName && (
                                             <div className="text-sm text-gray-900">
-                                                {rsvp.plusOneName}
+                                                <div>{rsvp.plusOneName}</div>
+                                                {rsvp.plusOneAgeCategory && (
+                                                    <div className="text-xs text-gray-500 capitalize">
+                                                        {rsvp.plusOneAgeCategory.replace('-', ' ')}
+                                                    </div>
+                                                )}
                                                 <span className={`ml-2 inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
                                                     rsvp.plusOneAttending 
                                                         ? 'bg-green-100 text-green-800' 

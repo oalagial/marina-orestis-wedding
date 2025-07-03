@@ -9,6 +9,7 @@ const RPSV = () => {
         attending: '',
         plusOneName: '',
         plusOneAttending: '',
+        plusOneAgeCategory: '',
         dietaryRestrictions: '',
         message: '',
         phone: ''
@@ -65,6 +66,7 @@ const RPSV = () => {
                                 attending: '',
                                 plusOneName: '',
                                 plusOneAttending: '',
+                                plusOneAgeCategory: '',
                                 dietaryRestrictions: '',
                                 message: '',
                                 phone: ''
@@ -222,6 +224,27 @@ const RPSV = () => {
                                 <span className="ml-2 text-gray-700">No</span>
                             </label>
                         </div>
+                    </div>
+                )}
+
+                {/* Plus One Age Category */}
+                {formData.plusOneName && formData.plusOneAttending === 'yes' && (
+                    <div>
+                        <label htmlFor="plusOneAgeCategory" className="block text-sm font-medium text-gray-700 mb-2">
+                            Plus One Age Category
+                        </label>
+                        <select
+                            id="plusOneAgeCategory"
+                            name="plusOneAgeCategory"
+                            value={formData.plusOneAgeCategory}
+                            onChange={handleInputChange}
+                            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-pink-500 focus:border-pink-500"
+                        >
+                            <option value="">Select age category</option>
+                            <option value="adult">Adult</option>
+                            <option value="child-0-7">Child (0-7)</option>
+                            <option value="child-8-13">Child (8-13)</option>
+                        </select>
                     </div>
                 )}
 
