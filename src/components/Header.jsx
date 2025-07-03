@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       {/* Announcement Bar */}
       <div className="bg-gray-800 text-white text-sm py-2 text-center">
-        Please don't forget to RSVP by May 1st, 2026!
+        {t('header.welcomeParty')}
       </div>
       <header className="bg-neutral-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-4 md:px-6">
           <div className="text-sm text-gray-700 font-serif">
             <span className="block md:hidden text-base font-semibold tracking-wide">
-              <span className="text-pink-400">June 27, 2026</span>
+              <span className="text-pink-400">{t('header.date')}</span>
               <span className="mx-2 text-gray-400">·</span>
-              <span className="text-gray-700">Thessaloniki, Greece</span>
+              <span className="text-gray-700">{t('header.location')}</span>
             </span>
             <span className="hidden md:block text-lg font-semibold tracking-wide leading-tight">
-              <div className="text-pink-400">June 27, 2026</div>
-              <div className="text-gray-700">Thessaloniki, Greece</div>
+              <div className="text-pink-400">{t('header.date')}</div>
+              <div className="text-gray-700">{t('header.location')}</div>
             </span>
           </div>
           <div className="flex-1 text-center">
@@ -28,27 +31,30 @@ export default function Header() {
               ORESTIS & MARINA
             </h1>
           </div>
-          {/* Burger Icon */}
-          <button
-            className="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-300"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Open menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              viewBox="0 0 24 24"
+          {/* Language Switcher and Burger Icon */}
+          <div className="flex items-center space-x-2">
+            <LanguageSwitcher />
+            {/* Burger Icon */}
+            <button
+              className="md:hidden w-10 h-10 flex items-center justify-center rounded-full border border-gray-300"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Open menu"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 8h16M4 16h16"
-              />
-            </svg>
-          </button>
-          <div className="hidden md:block w-10" /> {/* Spacer for symmetry */}
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M4 8h16M4 16h16"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
         {/* Navigation */}
         <nav className="border-t border-gray-200">
@@ -60,14 +66,14 @@ export default function Header() {
                 isActive ? "border-b-2 border-black pb-1" : ""
               }
             >
-              Home
+              {t('nav.home')}
             </NavLink>
-            <NavLink to="/schedule">Schedule</NavLink>
-            <NavLink to="/travel">Travel</NavLink>
-            <NavLink to="/gallery">Gallery</NavLink>
-            <NavLink to="/things-to-do">Things To Do</NavLink>
-            <NavLink to="/faqs">FAQs</NavLink>
-            <NavLink to="/rsvp">RSVP</NavLink>
+            <NavLink to="/schedule">{t('nav.schedule')}</NavLink>
+            <NavLink to="/travel">{t('nav.travel')}</NavLink>
+            <NavLink to="/gallery">{t('nav.gallery')}</NavLink>
+            <NavLink to="/things-to-do">{t('nav.thingsToDo')}</NavLink>
+            <NavLink to="/faqs">{t('nav.faqs')}</NavLink>
+            <NavLink to="/rsvp">{t('nav.rsvp')}</NavLink>
           </div>
           {/* Mobile Menu */}
           {menuOpen && (
@@ -79,25 +85,25 @@ export default function Header() {
                   isActive ? "border-b-2 border-black pb-1" : ""
                 }
               >
-                Home
+                {t('nav.home')}
               </NavLink>
               <NavLink to="/schedule" onClick={() => setMenuOpen(false)}>
-                Schedule
+                {t('nav.schedule')}
               </NavLink>
               <NavLink to="/travel" onClick={() => setMenuOpen(false)}>
-                Travel
+                {t('nav.travel')}
               </NavLink>
               <NavLink to="/gallery" onClick={() => setMenuOpen(false)}>
-                Gallery
+                {t('nav.gallery')}
               </NavLink>
               <NavLink to="/things-to-do" onClick={() => setMenuOpen(false)}>
-                Things To Do
+                {t('nav.thingsToDo')}
               </NavLink>
               <NavLink to="/faqs" onClick={() => setMenuOpen(false)}>
-                FAQs
+                {t('nav.faqs')}
               </NavLink>
               <NavLink to="/rsvp" onClick={() => setMenuOpen(false)}>
-                RSVP
+                {t('nav.rsvp')}
               </NavLink>
             </div>
           )}
