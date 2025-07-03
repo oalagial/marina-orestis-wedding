@@ -21,7 +21,7 @@ function App() {
             <Route path="/things-to-do" element={<div>Things To Do Page</div>} />
             <Route path="/faqs" element={<div>FAQs Page</div>} />
             <Route path="/rsvp" element={<RPSV />} />
-            <Route path="/admin-rsvps" element={<AdminRSVPs />} />
+            <Route path="/admin" element={<AdminRSVPs />} />
             <Route path="*" element={<div>Page Not Found</div>} />
           </Routes>
         </main>
