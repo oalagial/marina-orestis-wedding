@@ -8,7 +8,7 @@ const AdminLogin = ({ onLogin }) => {
         e.preventDefault();
         // Get password from environment variable
         const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'Marina&Orestis2026!';
-        
+
         if (password === ADMIN_PASSWORD) {
             localStorage.setItem('adminAuthenticated', 'true');
             onLogin(true);
@@ -19,8 +19,8 @@ const AdminLogin = ({ onLogin }) => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            <div className="max-w-md w-full space-y-8">
+        <div className="min-h-screen flex justify-center bg-gray-50">
+            <div className="max-w-md w-full space-y-8 mt-8">
                 <div>
                     <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">
                         Admin Access
