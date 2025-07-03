@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Schedule from './pages/Schedule';
 import Travel from './pages/Travel';
+import RPSV from './pages/RPSV';
+import AdminRSVPs from './pages/AdminRSVPs';
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
             <Route path="/gallery" element={<div>Gallery Page</div>} />
             <Route path="/things-to-do" element={<div>Things To Do Page</div>} />
             <Route path="/faqs" element={<div>FAQs Page</div>} />
-            <Route path="/rsvp" element={<div>RSVP Page</div>} />
+            <Route path="/rsvp" element={<RPSV />} />
+            <Route path="/admin-rsvps" element={<AdminRSVPs />} />
             <Route path="*" element={<div>Page Not Found</div>} />
           </Routes>
         </main>
