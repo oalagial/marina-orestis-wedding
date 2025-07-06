@@ -6,6 +6,9 @@ import Schedule from './pages/Schedule';
 import Travel from './pages/Travel';
 import RPSV from './pages/RPSV';
 import AdminRSVPs from './pages/AdminRSVPs';
+import Gallery from "./pages/Gallery";
+import ThingsToDo from "./pages/ThingsToDo";
+import FAQs from "./pages/FAQs";
 
 function App() {
   return (
@@ -17,9 +20,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/travel" element={<Travel />} />
-            <Route path="/gallery" element={<div>Gallery Page</div>} />
-            <Route path="/things-to-do" element={<div>Things To Do Page</div>} />
-            <Route path="/faqs" element={<div>FAQs Page</div>} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/things-to-do" element={<ThingsToDo />} />
+            <Route path="/faqs" element={<FAQs />} />
             <Route path="/rsvp" element={<RPSV />} />
             <Route path="/admin" element={<AdminRSVPs />} />
             <Route path="*" element={<div>Page Not Found</div>} />

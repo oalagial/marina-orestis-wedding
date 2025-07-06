@@ -9,28 +9,29 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1 bg-gray-100 rounded-lg p-1">
             <button
                 onClick={() => changeLanguage('el')}
-                className={`flex items-center p-2 rounded-md transition-colors ${i18n.language === 'el'
-                    ? 'bg-pink-100 border-2 border-pink-500'
-                    : 'hover:bg-gray-100 border-2 border-transparent'
-                    }`}
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                    i18n.language === 'el'
+                        ? 'bg-white text-pink-600 shadow-sm font-semibold'
+                        : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+                }`}
                 title="Ελληνικά"
             >
-                <span className="text-2xl">🇬🇷</span>
+                ΕΛ
             </button>
             <button
                 onClick={() => changeLanguage('en')}
-                className={`flex items-center p-2 rounded-md transition-colors ${i18n.language === 'en'
-                    ? 'bg-pink-100 border-2 border-pink-500'
-                    : 'hover:bg-gray-100 border-2 border-transparent'
-                    }`}
+                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                    i18n.language === 'en'
+                        ? 'bg-white text-pink-600 shadow-sm font-semibold'
+                        : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+                }`}
                 title="English"
             >
-                <span className="text-2xl">🇬🇧</span>
+                EN
             </button>
-
         </div>
     );
 };
