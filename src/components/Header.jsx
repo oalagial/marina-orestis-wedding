@@ -10,13 +10,13 @@ export default function Header() {
   return (
     <>
       {/* Minimal Announcement Bar */}
-      <div className="bg-gradient-to-r from-rose-500/90 to-pink-500/90 text-white text-sm py-2 text-center relative overflow-hidden">
+      {/* <div className="bg-gradient-to-r from-rose-500/90 to-pink-500/90 text-white text-sm py-2 text-center relative overflow-hidden">
         <div className="relative z-10 animate-fade-in">
           <span className="font-medium tracking-wide">
             {t('header.welcomeParty')}
           </span>
         </div>
-      </div>
+      </div> */}
 
       <header className="glass-effect sticky top-0 z-50 border-b border-white/20">
         <div className="max-w-7xl mx-auto container-padding">
