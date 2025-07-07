@@ -9,13 +9,13 @@ const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="flex items-center space-x-1 bg-gray-100 rounded-lg p-1">
+        <div className="flex items-center bg-white/50 backdrop-blur-sm rounded-full p-1 border border-white/20">
             <button
                 onClick={() => changeLanguage('el')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                className={`px-3 py-1 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${
                     i18n.language === 'el'
-                        ? 'bg-white text-pink-600 shadow-sm font-semibold'
-                        : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+                        ? 'bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-md'
+                        : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'
                 }`}
                 title="Ελληνικά"
             >
@@ -23,10 +23,10 @@ const LanguageSwitcher = () => {
             </button>
             <button
                 onClick={() => changeLanguage('en')}
-                className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all ${
+                className={`px-3 py-1 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${
                     i18n.language === 'en'
-                        ? 'bg-white text-pink-600 shadow-sm font-semibold'
-                        : 'text-gray-600 hover:text-gray-800 hover:bg-gray-50'
+                        ? 'bg-gradient-to-r from-rose-500 to-pink-500 text-white shadow-md'
+                        : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'
                 }`}
                 title="English"
             >
