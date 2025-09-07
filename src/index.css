@@ -2,7 +2,10 @@
 @import "tailwindcss";
 
 @layer base {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 
@@ -52,6 +55,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -63,6 +67,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -74,6 +79,7 @@
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -81,18 +87,24 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-8px);
   }
 }
 
 @keyframes pulseSoft {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.7;
   }
@@ -191,26 +203,48 @@
   border-color: #9ca3af;
 }
 
+/* Additional color utilities */
+.bg-primary {
+  background-color: #8b6f47;
+}
+
+.text-primary {
+  color: #8b6f47;
+}
+
+.border-primary {
+  border-color: #8b6f47;
+}
+
+.bg-primary-light {
+  background-color: rgba(139, 111, 71, 0.1);
+}
+
+.bg-primary-soft {
+  background-color: rgba(139, 111, 71, 0.05);
+}
+
 .btn-primary {
-  background: #2c2c2c;
+  background: #8b6f47;
   color: white;
-  border: 1px solid #2c2c2c;
+  border: 1px solid #d1d5db;
 }
 
 .btn-primary:hover {
-  background: #1a1a1a;
-  border-color: #1a1a1a;
+  background: #6d5535;
+  border-color: #d1d5db;
 }
 
 .btn-secondary {
   background: transparent;
-  color: #2c2c2c;
-  border: 1px solid #2c2c2c;
+  color: #8b6f47;
+  border: 1px solid #d1d5db;
 }
 
 .btn-secondary:hover {
-  background: #2c2c2c;
+  background: #8b6f47;
   color: white;
+  border-color: #d1d5db;
 }
 
 .btn-outline {

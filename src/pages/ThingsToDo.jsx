@@ -78,8 +78,8 @@ const ThingsToDo = () => {
                     <p className="text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto">
                         {t('thingsToDo.subtitle')}
                     </p>
-                    <div className="mt-8 inline-flex items-center px-6 py-3 bg-gradient-to-r from-stone-100 to-stone-200 rounded-full border border-stone-300">
-                        <span className="font-serif text-lg text-gray-800">{t('thingsToDo.exploreMessage')}</span>
+                    <div className="mt-8 inline-flex items-center px-6 py-3 rounded-full border border-gray-300" style={{backgroundColor: 'rgba(139, 111, 71, 0.1)'}}>
+                        <span className="font-serif text-lg" style={{color: '#8b6f47'}}>{t('thingsToDo.exploreMessage')}</span>
                     </div>
                 </div>
 
@@ -125,7 +125,7 @@ const ThingsToDo = () => {
                             <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
                                 <div className="text-center mb-4">
                                     <span className="text-3xl mb-3 block">{rec.icon}</span>
-                                    <div className="inline-block bg-gradient-to-r from-pink-100 to-purple-100 px-3 py-1 rounded-full text-sm font-medium text-gray-700 border border-pink-200">
+                                    <div className="inline-block px-3 py-1 rounded-full text-sm font-medium border border-gray-300" style={{backgroundColor: 'rgba(139, 111, 71, 0.1)', color: '#8b6f47'}}>
                                         {rec.type}
                                     </div>
                                 </div>
@@ -174,13 +174,25 @@ const ThingsToDo = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href="/travel"
-                            className="inline-block px-8 py-3 bg-gradient-to-r border-black-100 border-1 font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-brown-700 hover:to-brown-600 transition-all duration-300 transform hover:scale-105"
+                            className="inline-block px-8 py-3 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                            style={{backgroundColor: '#8b6f47'}}
+                            onMouseEnter={(e) => e.target.style.backgroundColor = '#6d5535'}
+                            onMouseLeave={(e) => e.target.style.backgroundColor = '#8b6f47'}
                         >
                             {t('thingsToDo.cta.travelButton')}
                         </a>
                         <a
                             href="/rsvp"
-                            className="inline-block px-8 py-3 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-slate-700 hover:to-slate-800 transition-all duration-300 transform hover:scale-105 border border-slate-600"
+                            className="inline-block px-8 py-3 bg-transparent font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-300"
+                            style={{color: '#8b6f47'}}
+                            onMouseEnter={(e) => {
+                                e.target.style.backgroundColor = '#8b6f47';
+                                e.target.style.color = 'white';
+                            }}
+                            onMouseLeave={(e) => {
+                                e.target.style.backgroundColor = 'transparent';
+                                e.target.style.color = '#8b6f47';
+                            }}
                         >
                             {t('thingsToDo.cta.rsvpButton')}
                         </a>
