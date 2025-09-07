@@ -55,7 +55,7 @@ const Travel = () => {
                 </div>
 
                 {/* Venue Location */}
-                <div className="mb-16 bg-elegant rounded-sm p-8 border border-gray-200 soft-shadow">
+                <div className="mb-16 bg-elegant rounded-lg p-8 border border-gray-200 soft-shadow">
                     <div className="text-center mb-6">
                         <h2 className="font-display text-3xl md:text-4xl elegant-text mb-4">
                             {t('travel.venue.title')}
@@ -74,7 +74,7 @@ const Travel = () => {
                                 <p className="muted-text">{t('travel.venue.parkingDetails')}</p>
                             </div>
                         </div>
-                        <div className="bg-white rounded-sm p-6 soft-shadow border border-gray-200">
+                        <div className="bg-white rounded-lg p-6 soft-shadow border border-gray-200">
                             <h3 className="font-display text-lg elegant-text mb-4">{t('travel.venue.directions')}</h3>
                             <div className="space-y-2 muted-text">
                                 <p>• {t('travel.venue.direction1')}</p>
@@ -95,7 +95,7 @@ const Travel = () => {
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         {transportation.map((item, index) => (
-                            <div key={index} className="bg-white rounded-sm p-6 soft-shadow border border-gray-200 hover:border-gray-300 transition-colors">
+                            <div key={index} className="bg-white rounded-lg p-6 soft-shadow border border-gray-200 hover:border-gray-300 transition-colors">
                                 <div className="text-center">
                                     <h3 className="font-display text-xl elegant-text mb-3">
                                         {item.title}
@@ -119,12 +119,12 @@ const Travel = () => {
                     </p>
                     <div className="space-y-6">
                         {accommodations.map((hotel, index) => (
-                            <div key={index} className={`rounded-sm p-6 border ${hotel.color} soft-shadow hover:border-gray-300 transition-colors`}>
+                            <div key={index} className={`rounded-lg p-6 border ${hotel.color} soft-shadow hover:border-gray-300 transition-colors`}>
                                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                                     <h3 className="font-display text-xl md:text-2xl elegant-text">
                                         {hotel.name}
                                     </h3>
-                                    <span className="text-sm bg-gray-100 px-3 py-1 rounded-sm border border-gray-200 font-medium muted-text">
+                                    <span className="text-sm bg-gray-100 px-3 py-1 rounded-lg border border-gray-200 font-medium muted-text">
                                         {hotel.distance}
                                     </span>
                                 </div>
@@ -145,7 +145,7 @@ const Travel = () => {
                 </div>
 
                 {/* Airport Information */}
-                <div className="bg-elegant rounded-sm p-8 border border-gray-200 soft-shadow">
+                <div className="bg-elegant rounded-lg p-8 border border-gray-200 soft-shadow">
                     <h2 className="font-display text-3xl elegant-text text-center mb-6">
                         {t('travel.airport.title')}
                     </h2>
@@ -166,11 +166,11 @@ const Travel = () => {
                                 {t('travel.airport.transfer')}
                             </h3>
                             <div className="space-y-3">
-                                <div className="bg-white rounded-sm p-4 border border-gray-200">
+                                <div className="bg-white rounded-lg p-4 border border-gray-200">
                                     <h4 className="font-medium elegant-text">{t('travel.airport.bus')}</h4>
                                     <p className="muted-text">{t('travel.airport.busDetails')}</p>
                                 </div>
-                                <div className="bg-white rounded-sm p-4 border border-gray-200">
+                                <div className="bg-white rounded-lg p-4 border border-gray-200">
                                     <h4 className="font-medium elegant-text">{t('travel.airport.taxi')}</h4>
                                     <p className="muted-text">{t('travel.airport.taxiDetails')}</p>
                                 </div>

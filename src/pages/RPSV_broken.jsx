@@ -96,7 +96,7 @@ const RPSV = () => {
                 </div>
 
                 {error && (
-                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-sm mb-6">
+                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-6">
                         {error}
                     </div>
                 )}
@@ -114,7 +114,7 @@ const RPSV = () => {
                             value={formData.guestName}
                             onChange={handleInputChange}
                             required
-                            className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             placeholder="Enter your full name"
                         />
                     </div>
@@ -131,7 +131,7 @@ const RPSV = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             required
-                            className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             placeholder="your.email@example.com"
                         />
                     </div>
@@ -147,7 +147,7 @@ const RPSV = () => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             placeholder="+30 123 456 7890"
                         />
                     </div>
@@ -158,7 +158,7 @@ const RPSV = () => {
                             Will you be attending? *
                         </label>
                         <div className="space-y-3">
-                            <label className="flex items-center p-3 border border-gray-200 rounded-sm hover:bg-gray-50 cursor-pointer">
+                            <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
                                 <input
                                     type="radio"
                                     name="attending"
@@ -170,7 +170,7 @@ const RPSV = () => {
                                 />
                                 <span className="ml-3 elegant-text">Yes, I'll be there!</span>
                             </label>
-                            <label className="flex items-center p-3 border border-gray-200 rounded-sm hover:bg-gray-50 cursor-pointer">
+                            <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
                                 <input
                                     type="radio"
                                     name="attending"
@@ -196,7 +196,7 @@ const RPSV = () => {
                             name="plusOneName"
                             value={formData.plusOneName}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             placeholder="Enter plus one's name"
                         />
                     </div>
@@ -208,7 +208,7 @@ const RPSV = () => {
                                 Will your plus one be attending?
                             </label>
                             <div className="space-y-3">
-                                <label className="flex items-center p-3 border border-gray-200 rounded-sm hover:bg-gray-50 cursor-pointer">
+                                <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
                                     <input
                                         type="radio"
                                         name="plusOneAttending"
@@ -219,7 +219,7 @@ const RPSV = () => {
                                     />
                                     <span className="ml-3 elegant-text">Yes</span>
                                 </label>
-                                <label className="flex items-center p-3 border border-gray-200 rounded-sm hover:bg-gray-50 cursor-pointer">
+                                <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
                                     <input
                                         type="radio"
                                         name="plusOneAttending"
@@ -245,7 +245,7 @@ const RPSV = () => {
                                 name="plusOneAgeCategory"
                                 value={formData.plusOneAgeCategory}
                                 onChange={handleInputChange}
-                                className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                                className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             >
                                 <option value="">Select age category</option>
                                 <option value="adult">Adult</option>
@@ -266,7 +266,7 @@ const RPSV = () => {
                             value={formData.dietaryRestrictions}
                             onChange={handleInputChange}
                             rows={3}
-                            className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             placeholder="Please let us know about any dietary restrictions, allergies, or special meal preferences"
                         />
                     </div>
@@ -282,7 +282,7 @@ const RPSV = () => {
                             value={formData.message}
                             onChange={handleInputChange}
                             rows={4}
-                            className="w-full px-4 py-3 border border-gray-200 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             placeholder="Share your congratulations, a memory, or any special message for Marina & Orestis"
                         />
                     </div>

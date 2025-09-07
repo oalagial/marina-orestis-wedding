@@ -38,7 +38,7 @@ const Gallery = () => {
                     <p className="text-lg md:text-xl muted-text font-light max-w-3xl mx-auto">
                         {t('gallery.subtitle')}
                     </p>
-                    <div className="mt-8 inline-flex items-center px-6 py-3 bg-elegant rounded-sm border border-gray-200">
+                    <div className="mt-8 inline-flex items-center px-6 py-3 bg-elegant rounded-lg border border-gray-200">
                         <span className="font-display text-lg elegant-text">{t('gallery.memoryMessage')}</span>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Gallery = () => {
                             <button
                                 key={category.id}
                                 onClick={() => setSelectedCategory(category.id)}
-                                className={`px-6 py-3 rounded-sm transition-all uppercase tracking-wider text-sm font-medium ${
+                                className={`px-6 py-3 rounded-lg transition-all uppercase tracking-wider text-sm font-medium ${
                                     selectedCategory === category.id
                                         ? 'bg-gray-800 text-white'
                                         : 'bg-white text-gray-700 border border-gray-300 hover:border-gray-400'
@@ -67,7 +67,7 @@ const Gallery = () => {
                     {filteredItems.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             {filteredItems.map((item) => (
-                                <div key={item.id} className="group relative overflow-hidden rounded-sm soft-shadow hover:shadow-md transition-all duration-300">
+                                <div key={item.id} className="group relative overflow-hidden rounded-lg soft-shadow hover:shadow-md transition-all duration-300">
                                     <div className="aspect-w-4 aspect-h-3">
                                         <img
                                             src={item.src}
@@ -96,7 +96,7 @@ const Gallery = () => {
                 </div>
 
                 {/* Coming Soon Section */}
-                <div className="bg-elegant rounded-sm p-8 mb-16 border border-gray-200 soft-shadow">
+                <div className="bg-elegant rounded-lg p-8 mb-16 border border-gray-200 soft-shadow">
                     <div className="text-center">
                         <h2 className="font-display text-3xl elegant-text mb-4">
                             {t('gallery.comingSoon.title')}
@@ -107,15 +107,15 @@ const Gallery = () => {
                         </p>
                         <div className="space-y-4">
                             <div className="grid md:grid-cols-3 gap-4 max-w-2xl mx-auto">
-                                <div className="bg-white rounded-sm p-4 soft-shadow border border-gray-200">
+                                <div className="bg-white rounded-lg p-4 soft-shadow border border-gray-200">
                                     <h3 className="font-display text-lg elegant-text mb-1">{t('gallery.comingSoon.ceremony')}</h3>
                                     <p className="text-sm muted-text">{t('gallery.comingSoon.ceremonyDesc')}</p>
                                 </div>
-                                <div className="bg-white rounded-sm p-4 soft-shadow border border-gray-200">
+                                <div className="bg-white rounded-lg p-4 soft-shadow border border-gray-200">
                                     <h3 className="font-display text-lg elegant-text mb-1">{t('gallery.comingSoon.reception')}</h3>
                                     <p className="text-sm muted-text">{t('gallery.comingSoon.receptionDesc')}</p>
                                 </div>
-                                <div className="bg-white rounded-sm p-4 soft-shadow border border-gray-200">
+                                <div className="bg-white rounded-lg p-4 soft-shadow border border-gray-200">
                                     <h3 className="font-display text-lg elegant-text mb-1">{t('gallery.comingSoon.party')}</h3>
                                     <p className="text-sm muted-text">{t('gallery.comingSoon.partyDesc')}</p>
                                 </div>
@@ -125,7 +125,7 @@ const Gallery = () => {
                 </div>
 
                 {/* Share Your Photos */}
-                <div className="bg-elegant rounded-sm p-8 border border-gray-200 soft-shadow">
+                <div className="bg-elegant rounded-lg p-8 border border-gray-200 soft-shadow">
                     <div className="text-center">
                         <h2 className="font-display text-3xl elegant-text mb-4">
                             {t('gallery.sharePhotos.title')}
@@ -133,11 +133,11 @@ const Gallery = () => {
                         <p className="text-lg muted-text mb-6 max-w-2xl mx-auto">
                             {t('gallery.sharePhotos.description')}
                         </p>
-                        <div className="bg-white rounded-sm p-6 max-w-md mx-auto soft-shadow border border-gray-200">
+                        <div className="bg-white rounded-lg p-6 max-w-md mx-auto soft-shadow border border-gray-200">
                             <h3 className="font-display text-xl elegant-text mb-3">
                                 {t('gallery.sharePhotos.hashtag')}
                             </h3>
-                            <div className="bg-gray-100 rounded-sm p-3 font-mono text-lg elegant-text mb-4">
+                            <div className="bg-gray-100 rounded-lg p-3 font-mono text-lg elegant-text mb-4">
                                 #MarinaOrestis2026
                             </div>
                             <p className="text-sm muted-text">

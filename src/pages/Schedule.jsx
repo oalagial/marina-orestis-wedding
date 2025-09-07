@@ -44,7 +44,7 @@ const Schedule = () => {
                     <p className="text-lg md:text-xl muted-text font-light max-w-2xl mx-auto leading-relaxed-plus">
                         {t('schedule.subtitle')}
                     </p>
-                    <div className="mt-8 inline-flex items-center px-6 py-3 bg-elegant rounded-sm border border-gray-200">
+                    <div className="mt-8 inline-flex items-center px-6 py-3 bg-elegant rounded-lg border border-gray-200">
                         <span className="w-2 h-2 bg-gray-400 rounded-full mr-3"></span>
                         <span className="font-medium elegant-text">{t('header.date')}</span>
                     </div>
@@ -62,14 +62,14 @@ const Schedule = () => {
                                 {/* Time marker */}
                                 <div className="flex items-center">
                                     <div className="w-24 md:w-64 text-right pr-6 md:pr-12">
-                                        <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-sm border border-gray-200 relative z-10 soft-shadow">
+                                        <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-lg border border-gray-200 relative z-10 soft-shadow">
                                             <span className="font-display-bold text-lg elegant-text">{item.time}</span>
                                         </div>
                                     </div>
                                     
                                     {/* Content */}
                                     <div className="flex-1 ml-6">
-                                        <div className="bg-white rounded-sm p-6 md:p-8 soft-shadow border border-gray-200 hover:border-gray-300 transition-all duration-300">
+                                        <div className="bg-white rounded-lg p-6 md:p-8 soft-shadow border border-gray-200 hover:border-gray-300 transition-all duration-300">
                                             <h3 className="font-display text-xl md:text-2xl elegant-text mb-3">
                                                 {item.title}
                                             </h3>
@@ -85,7 +85,7 @@ const Schedule = () => {
                 </div>
 
                 {/* Venue Info - Elegant */}
-                <div className="bg-elegant rounded-sm p-8 md:p-12 soft-shadow border border-gray-200 mb-16">
+                <div className="bg-elegant rounded-lg p-8 md:p-12 soft-shadow border border-gray-200 mb-16">
                     <div className="text-center">
                         <h2 className="font-display text-3xl md:text-4xl elegant-text mb-8">
                             {t('schedule.venueTitle')}

@@ -70,122 +70,122 @@ const ThingsToDo = () => {
     return (
         <div className="section-padding">
             <div className="max-w-6xl mx-auto container-padding">
-            {/* Header Section */}
-            <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">
-                    {t('thingsToDo.title')}
-                </h1>
-                <p className="text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto">
-                    {t('thingsToDo.subtitle')}
-                </p>
-                <div className="mt-8 inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-100 to-purple-100 rounded-full border border-pink-200">
-                    <span className="font-serif text-lg text-gray-800">{t('thingsToDo.exploreMessage')}</span>
-                </div>
-            </div>
-
-            {/* Activities Grid */}
-            <div className="mb-16">
-                <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-12">
-                    {t('thingsToDo.activitiesTitle')}
-                </h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {activities.map((activity, index) => (
-                        <div key={index} className={`rounded-xl p-6 border-2 ${activity.color} shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
-                            <div className="text-center mb-4">
-                                <span className="text-4xl mb-3 block">{activity.icon}</span>
-                                <div className="inline-block bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-600 border border-gray-200 mb-3">
-                                    {activity.category}
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-serif font-bold text-gray-800 mb-3 text-center">
-                                {activity.title}
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed mb-4 text-center">
-                                {activity.description}
-                            </p>
-                            <div className="flex items-center justify-center text-sm text-gray-500">
-                                <span className="mr-2">⏱️</span>
-                                <span>{activity.duration}</span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Local Recommendations */}
-            <div className="mb-16">
-                <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-8">
-                    {t('thingsToDo.recommendationsTitle')}
-                </h2>
-                <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                    {t('thingsToDo.recommendationsSubtitle')}
-                </p>
-                <div className="grid md:grid-cols-3 gap-6">
-                    {recommendations.map((rec, index) => (
-                        <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                            <div className="text-center mb-4">
-                                <span className="text-3xl mb-3 block">{rec.icon}</span>
-                                <div className="inline-block bg-gradient-to-r from-pink-100 to-purple-100 px-3 py-1 rounded-full text-sm font-medium text-gray-700 border border-pink-200">
-                                    {rec.type}
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-serif font-bold text-gray-800 mb-3 text-center">
-                                {rec.title}
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed text-center">
-                                {rec.description}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </div>
-
-            {/* Weather & Best Time */}
-            <div className="mb-16 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-200">
-                <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-8">
-                    {t('thingsToDo.weather.title')}
-                </h2>
-                <div className="grid md:grid-cols-2 gap-8">
-                    <div className="text-center">
-                        <span className="text-6xl mb-4 block">☀️</span>
-                        <h3 className="text-xl font-bold text-gray-800 mb-2">{t('thingsToDo.weather.june')}</h3>
-                        <p className="text-gray-700">{t('thingsToDo.weather.juneDesc')}</p>
-                    </div>
-                    <div className="bg-white rounded-lg p-6 shadow-md">
-                        <h3 className="text-xl font-bold text-gray-800 mb-4">{t('thingsToDo.weather.tips')}</h3>
-                        <div className="space-y-2 text-gray-700">
-                            <p>• {t('thingsToDo.weather.tip1')}</p>
-                            <p>• {t('thingsToDo.weather.tip2')}</p>
-                            <p>• {t('thingsToDo.weather.tip3')}</p>
-                            <p>• {t('thingsToDo.weather.tip4')}</p>
-                        </div>
+                {/* Header Section */}
+                <div className="text-center mb-16">
+                    <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">
+                        {t('thingsToDo.title')}
+                    </h1>
+                    <p className="text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto">
+                        {t('thingsToDo.subtitle')}
+                    </p>
+                    <div className="mt-8 inline-flex items-center px-6 py-3 bg-gradient-to-r from-stone-100 to-stone-200 rounded-full border border-stone-300">
+                        <span className="font-serif text-lg text-gray-800">{t('thingsToDo.exploreMessage')}</span>
                     </div>
                 </div>
-            </div>
 
-            {/* Call to Action */}
-            <div className="text-center bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 border border-pink-200">
-                <h2 className="text-2xl font-serif font-bold text-gray-800 mb-4">
-                    {t('thingsToDo.cta.title')}
-                </h2>
-                <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-                    {t('thingsToDo.cta.description')}
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a
-                        href="/travel"
-                        className="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all"
-                    >
-                        {t('thingsToDo.cta.travelButton')}
-                    </a>
-                    <a
-                        href="/rsvp"
-                        className="inline-block px-6 py-3 bg-white text-gray-700 border border-gray-300 font-bold rounded-full hover:bg-gray-50 transition-colors"
-                    >
-                        {t('thingsToDo.cta.rsvpButton')}
-                    </a>
+                {/* Activities Grid */}
+                <div className="mb-16">
+                    <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-12">
+                        {t('thingsToDo.activitiesTitle')}
+                    </h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {activities.map((activity, index) => (
+                            <div key={index} className={`rounded-xl p-6 border-2 ${activity.color} shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
+                                <div className="text-center mb-4">
+                                    <span className="text-4xl mb-3 block">{activity.icon}</span>
+                                    <div className="inline-block bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-600 border border-gray-200 mb-3">
+                                        {activity.category}
+                                    </div>
+                                </div>
+                                <h3 className="text-xl font-serif font-bold text-gray-800 mb-3 text-center">
+                                    {activity.title}
+                                </h3>
+                                <p className="text-gray-600 leading-relaxed mb-4 text-center">
+                                    {activity.description}
+                                </p>
+                                <div className="flex items-center justify-center text-sm text-gray-500">
+                                    <span className="mr-2">⏱️</span>
+                                    <span>{activity.duration}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+
+                {/* Local Recommendations */}
+                <div className="mb-16">
+                    <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-8">
+                        {t('thingsToDo.recommendationsTitle')}
+                    </h2>
+                    <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                        {t('thingsToDo.recommendationsSubtitle')}
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {recommendations.map((rec, index) => (
+                            <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                                <div className="text-center mb-4">
+                                    <span className="text-3xl mb-3 block">{rec.icon}</span>
+                                    <div className="inline-block bg-gradient-to-r from-pink-100 to-purple-100 px-3 py-1 rounded-full text-sm font-medium text-gray-700 border border-pink-200">
+                                        {rec.type}
+                                    </div>
+                                </div>
+                                <h3 className="text-xl font-serif font-bold text-gray-800 mb-3 text-center">
+                                    {rec.title}
+                                </h3>
+                                <p className="text-gray-600 leading-relaxed text-center">
+                                    {rec.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Weather & Best Time */}
+                <div className="mb-16 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-200">
+                    <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-8">
+                        {t('thingsToDo.weather.title')}
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="text-center">
+                            <span className="text-6xl mb-4 block">☀️</span>
+                            <h3 className="text-xl font-bold text-gray-800 mb-2">{t('thingsToDo.weather.june')}</h3>
+                            <p className="text-gray-700">{t('thingsToDo.weather.juneDesc')}</p>
+                        </div>
+                        <div className="bg-white rounded-lg p-6 shadow-md">
+                            <h3 className="text-xl font-bold text-gray-800 mb-4">{t('thingsToDo.weather.tips')}</h3>
+                            <div className="space-y-2 text-gray-700">
+                                <p>• {t('thingsToDo.weather.tip1')}</p>
+                                <p>• {t('thingsToDo.weather.tip2')}</p>
+                                <p>• {t('thingsToDo.weather.tip3')}</p>
+                                <p>• {t('thingsToDo.weather.tip4')}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Call to Action */}
+                <div className="text-center bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 border border-pink-200">
+                    <h2 className="text-2xl font-serif font-bold text-gray-800 mb-4">
+                        {t('thingsToDo.cta.title')}
+                    </h2>
+                    <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+                        {t('thingsToDo.cta.description')}
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="/travel"
+                            className="inline-block px-8 py-3 bg-gradient-to-r border-black-100 border-1 font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-brown-700 hover:to-brown-600 transition-all duration-300 transform hover:scale-105"
+                        >
+                            {t('thingsToDo.cta.travelButton')}
+                        </a>
+                        <a
+                            href="/rsvp"
+                            className="inline-block px-8 py-3 bg-gradient-to-r from-slate-600 to-slate-700 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:from-slate-700 hover:to-slate-800 transition-all duration-300 transform hover:scale-105 border border-slate-600"
+                        >
+                            {t('thingsToDo.cta.rsvpButton')}
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     );

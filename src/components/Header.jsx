@@ -38,7 +38,7 @@ export default function Header() {
 
               {/* Elegant Burger */}
               <button
-                className="md:hidden p-2 rounded-sm hover:bg-gray-50 transition-colors"
+                className="md:hidden p-2 rounded-lg hover:bg-gray-50 transition-colors"
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Menu"
               >
@@ -59,7 +59,7 @@ export default function Header() {
                 { to: '/', label: t('nav.home') },
                 { to: '/schedule', label: t('nav.schedule') },
                 { to: '/travel', label: t('nav.travel') },
-                { to: '/gallery', label: t('nav.gallery') },
+                // { to: '/gallery', label: t('nav.gallery') },
                 { to: '/things-to-do', label: t('nav.thingsToDo') },
                 { to: '/faqs', label: t('nav.faqs') }
               ].map((item) => (
