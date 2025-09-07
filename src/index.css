@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @layer base {
@@ -13,14 +13,15 @@
   }
 
   html {
-    font-family: 'Inter', 'ui-sans-serif', 'system-ui', sans-serif;
+    font-family: 'Source Sans Pro', 'ui-sans-serif', 'system-ui', sans-serif;
     scroll-behavior: smooth;
     font-feature-settings: "kern";
   }
 
   body {
-    background: linear-gradient(135deg, #fdf8f6 0%, #fef7f0 50%, #fdf2f8 100%);
+    background: #fefefe;
     min-height: 100vh;
+    color: #3a3a3a;
   }
 }
 
@@ -99,54 +100,50 @@
 
 /* Custom font classes */
 .font-display {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.01em;
 }
 
 .font-display-bold {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 600;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.01em;
 }
 
-/* Minimal design elements */
+/* Sophisticated design elements */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .soft-shadow {
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .soft-shadow-lg {
-  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #e11d48, #c026d3, #7c3aed);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.elegant-text {
+  color: #2c2c2c;
 }
 
-.gradient-border {
-  position: relative;
-  background: white;
+.accent-text {
+  color: #8b6f47;
 }
 
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  background: linear-gradient(135deg, #e11d48, #c026d3, #7c3aed);
-  border-radius: inherit;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: xor;
-  -webkit-mask-composite: xor;
+.muted-text {
+  color: #6b6b6b;
+}
+
+.border-elegant {
+  border-color: #e5e1dc;
+}
+
+.bg-elegant {
+  background-color: #f8f6f3;
 }
 
 /* Custom scrollbar */
@@ -159,47 +156,56 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #e11d48, #c026d3);
+  background: #c4b5a0;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #be185d, #a21caf);
+  background: #8b6f47;
 }
 
-/* Minimal button styles */
-.btn-minimal {
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
+/* Elegant button styles */
+.btn-elegant {
+  padding: 0.875rem 2rem;
+  border-radius: 2px;
   font-weight: 500;
   transition: all 0.3s ease;
-  transform: scale(1);
-}
-
-.btn-minimal:hover {
-  transform: scale(1.05);
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
 }
 
 .btn-primary {
-  background: linear-gradient(to right, #f43f5e, #ec4899);
+  background: #2c2c2c;
   color: white;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #2c2c2c;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  background: #1a1a1a;
+  border-color: #1a1a1a;
 }
 
 .btn-secondary {
-  background: white;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: transparent;
+  color: #2c2c2c;
+  border: 1px solid #2c2c2c;
 }
 
 .btn-secondary:hover {
-  border-color: #d1d5db;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: #2c2c2c;
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #8b6f47;
+  border: 1px solid #8b6f47;
+}
+
+.btn-outline:hover {
+  background: #8b6f47;
+  color: white;
 }
 
 /* Typography improvements */

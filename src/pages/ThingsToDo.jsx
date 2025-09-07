@@ -8,49 +8,43 @@ const ThingsToDo = () => {
         {
             title: t('thingsToDo.oldTown.title'),
             description: t('thingsToDo.oldTown.description'),
-            icon: "🏛️",
             category: t('thingsToDo.categories.culture'),
-            color: "bg-amber-50 border-amber-200",
+            color: "bg-white border-gray-200",
             duration: t('thingsToDo.oldTown.duration')
         },
         {
             title: t('thingsToDo.beach.title'),
             description: t('thingsToDo.beach.description'),
-            icon: "🏖️",
             category: t('thingsToDo.categories.nature'),
-            color: "bg-blue-50 border-blue-200",
+            color: "bg-white border-gray-200",
             duration: t('thingsToDo.beach.duration')
         },
         {
             title: t('thingsToDo.cuisine.title'),
             description: t('thingsToDo.cuisine.description'),
-            icon: "🍽️",
             category: t('thingsToDo.categories.food'),
-            color: "bg-green-50 border-green-200",
+            color: "bg-white border-gray-200",
             duration: t('thingsToDo.cuisine.duration')
         },
         {
             title: t('thingsToDo.boatTour.title'),
             description: t('thingsToDo.boatTour.description'),
-            icon: "⛵",
             category: t('thingsToDo.categories.adventure'),
-            color: "bg-cyan-50 border-cyan-200",
+            color: "bg-white border-gray-200",
             duration: t('thingsToDo.boatTour.duration')
         },
         {
             title: t('thingsToDo.museum.title'),
             description: t('thingsToDo.museum.description'),
-            icon: "🏛️",
             category: t('thingsToDo.categories.culture'),
-            color: "bg-purple-50 border-purple-200",
+            color: "bg-white border-gray-200",
             duration: t('thingsToDo.museum.duration')
         },
         {
             title: t('thingsToDo.nightlife.title'),
             description: t('thingsToDo.nightlife.description'),
-            icon: "🌃",
             category: t('thingsToDo.categories.entertainment'),
-            color: "bg-pink-50 border-pink-200",
+            color: "bg-white border-gray-200",
             duration: t('thingsToDo.nightlife.duration')
         }
     ];
@@ -59,25 +53,23 @@ const ThingsToDo = () => {
         {
             title: t('thingsToDo.recommendations.restaurant1.title'),
             description: t('thingsToDo.recommendations.restaurant1.description'),
-            type: t('thingsToDo.recommendations.restaurant1.type'),
-            icon: "🍴"
+            type: t('thingsToDo.recommendations.restaurant1.type')
         },
         {
             title: t('thingsToDo.recommendations.bar1.title'),
             description: t('thingsToDo.recommendations.bar1.description'),
-            type: t('thingsToDo.recommendations.bar1.type'),
-            icon: "🍸"
+            type: t('thingsToDo.recommendations.bar1.type')
         },
         {
             title: t('thingsToDo.recommendations.attraction1.title'),
             description: t('thingsToDo.recommendations.attraction1.description'),
-            type: t('thingsToDo.recommendations.attraction1.type'),
-            icon: "🎯"
+            type: t('thingsToDo.recommendations.attraction1.type')
         }
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-4 py-8">
+        <div className="section-padding">
+            <div className="max-w-6xl mx-auto container-padding">
             {/* Header Section */}
             <div className="text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">
@@ -87,7 +79,6 @@ const ThingsToDo = () => {
                     {t('thingsToDo.subtitle')}
                 </p>
                 <div className="mt-8 inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-100 to-purple-100 rounded-full border border-pink-200">
-                    <span className="text-2xl mr-3">🗺️</span>
                     <span className="font-serif text-lg text-gray-800">{t('thingsToDo.exploreMessage')}</span>
                 </div>
             </div>
@@ -194,6 +185,7 @@ const ThingsToDo = () => {
                         {t('thingsToDo.cta.rsvpButton')}
                     </a>
                 </div>
+            </div>
             </div>
         </div>
     );

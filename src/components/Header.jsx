@@ -9,34 +9,25 @@ export default function Header() {
 
   return (
     <>
-      {/* Minimal Announcement Bar */}
-      {/* <div className="bg-gradient-to-r from-rose-500/90 to-pink-500/90 text-white text-sm py-2 text-center relative overflow-hidden">
-        <div className="relative z-10 animate-fade-in">
-          <span className="font-medium tracking-wide">
-            {t('header.welcomeParty')}
-          </span>
-        </div>
-      </div> */}
-
-      <header className="glass-effect sticky top-0 z-50 border-b border-white/20">
+      <header className="bg-white sticky top-0 z-50 border-b border-elegant soft-shadow">
         <div className="max-w-7xl mx-auto container-padding">
           <div className="flex justify-between items-center py-6">
-            {/* Date & Location - Minimal */}
-            <div className="hidden md:block text-sm text-gray-600 space-y-1">
-              <div className="font-medium">
+            {/* Date & Location - Elegant */}
+            <div className="hidden md:block text-sm muted-text space-y-1">
+              <div className="font-medium elegant-text">
                 {t('header.date')}
               </div>
-              <div className="text-gray-500">
+              <div className="text-xs">
                 {t('header.location')}
               </div>
             </div>
 
-            {/* Main Title - Elegant */}
+            {/* Main Title - Sophisticated */}
             <div className="flex-1 text-center">
-              <h1 className="font-display-bold text-3xl lg:text-4xl xl:text-5xl gradient-text">
+              <h1 className="font-display-bold text-3xl lg:text-4xl xl:text-5xl elegant-text">
                 Marina & Orestis
               </h1>
-              <p className="text-xs tracking-[0.3em] text-gray-500 mt-1 uppercase font-medium">
+              <p className="text-xs tracking-[0.3em] muted-text mt-1 uppercase font-medium">
                 June 27, 2026
               </p>
             </div>
@@ -45,9 +36,9 @@ export default function Header() {
             <div className="flex items-center space-x-4">
               <LanguageSwitcher />
 
-              {/* Minimal Burger */}
+              {/* Elegant Burger */}
               <button
-                className="md:hidden p-2 rounded-full hover:bg-white/50 transition-colors"
+                className="md:hidden p-2 rounded-sm hover:bg-gray-50 transition-colors"
                 onClick={() => setMenuOpen(!menuOpen)}
                 aria-label="Menu"
               >
@@ -60,8 +51,8 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Minimal Navigation */}
-          <nav className="border-t border-white/10">
+          {/* Sophisticated Navigation */}
+          <nav className="border-t border-elegant">
             {/* Desktop Menu */}
             <div className="hidden md:flex justify-center py-4 space-x-8">
               {[
@@ -76,9 +67,9 @@ export default function Header() {
                   key={item.to}
                   to={item.to}
                   className={({ isActive }) =>
-                    `relative px-4 py-2 text-sm font-medium transition-all duration-300 ${isActive
-                      ? "text-rose-600"
-                      : "text-gray-600 hover:text-gray-900"
+                    `relative px-4 py-2 text-sm font-medium transition-all duration-300 uppercase tracking-wider ${isActive
+                      ? "accent-text"
+                      : "muted-text hover:text-gray-900"
                     }`
                   }
                 >
@@ -86,17 +77,17 @@ export default function Header() {
                     <>
                       {item.label}
                       {isActive && (
-                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-rose-500 rounded-full"></div>
+                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-px bg-current"></div>
                       )}
                     </>
                   )}
                 </NavLink>
               ))}
 
-              {/* RSVP Button - Minimal */}
+              {/* RSVP Button - Elegant */}
               <NavLink
                 to="/rsvp"
-                className="btn-minimal btn-primary text-sm"
+                className="btn-elegant btn-primary text-xs"
               >
                 {t('nav.rsvp')}
               </NavLink>
@@ -104,7 +95,7 @@ export default function Header() {
 
             {/* Mobile Menu */}
             {menuOpen && (
-              <div className="md:hidden py-6 animate-fade-in">
+              <div className="md:hidden py-6 animate-fade-in bg-elegant">
                 <div className="flex flex-col space-y-4 text-center">
                   {[
                     { to: '/', label: t('nav.home') },
@@ -119,9 +110,9 @@ export default function Header() {
                       to={item.to}
                       onClick={() => setMenuOpen(false)}
                       className={({ isActive }) =>
-                        `py-2 text-base font-medium transition-colors ${isActive
-                          ? "text-rose-600"
-                          : "text-gray-700 hover:text-gray-900"
+                        `py-2 text-base font-medium transition-colors uppercase tracking-wider ${isActive
+                          ? "accent-text"
+                          : "muted-text hover:text-gray-900"
                         }`
                       }
                     >
@@ -132,7 +123,7 @@ export default function Header() {
                   <NavLink
                     to="/rsvp"
                     onClick={() => setMenuOpen(false)}
-                    className="btn-minimal btn-primary mx-auto w-fit"
+                    className="btn-elegant btn-primary mx-auto w-fit mt-4"
                   >
                     {t('nav.rsvp')}
                   </NavLink>

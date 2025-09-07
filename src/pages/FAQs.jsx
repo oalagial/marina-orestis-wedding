@@ -8,7 +8,6 @@ const FAQs = () => {
     const faqCategories = [
         {
             title: t('faqs.categories.general'),
-            icon: "❓",
             faqs: [
                 {
                     question: t('faqs.general.when.question'),
@@ -26,7 +25,6 @@ const FAQs = () => {
         },
         {
             title: t('faqs.categories.attire'),
-            icon: "👗",
             faqs: [
                 {
                     question: t('faqs.attire.dress.question'),
@@ -44,7 +42,6 @@ const FAQs = () => {
         },
         {
             title: t('faqs.categories.logistics'),
-            icon: "🚗",
             faqs: [
                 {
                     question: t('faqs.logistics.parking.question'),
@@ -62,7 +59,6 @@ const FAQs = () => {
         },
         {
             title: t('faqs.categories.ceremony'),
-            icon: "💒",
             faqs: [
                 {
                     question: t('faqs.ceremony.plusOne.question'),
@@ -80,7 +76,6 @@ const FAQs = () => {
         },
         {
             title: t('faqs.categories.food'),
-            icon: "🍽️",
             faqs: [
                 {
                     question: t('faqs.food.dietary.question'),
@@ -104,7 +99,8 @@ const FAQs = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto px-4 py-8">
+        <div className="section-padding">
+            <div className="max-w-4xl mx-auto container-padding">
             {/* Header Section */}
             <div className="text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">
@@ -113,8 +109,7 @@ const FAQs = () => {
                 <p className="text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto">
                     {t('faqs.subtitle')}
                 </p>
-                <div className="mt-8 inline-flex items-center px-6 py-3 bg-gradient-to-r from-pink-100 to-purple-100 rounded-full border border-pink-200">
-                    <span className="text-2xl mr-3">💡</span>
+                <div className="mt-8 inline-flex items-center px-6 py-3 bg-white rounded-full border border-gray-200">
                     <span className="font-serif text-lg text-gray-800">{t('faqs.helpMessage')}</span>
                 </div>
             </div>
@@ -124,9 +119,8 @@ const FAQs = () => {
                 {faqCategories.map((category, categoryIndex) => (
                     <div key={categoryIndex} className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                         {/* Category Header */}
-                        <div className="bg-gradient-to-r from-pink-50 to-purple-50 px-6 py-4 border-b border-gray-100">
-                            <h2 className="text-2xl font-serif font-bold text-gray-800 flex items-center">
-                                <span className="text-3xl mr-3">{category.icon}</span>
+                        <div className="bg-gray-50 px-6 py-4 border-b border-gray-100">
+                            <h2 className="text-2xl font-serif font-bold text-gray-800">
                                 {category.title}
                             </h2>
                         </div>
@@ -139,13 +133,13 @@ const FAQs = () => {
                                     <div key={faqIndex} className="px-6 py-4">
                                         <button
                                             onClick={() => toggleFAQ(categoryIndex, faqIndex)}
-                                            className="w-full text-left flex items-center justify-between hover:text-pink-600 transition-colors"
+                                            className="w-full text-left flex items-center justify-between hover:text-gray-600 transition-colors"
                                         >
                                             <h3 className="text-lg font-semibold text-gray-800 pr-4">
                                                 {faq.question}
                                             </h3>
-                                            <span className={`text-2xl transition-transform ${isOpen ? 'rotate-45' : ''}`}>
-                                                ➕
+                                            <span className={`text-xl text-gray-400 transition-transform ${isOpen ? 'rotate-45' : ''}`}>
+                                                +
                                             </span>
                                         </button>
                                         {isOpen && (
@@ -164,7 +158,7 @@ const FAQs = () => {
             </div>
 
             {/* Quick RSVP Reminder */}
-            <div className="mt-12 text-center bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-6 border border-pink-200">
+            <div className="mt-12 text-center bg-white rounded-2xl p-6 border border-gray-200">
                 <h3 className="text-xl font-serif font-bold text-gray-800 mb-3">
                     {t('faqs.rsvpReminder.title')}
                 </h3>
@@ -173,10 +167,11 @@ const FAQs = () => {
                 </p>
                 <a
                     href="/rsvp"
-                    className="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all"
+                    className="btn-elegant"
                 >
                     {t('faqs.rsvpReminder.button')}
                 </a>
+            </div>
             </div>
         </div>
     );

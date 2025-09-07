@@ -110,19 +110,20 @@ const AdminRSVPs = () => {
     }
 
     return (
-        <div className="max-w-6xl mx-auto p-8">
+        <div className="section-padding">
+            <div className="max-w-6xl mx-auto container-padding">
             <div className="flex justify-between items-center mb-8">
                 <h1 className="text-3xl font-serif font-bold text-gray-800">Wedding RSVPs</h1>
                 <div className="flex gap-4">
                     <button
                         onClick={exportToCSV}
-                        className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                        className="btn-elegant bg-green-600 hover:bg-green-700"
                     >
                         Export to CSV
                     </button>
                     <button
                         onClick={handleLogout}
-                        className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                        className="btn-elegant bg-red-600 hover:bg-red-700"
                     >
                         Logout
                     </button>
@@ -130,16 +131,16 @@ const AdminRSVPs = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-blue-50 p-4 rounded-lg text-center">
-                    <h3 className="text-lg font-semibold text-blue-800">Total Responses</h3>
-                    <p className="text-2xl font-bold text-blue-600">{rsvps.length}</p>
+                <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
+                    <h3 className="text-lg font-semibold text-gray-800">Total Responses</h3>
+                    <p className="text-2xl font-bold text-gray-600">{rsvps.length}</p>
                 </div>
-                <div className="bg-green-50 p-4 rounded-lg text-center">
-                    <h3 className="text-lg font-semibold text-green-800">Attending</h3>
+                <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
+                    <h3 className="text-lg font-semibold text-gray-800">Attending</h3>
                     <p className="text-2xl font-bold text-green-600">{getAttendingCount()}</p>
                 </div>
-                <div className="bg-red-50 p-4 rounded-lg text-center">
-                    <h3 className="text-lg font-semibold text-red-800">Not Attending</h3>
+                <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
+                    <h3 className="text-lg font-semibold text-gray-800">Not Attending</h3>
                     <p className="text-2xl font-bold text-red-600">
                         {rsvps.filter(rsvp => !rsvp.attending).length}
                     </p>
@@ -236,6 +237,7 @@ const AdminRSVPs = () => {
                         </tbody>
                     </table>
                 </div>
+            </div>
             </div>
         </div>
     );

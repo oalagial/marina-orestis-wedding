@@ -5,54 +5,47 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="glass-effect border-t border-white/20 mt-20">
+    <footer className="bg-elegant border-t border-elegant mt-20">
       <div className="max-w-6xl mx-auto container-padding py-16">
         <div className="text-center">
           {/* Main Content */}
           <div className="mb-12">
-            <h3 className="font-display-bold text-3xl md:text-4xl gradient-text mb-4">
+            <h3 className="font-display-bold text-3xl md:text-4xl elegant-text mb-4">
               Marina & Orestis
             </h3>
-            <p className="text-gray-600 font-light italic text-lg">
+            <div className="w-16 h-px bg-gray-300 mx-auto mb-4"></div>
+            <p className="muted-text font-light italic text-lg">
               {t('footer.tagline')}
             </p>
           </div>
 
-          {/* Wedding Info - Minimal */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
+          {/* Wedding Info - Elegant */}
+          <div className="grid md:grid-cols-2 gap-12 mb-12 max-w-3xl mx-auto">
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 mb-3">
-                <span className="text-white text-sm">�</span>
-              </div>
-              <p className="text-sm text-gray-500 uppercase tracking-widest mb-1">Date</p>
-              <p className="font-medium text-gray-800">{t('header.date')}</p>
+              <p className="text-sm muted-text uppercase tracking-widest mb-3 font-medium">Date</p>
+              <p className="font-display text-xl elegant-text">{t('header.date')}</p>
             </div>
             <div className="text-center">
-              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 mb-3">
-                <span className="text-white text-sm">�</span>
-              </div>
-              <p className="text-sm text-gray-500 uppercase tracking-widest mb-1">Location</p>
-              <p className="font-medium text-gray-800">{t('header.location')}</p>
+              <p className="text-sm muted-text uppercase tracking-widest mb-3 font-medium">Location</p>
+              <p className="font-display text-xl elegant-text">{t('header.location')}</p>
             </div>
           </div>
 
-          {/* Minimal Contact */}
+          {/* Contact */}
           <div className="mb-12">
-            <p className="text-gray-600 text-sm mb-4">
+            <p className="muted-text text-sm mb-4">
               {t('footer.contactInfo')}
             </p>
           </div>
 
-          {/* Decorative Elements */}
-          <div className="flex justify-center space-x-6 mb-8 text-2xl opacity-50">
-            <span>💕</span>
-            <span>💒</span>
-            <span>🎉</span>
+          {/* Decorative Element */}
+          <div className="mb-8">
+            <div className="w-24 h-px bg-gray-300 mx-auto"></div>
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-gray-200/50 pt-8">
-            <p className="text-xs text-gray-500 font-light tracking-wide">
+          <div className="border-t border-gray-200 pt-8">
+            <p className="text-xs muted-text font-light tracking-wide">
               © 2025 Marina & Orestis • {t('footer.madeWithLove')}
             </p>
           </div>
