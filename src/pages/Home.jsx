@@ -75,7 +75,18 @@ const Home = () => {
                                 <div className="text-center md:text-left">
                                     <p className="text-sm muted-text tracking-widest mb-4 font-medium">{t('general.where')}</p>
                                     <h3 className="font-display text-3xl md:text-4xl elegant-text mb-2">
-                                        Ethereal Hall
+                                        <a
+                                            href={`https://maps.app.goo.gl/1K2aZJPA9B3pQXC19`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="hover:underline inline-flex items-center gap-2 text-current"
+                                        >
+                                            Ethereal Hall
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M14 3h7m0 0v7m0-7L10 14" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21H3V3" />
+                                            </svg>
+                                        </a>
                                     </h3>
                                     <p className="muted-text text-lg">{t('header.exactLocation')}</p>
                                 </div>
