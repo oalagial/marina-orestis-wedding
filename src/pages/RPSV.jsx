@@ -8,8 +8,8 @@ const RPSV = () => {
     const [formData, setFormData] = useState({
         guestName: '',
         phone: '',
-        numberOfPeople: '0',
-        numberOfChildren: '0',
+        numberOfPeople: '',
+        numberOfChildren: '',
         dietaryRestrictions: '',
         comment: ''
     });
@@ -186,6 +186,7 @@ const RPSV = () => {
                             onChange={handleInputChange}
                             rows={3}
                             className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            placeholder={t('rsvp.dietaryPlaceholder')}
                         />
                     </div>
 
