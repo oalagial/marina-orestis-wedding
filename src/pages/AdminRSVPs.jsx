@@ -10,7 +10,6 @@ const AdminRSVPs = () => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     useEffect(() => {
-        // Check if user is already authenticated
         const authenticated = localStorage.getItem('adminAuthenticated') === 'true';
         setIsAuthenticated(authenticated);
         
@@ -42,7 +41,8 @@ const AdminRSVPs = () => {
                 rsvpData.push({
                     id: doc.id,
                     ...doc.data(),
-                    timestamp: doc.data().timestamp?.toDate?.() || doc.data().timestamp
+                    // normalize timestamp to a JS Date or keep as-is
+                    timestamp: doc.data().timestamp?.toDate?.() || doc.data().timestamp || null
                 });
             });
             setRsvps(rsvpData);
@@ -57,32 +57,28 @@ const AdminRSVPs = () => {
     const exportToCSV = () => {
         const headers = [
             'Guest Name',
-            'Email',
             'Phone',
-            'Attending',
-            'Plus One Name',
-            'Plus One Attending',
-            'Plus One Age Category',
+            'Number of People',
+            'Number of Children',
             'Dietary Restrictions',
-            'Message',
+            'Comment',
             'Submitted At'
         ];
 
-        const csvContent = [
-            headers.join(','),
-            ...rsvps.map(rsvp => [
-                `"${rsvp.guestName || ''}"`,
-                `"${rsvp.email || ''}"`,
-                `"${rsvp.phone || ''}"`,
-                rsvp.attending ? 'Yes' : 'No',
-                `"${rsvp.plusOneName || ''}"`,
-                rsvp.plusOneAttending ? 'Yes' : 'No',
-                `"${rsvp.plusOneAgeCategory || ''}"`,
-                `"${rsvp.dietaryRestrictions || ''}"`,
-                `"${rsvp.message || ''}"`,
-                `"${rsvp.timestamp ? new Date(rsvp.timestamp).toLocaleString() : ''}"`
-            ].join(','))
-        ].join('\n');
+        const csvRows = rsvps.map(rsvp => {
+            const submittedAt = rsvp.timestamp ? new Date(rsvp.timestamp).toLocaleString() : '';
+            return [
+                `"${(rsvp.guestName || '').replace(/"/g, '""')}"`,
+                `"${(rsvp.phone || '').replace(/"/g, '""')}"`,
+                `"${(rsvp.numberOfPeople != null ? rsvp.numberOfPeople : '')}"`,
+                `"${(rsvp.numberOfChildren != null ? rsvp.numberOfChildren : '')}"`,
+                `"${(rsvp.dietaryRestrictions || '').replace(/"/g, '""')}"`,
+                `"${(rsvp.comment || '').replace(/"/g, '""')}"`,
+                `"${submittedAt}"`
+            ].join(',');
+        });
+
+        const csvContent = [headers.join(','), ...csvRows].join('\n');
 
         const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
         const link = document.createElement('a');
@@ -95,16 +91,17 @@ const AdminRSVPs = () => {
         document.body.removeChild(link);
     };
 
-    const getAttendingCount = () => {
-        const attending = rsvps.filter(rsvp => rsvp.attending).length;
-        const plusOnes = rsvps.filter(rsvp => rsvp.plusOneAttending).length;
-        return attending + plusOnes;
+    const getTotalGuests = () => {
+        return rsvps.reduce((sum, r) => {
+            const adults = parseInt(r.numberOfPeople || 0, 10) || 0;
+            const children = parseInt(r.numberOfChildren || 0, 10) || 0;
+            return sum + adults + children;
+        }, 0);
     };
 
     if (loading) return <div className="p-8 text-center">Loading RSVPs...</div>;
     if (error) return <div className="p-8 text-center text-red-600">{error}</div>;
     
-    // Show login form if not authenticated
     if (!isAuthenticated) {
         return <AdminLogin onLogin={handleLogin} />;
     }
@@ -136,13 +133,13 @@ const AdminRSVPs = () => {
                     <p className="text-2xl font-bold text-gray-600">{rsvps.length}</p>
                 </div>
                 <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
-                    <h3 className="text-lg font-semibold text-gray-800">Attending</h3>
-                    <p className="text-2xl font-bold text-green-600">{getAttendingCount()}</p>
+                    <h3 className="text-lg font-semibold text-gray-800">Total Guests</h3>
+                    <p className="text-2xl font-bold text-gray-600">{getTotalGuests()}</p>
                 </div>
                 <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
-                    <h3 className="text-lg font-semibold text-gray-800">Not Attending</h3>
-                    <p className="text-2xl font-bold text-red-600">
-                        {rsvps.filter(rsvp => !rsvp.attending).length}
+                    <h3 className="text-lg font-semibold text-gray-800">Avg Guests / Response</h3>
+                    <p className="text-2xl font-bold text-gray-600">
+                        {rsvps.length ? (getTotalGuests() / rsvps.length).toFixed(2) : '0.00'}
                     </p>
                 </div>
             </div>
@@ -159,13 +156,16 @@ const AdminRSVPs = () => {
                                     Contact
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Attending
+                                    People
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Plus One
+                                    Children
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                    Notes
+                                    Dietary Restrictions
+                                </th>
+                                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                    Comment
                                 </th>
                                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                     Submitted
@@ -181,50 +181,27 @@ const AdminRSVPs = () => {
                                         </div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
-                                        <div className="text-sm text-gray-900">{rsvp.email}</div>
-                                        {rsvp.phone && (
-                                            <div className="text-sm text-gray-500">{rsvp.phone}</div>
-                                        )}
+                                        <div className="text-sm text-gray-900">{rsvp.phone || '-'}</div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
-                                        <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
-                                            rsvp.attending 
-                                                ? 'bg-green-100 text-green-800' 
-                                                : 'bg-red-100 text-red-800'
-                                        }`}>
-                                            {rsvp.attending ? 'Yes' : 'No'}
-                                        </span>
+                                        <div className="text-sm text-gray-900">
+                                            {rsvp.numberOfPeople != null ? rsvp.numberOfPeople : '0'}
+                                        </div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap">
-                                        {rsvp.plusOneName && (
-                                            <div className="text-sm text-gray-900">
-                                                <div>{rsvp.plusOneName}</div>
-                                                {rsvp.plusOneAgeCategory && (
-                                                    <div className="text-xs text-gray-500 capitalize">
-                                                        {rsvp.plusOneAgeCategory.replace('-', ' ')}
-                                                    </div>
-                                                )}
-                                                <span className={`ml-2 inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
-                                                    rsvp.plusOneAttending 
-                                                        ? 'bg-green-100 text-green-800' 
-                                                        : 'bg-red-100 text-red-800'
-                                                }`}>
-                                                    {rsvp.plusOneAttending ? 'Yes' : 'No'}
-                                                </span>
-                                            </div>
-                                        )}
+                                        <div className="text-sm text-gray-900">
+                                            {rsvp.numberOfChildren != null ? rsvp.numberOfChildren : '0'}
+                                        </div>
                                     </td>
                                     <td className="px-6 py-4">
-                                        {rsvp.dietaryRestrictions && (
-                                            <div className="text-sm text-gray-900 mb-1">
-                                                <strong>Dietary:</strong> {rsvp.dietaryRestrictions}
-                                            </div>
-                                        )}
-                                        {rsvp.message && (
-                                            <div className="text-sm text-gray-500">
-                                                <strong>Message:</strong> {rsvp.message}
-                                            </div>
-                                        )}
+                                        <div className="text-sm text-gray-900">
+                                            {rsvp.dietaryRestrictions || '-'}
+                                        </div>
+                                    </td>
+                                    <td className="px-6 py-4">
+                                        <div className="text-sm text-gray-500">
+                                            {rsvp.comment || '-'}
+                                        </div>
                                     </td>
                                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                         {rsvp.timestamp 

@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Main Content */}
           <div className="mb-12">
             <h3 className="font-display-bold text-3xl md:text-4xl elegant-text mb-4">
-              Marina & Orestis
+              {t('footer.coupleNames')}
             </h3>
             <div className="w-16 h-px bg-gray-300 mx-auto mb-4"></div>
             <p className="muted-text font-light italic text-lg">
@@ -22,11 +22,11 @@ export default function Footer() {
           {/* Wedding Info - Elegant */}
           <div className="grid md:grid-cols-2 gap-12 mb-12 max-w-3xl mx-auto">
             <div className="text-center">
-              <p className="text-sm muted-text uppercase tracking-widest mb-3 font-medium">Date</p>
+              <p className="text-sm muted-text tracking-widest mb-3 font-medium">{t('general.when')}</p>
               <p className="font-display text-xl elegant-text">{t('header.date')}</p>
             </div>
             <div className="text-center">
-              <p className="text-sm muted-text uppercase tracking-widest mb-3 font-medium">Location</p>
+              <p className="text-sm muted-text tracking-widest mb-3 font-medium">{t('general.where')}</p>
               <p className="font-display text-xl elegant-text">{t('header.location')}</p>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Footer() {
           {/* Bottom Bar */}
           <div className="border-t border-gray-200 pt-8">
             <p className="text-xs muted-text font-light tracking-wide">
-              © 2025 Marina & Orestis • {t('footer.madeWithLove')}
+              © 2025 {t('footer.coupleNames')} • {t('footer.madeWithLove')}
             </p>
           </div>
         </div>

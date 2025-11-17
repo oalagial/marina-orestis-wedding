@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth, signInAnonymously } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -17,5 +18,13 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Cloud Firestore and get a reference to the service
 export const db = getFirestore(app);
+
+// Initialize Auth and sign in anonymously (so Firestore rules that require auth will pass)
+const auth = getAuth(app);
+signInAnonymously(auth).catch((err) => {
+  console.error('Anonymous sign-in failed:', err);
+});
+
+export { auth };
 
 export default app;

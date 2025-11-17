@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase';
+import { useTranslation } from 'react-i18next';
 
 const RPSV = () => {
+    const { t } = useTranslation();
     const [formData, setFormData] = useState({
         guestName: '',
-        email: '',
-        attending: '',
-        plusOneName: '',
-        plusOneAttending: '',
-        plusOneAgeCategory: '',
+        phone: '',
+        numberOfPeople: '0',
+        numberOfChildren: '0',
         dietaryRestrictions: '',
-        message: '',
-        phone: ''
+        comment: ''
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -32,18 +31,25 @@ const RPSV = () => {
         setError('');
 
         try {
-            // Add RSVP to Firestore
-            await addDoc(collection(db, 'rsvps'), {
-                ...formData,
-                timestamp: new Date(),
-                attending: formData.attending === 'yes',
-                plusOneAttending: formData.plusOneAttending === 'yes'
-            });
+            // Normalize numeric fields and build payload
+            const payload = {
+                guestName: formData.guestName.trim(),
+                phone: formData.phone.trim(),
+                numberOfPeople: parseInt(formData.numberOfPeople || '0', 10) || 0,
+                numberOfChildren: parseInt(formData.numberOfChildren || '0', 10) || 0,
+                dietaryRestrictions: formData.dietaryRestrictions.trim(),
+                comment: formData.comment.trim(),
+                timestamp: new Date()
+            };
+
+            await addDoc(collection(db, 'rsvps'), payload);
 
             setSubmitted(true);
         } catch (err) {
             console.error('Error submitting RSVP:', err);
-            setError('There was an error submitting your RSVP. Please try again.');
+            const code = err?.code ? ` (${err.code})` : '';
+            const message = err?.message ? ` ${err.message}` : '';
+            setError(`There was an error submitting your RSVP.${code}. Please try again.${message}`);
         } finally {
             setIsSubmitting(false);
         }
@@ -64,14 +70,11 @@ const RPSV = () => {
                                 setSubmitted(false);
                                 setFormData({
                                     guestName: '',
-                                    email: '',
-                                    attending: '',
-                                    plusOneName: '',
-                                    plusOneAttending: '',
-                                    plusOneAgeCategory: '',
+                                    phone: '',
+                                    numberOfPeople: '0',
+                                    numberOfChildren: '0',
                                     dietaryRestrictions: '',
-                                    message: '',
-                                    phone: ''
+                                    comment: ''
                                 });
                             }}
                             className="btn-elegant btn-outline"
@@ -91,7 +94,7 @@ const RPSV = () => {
                     <h1 className="font-display-bold text-4xl md:text-5xl elegant-text mb-4">RSVP</h1>
                     <div className="w-16 h-px bg-gray-300 mx-auto mb-6"></div>
                     <p className="text-lg muted-text">
-                        Please let us know if you will be able to attend our wedding!
+                        {t('rsvp.subtitle')}
                     </p>
                 </div>
 
@@ -104,8 +107,8 @@ const RPSV = () => {
                 <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 soft-shadow">
                     {/* Guest Name */}
                     <div>
-                        <label htmlFor="guestName" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                            Your Name *
+                        <label htmlFor="guestName" className="block text-sm font-medium muted-text mb-2 tracking-wider">
+                            {t('rsvp.yourName')} *
                         </label>
                         <input
                             type="text"
@@ -115,31 +118,13 @@ const RPSV = () => {
                             onChange={handleInputChange}
                             required
                             className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            placeholder="Enter your full name"
-                        />
-                    </div>
-
-                    {/* Email */}
-                    <div>
-                        <label htmlFor="email" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                            Email Address *
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            required
-                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            placeholder="your.email@example.com"
                         />
                     </div>
 
                     {/* Phone */}
                     <div>
-                        <label htmlFor="phone" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                            Phone Number
+                        <label htmlFor="phone" className="block text-sm font-medium muted-text mb-2 tracking-wider">
+                            {t('rsvp.phone')}
                         </label>
                         <input
                             type="tel"
@@ -148,117 +133,51 @@ const RPSV = () => {
                             value={formData.phone}
                             onChange={handleInputChange}
                             className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            placeholder="+30 123 456 7890"
                         />
                     </div>
 
-                    {/* Attending */}
+                    {/* Number of People */}
                     <div>
-                        <label className="block text-sm font-medium muted-text mb-3 uppercase tracking-wider">
-                            Will you be attending? *
+                        <label htmlFor="numberOfPeople" className="block text-sm font-medium muted-text mb-3 tracking-wider">
+                            {t('rsvp.numberOfPeople')}
                         </label>
                         <div className="space-y-3">
-                            <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
-                                <input
-                                    type="radio"
-                                    name="attending"
-                                    value="yes"
-                                    checked={formData.attending === 'yes'}
-                                    onChange={handleInputChange}
-                                    className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300"
-                                    required
-                                />
-                                <span className="ml-3 elegant-text">Yes, I'll be there!</span>
-                            </label>
-                            <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
-                                <input
-                                    type="radio"
-                                    name="attending"
-                                    value="no"
-                                    checked={formData.attending === 'no'}
-                                    onChange={handleInputChange}
-                                    className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300"
-                                    required
-                                />
-                                <span className="ml-3 elegant-text">Sorry, I can't make it</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    {/* Plus One */}
-                    <div>
-                        <label htmlFor="plusOneName" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                            Plus One Name (if applicable)
-                        </label>
-                        <input
-                            type="text"
-                            id="plusOneName"
-                            name="plusOneName"
-                            value={formData.plusOneName}
-                            onChange={handleInputChange}
-                            className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            placeholder="Enter plus one's name"
-                        />
-                    </div>
-
-                    {/* Plus One Attending */}
-                    {formData.plusOneName && (
-                        <div>
-                            <label className="block text-sm font-medium muted-text mb-3 uppercase tracking-wider">
-                                Will your plus one be attending?
-                            </label>
-                            <div className="space-y-3">
-                                <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
-                                    <input
-                                        type="radio"
-                                        name="plusOneAttending"
-                                        value="yes"
-                                        checked={formData.plusOneAttending === 'yes'}
-                                        onChange={handleInputChange}
-                                        className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300"
-                                    />
-                                    <span className="ml-3 elegant-text">Yes</span>
-                                </label>
-                                <label className="flex items-center p-3 border border-gray-200 rounded-lg hover:bg-gray-50 cursor-pointer">
-                                    <input
-                                        type="radio"
-                                        name="plusOneAttending"
-                                        value="no"
-                                        checked={formData.plusOneAttending === 'no'}
-                                        onChange={handleInputChange}
-                                        className="h-4 w-4 text-gray-600 focus:ring-gray-400 border-gray-300"
-                                    />
-                                    <span className="ml-3 elegant-text">No</span>
-                                </label>
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Plus One Age Category */}
-                    {formData.plusOneName && formData.plusOneAttending === 'yes' && (
-                        <div>
-                            <label htmlFor="plusOneAgeCategory" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                                Plus One Age Category
-                            </label>
-                            <select
-                                id="plusOneAgeCategory"
-                                name="plusOneAgeCategory"
-                                value={formData.plusOneAgeCategory}
+                            <input
+                                id="numberOfPeople"
+                                type="number"
+                                name="numberOfPeople"
+                                min="0"
+                                max="10"
+                                value={formData.numberOfPeople}
                                 onChange={handleInputChange}
                                 className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            >
-                                <option value="">Select age category</option>
-                                <option value="adult">Adult</option>
-                                <option value="child-0-7">Child (0-7)</option>
-                                <option value="child-8-13">Child (8-13)</option>
-                            </select>
+                            />
                         </div>
-                    )}
+                    </div>
+
+                    {/* Number of Children */}
+                    <div>
+                        <label htmlFor="numberOfChildren" className="block text-sm font-medium muted-text mb-3 tracking-wider">
+                            {t('rsvp.numberOfChildren')}
+                        </label>
+                        <div className="space-y-3">
+                            <input
+                                id="numberOfChildren"
+                                type="number"
+                                name="numberOfChildren"
+                                min="0"
+                                max="10"
+                                value={formData.numberOfChildren}
+                                onChange={handleInputChange}
+                                className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
+                            />
+                        </div>
+                    </div>
 
                     {/* Dietary Restrictions */}
                     <div>
-                        <label htmlFor="dietaryRestrictions" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                            Dietary Restrictions or Allergies
+                        <label htmlFor="dietaryRestrictions" className="block text-sm font-medium muted-text mb-2 tracking-wider">
+                            {t('rsvp.dietaryRestrictions')}
                         </label>
                         <textarea
                             id="dietaryRestrictions"
@@ -267,23 +186,21 @@ const RPSV = () => {
                             onChange={handleInputChange}
                             rows={3}
                             className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            placeholder="Please let us know about any dietary restrictions, allergies, or special meal preferences"
                         />
                     </div>
 
-                    {/* Message */}
+                    {/* Comment */}
                     <div>
-                        <label htmlFor="message" className="block text-sm font-medium muted-text mb-2 uppercase tracking-wider">
-                            Message for the Couple
+                        <label htmlFor="comment" className="block text-sm font-medium muted-text mb-2 tracking-wider">
+                            {t('rsvp.comment')}
                         </label>
                         <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
+                            id="comment"
+                            name="comment"
+                            value={formData.comment}
                             onChange={handleInputChange}
                             rows={4}
                             className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
-                            placeholder="Share your congratulations, a memory, or any special message for Marina & Orestis"
                         />
                     </div>
 
@@ -298,9 +215,11 @@ const RPSV = () => {
                                     : 'btn-primary'
                             }`}
                         >
-                            {isSubmitting ? 'Submitting...' : 'Submit RSVP'}
+                            {isSubmitting ? t('general.submitting') : t('rsvp.submit')}
                         </button>
                     </div>
+
+                    <p className="muted-text">{t('rsvp.note')}</p>
                 </form>
             </div>
         </div>

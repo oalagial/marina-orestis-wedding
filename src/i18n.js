@@ -6,6 +6,11 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
     en: {
         translation: {
+            general: {
+                when: 'When',
+                where: 'Where',
+                submitting: "Submitting..."
+            },
             // Navigation
             nav: {
                 home: "Home",
@@ -21,19 +26,23 @@ const resources = {
             header: {
                 welcomeParty: "Welcome Party details posted! Please join us at 7:30pm on June 18th at Anestis Restaurant",
                 date: "June 27, 2026",
-                location: "Thessaloniki, Greece"
+                datetime: "Saturday, at 8:00 PM",
+                location: "Thessaloniki, Greece",
+                exactLocation: "Peraia, Thessaloniki",
+                welcome: "Welcome to Our Wedding",
             },
 
             // Home page
             home: {
                 welcomeTitle: "Welcome to Our Wedding",
                 welcomeMessage: "We are delighted to invite you to celebrate our special day with us!",
-                coupleNames: "Marina & Orestis",
+                coupleNames: "Orestis & Marina",
                 date: "Date: 27 June 2026",
                 location: "Location: Ethereal Hall, Peraia, Thessaloniki",
                 rsvpButton: "RSVP Here",
                 viewSchedule: "View Schedule",
-                countdownMessage: "Join us for a celebration of love and new beginnings"
+                countdownMessagePart1: "Please confirm your attendance at the link below ",
+                countdownMessagePart2: "by 15/06/2026"
             },
 
             // RSVP page
@@ -45,10 +54,11 @@ const resources = {
                 submitAnother: "Submit another RSVP",
 
                 // Form fields
-                yourName: "Your Name",
+                yourName: "Full Name",
                 required: "*",
-                email: "Email Address",
                 phone: "Phone Number",
+                numberOfPeople: 'Number of People',
+                numberOfChildren: 'Number of Children under 12',
                 attending: "Will you be attending?",
                 attendingYes: "Yes, I'll be there!",
                 attendingNo: "Sorry, I can't make it",
@@ -59,10 +69,11 @@ const resources = {
                 adult: "Adult",
                 child07: "Child (0-7)",
                 child813: "Child (8-13)",
-                dietaryRestrictions: "Dietary Restrictions or Allergies",
+                dietaryRestrictions: "Allergies/Dietary (e.g. vegetarian)",
                 dietaryPlaceholder: "Please let us know about any dietary restrictions, allergies, or special meal preferences",
                 message: "Message for the Couple",
-                messagePlaceholder: "Share your congratulations, a memory, or any special message for Marina & Orestis",
+                comment: 'Comments',
+                messagePlaceholder: "Share your congratulations, a memory, or any special message for Orestis & Marina",
                 submitting: "Submitting...",
                 submit: "Submit RSVP",
                 error: "There was an error submitting your RSVP. Please try again.",
@@ -71,7 +82,8 @@ const resources = {
                 namePlaceholder: "Enter your full name",
                 emailPlaceholder: "your.email@example.com",
                 phonePlaceholder: "+30 123 456 7890",
-                plusOnePlaceholder: "Enter plus one's name"
+                plusOnePlaceholder: "Enter plus one's name",
+                note: '* Please inform us of any changes in the number of attendees as soon as possible at +306946172421 '
             },
 
             // Admin page
@@ -124,6 +136,7 @@ const resources = {
                 weddingInfo: "Wedding Information",
                 tagline: "Beginning our forever together",
                 questions: "Questions?",
+                coupleNames: "Orestis & Marina",
                 contactInfo: "For any questions or concerns, please reach out to the wedding party or check our FAQs page.",
                 madeWithLove: "Made with love for our special day"
             },
@@ -416,6 +429,11 @@ const resources = {
 
     el: {
         translation: {
+            general: {
+                when: 'Πότε',
+                where: 'Πού',
+                submitting: "Υποβολή..."
+            },
             // Navigation
             nav: {
                 home: "Αρχική",
@@ -424,26 +442,30 @@ const resources = {
                 gallery: "Φωτογραφίες",
                 thingsToDo: "Τι να κάνετε",
                 faqs: "Συχνές Ερωτήσεις",
-                rsvp: "Επιβεβαίωση"
+                rsvp: "RSVP"
             },
 
             // Header
             header: {
                 welcomeParty: "Στοιχεία για το καλωσόρισμα αναρτήθηκαν! Παρακαλούμε ελάτε στις 7:30μμ στις 18 Ιουνίου στο εστιατόριο Ανέστης",
                 date: "27 Ιουνίου 2026",
-                location: "Θεσσαλονίκη, Ελλάδα"
+                datetime: "Σάββατο, στις 8:00 μ.μ.",
+                exactLocation: "Περαία, Θεσσαλονίκη",
+                location: "Θεσσαλονίκη, Ελλάδα",
+                welcome: "Καλώς ήρθατε στο γάμο μας"
             },
 
             // Home page
             home: {
                 welcomeTitle: "Καλώς ήρθατε στο Γάμο μας",
                 welcomeMessage: "Είμαστε ενθουσιασμένοι να σας προσκαλέσουμε να γιορτάσετε μαζί μας αυτή την ξεχωριστή μέρα!",
-                coupleNames: "Μαρίνα & Ορέστης",
+                coupleNames: "Ορέστης & Μαρίνα",
                 date: "Ημερομηνία: 27 Ιουνίου 2026",
                 location: "Τοποθεσία: Ethereal Hall, Περαία, Θεσσαλονίκη",
-                rsvpButton: "Επιβεβαίωση Παρουσίας",
+                rsvpButton: "Επιβεβαιωση Παρουσιας",
                 viewSchedule: "Δείτε το Πρόγραμμα",
-                countdownMessage: "Ελάτε να γιορτάσουμε την αγάπη και τις νέες αρχές"
+                countdownMessagePart1: "Παρακαλούμε επιβεβαιώστε την παρουσία σας στον παρακάτω σύνδεσμο ",
+                countdownMessagePart2: "έως το αργότερο 15/06/2026"
             },
 
             // RSVP page
@@ -455,10 +477,11 @@ const resources = {
                 submitAnother: "Υποβολή άλλης επιβεβαίωσης",
 
                 // Form fields
-                yourName: "Το όνομά σας",
+                yourName: "Ονοματεπώνυμο",
                 required: "*",
-                email: "Διεύθυνση Email",
                 phone: "Τηλέφωνο",
+                numberOfPeople: 'Αριθμός Ατόμων',
+                numberOfChildren: 'Αριθμός παιδιών κάτω των 12 ετών',
                 attending: "Θα παρευρεθείτε;",
                 attendingYes: "Ναι, θα είμαι εκεί!",
                 attendingNo: "Λυπάμαι, δεν μπορώ να έρθω",
@@ -469,19 +492,21 @@ const resources = {
                 adult: "Ενήλικας",
                 child07: "Παιδί (0-7)",
                 child813: "Παιδί (8-13)",
-                dietaryRestrictions: "Διατροφικοί περιορισμοί ή αλλεργίες",
+                dietaryRestrictions: "Αλλεργίες/διατροφή (π.χ. vegetarian)",
+                comment: 'Σχόλια',
                 dietaryPlaceholder: "Παρακαλούμε ενημερώστε μας για τυχόν διατροφικούς περιορισμούς, αλλεργίες ή ειδικές προτιμήσεις",
                 message: "Μήνυμα για το ζευγάρι",
                 messagePlaceholder: "Μοιραστείτε τα συγχαρητήριά σας, μια ανάμνηση ή κάποιο ειδικό μήνυμα για τη Μαρίνα και τον Ορέστη",
-                submitting: "Υποβολή...",
-                submit: "Υποβολή",
+                submitting: "Υποβολη...",
+                submit: "Υποβολη",
                 error: "Υπήρξε σφάλμα κατά την υποβολή. Παρακαλούμε δοκιμάστε ξανά.",
 
                 // Placeholders
                 namePlaceholder: "Εισάγετε το πλήρες όνομά σας",
                 emailPlaceholder: "το.email@example.com",
                 phonePlaceholder: "+30 123 456 7890",
-                plusOnePlaceholder: "Εισάγετε το όνομα του συνοδού"
+                plusOnePlaceholder: "Εισάγετε το όνομα του συνοδού",
+                note: '* Παρακαλούμε ενημερώστε μας για τυχόν αλλαγές στον αριθμό των ατόμων το συντομότερο δυνατόν στο +306946172421 '
             },
 
             // Admin page
@@ -535,6 +560,7 @@ const resources = {
                 tagline: "Ξεκινώντας το για πάντα μας μαζί",
                 questions: "Ερωτήσεις;",
                 contactInfo: "Για οποιεσδήποτε ερωτήσεις ή ανησυχίες, παρακαλώ επικοινωνήστε με το γαμήλιο πάρτι ή δείτε τη σελίδα συχνών ερωτήσεων.",
+                coupleNames: "Ορέστης & Μαρίνα",
                 madeWithLove: "Φτιαγμένο με αγάπη για την ξεχωριστή μας μέρα"
             },
 
