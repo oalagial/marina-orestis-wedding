@@ -25,10 +25,10 @@ export default function Header() {
             {/* Main Title - Sophisticated */}
             <div className="flex-1 text-center">
               <h1 className="font-display-bold text-3xl lg:text-4xl xl:text-5xl elegant-text">
-                Marina & Orestis
+                {t('footer.coupleNames')}
               </h1>
-              <p className="text-xs tracking-[0.3em] muted-text mt-1 uppercase font-medium">
-                June 27, 2026
+              <p className="text-xs tracking-[0.3em] muted-text mt-1 uppercase font-medium mt-4">
+                {t('header.date')}
               </p>
             </div>
 

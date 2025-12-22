@@ -1,34 +1,39 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Schedule = () => {
     const { t } = useTranslation();
 
     const scheduleItems = [
         {
-            time: "12:00",
-            title: t('schedule.guestsArrive'),
-            description: t('schedule.guestsArriveDesc')
-        },
-        {
-            time: "13:00",
-            title: t('schedule.ceremony'),
-            description: t('schedule.ceremonyDesc')
-        },
-        {
-            time: "14:00",
-            title: t('schedule.reception'),
-            description: t('schedule.receptionDesc')
+            time: "17:00",
+            title: t('schedule.guestsArriveGroom'),
+            description: t('schedule.guestsArriveGroomDesc'),
+            link: "https://maps.app.goo.gl/zvvkstbnK9iGVsJ89"
         },
         {
             time: "17:00",
-            title: t('schedule.dancing'),
-            description: t('schedule.dancingDesc')
+            title: t('schedule.guestsArriveBride'),
+            description: t('schedule.guestsArriveBrideDesc'),
+            link: "https://maps.app.goo.gl/SWzJBLCPCPrY8yeD8"
         },
         {
-            time: "22:00",
-            title: t('schedule.farewell'),
-            description: t('schedule.farewellDesc')
+            time: "19:45",
+            title: t('schedule.ceremony'),
+            description: t('schedule.ceremonyDesc'),
+            link: "https://maps.app.goo.gl/bQZrmmLcg6djn7t28"
+        },
+        {
+            time: "20:30",
+            title: t('schedule.dinner'),
+            description: t('schedule.dinnerDesc'),
+            link: "https://maps.app.goo.gl/bQZrmmLcg6djn7t28"
+        },
+        {
+            time: "22:30",
+            title: t('schedule.coupleEntrance'),
+            description: t('schedule.coupleEntranceDesc')
         }
     ];
 
@@ -66,15 +71,30 @@ const Schedule = () => {
                                             <span className="font-display-bold text-lg elegant-text">{item.time}</span>
                                         </div>
                                     </div>
-                                    
                                     {/* Content */}
                                     <div className="flex-1 ml-6">
                                         <div className="bg-white rounded-lg p-6 md:p-8 soft-shadow border border-gray-200 hover:border-gray-300 transition-all duration-300">
                                             <h3 className="font-display text-xl md:text-2xl elegant-text mb-3">
                                                 {item.title}
                                             </h3>
-                                            <p className="muted-text leading-relaxed-plus font-light">
+                                            <p className="muted-text leading-relaxed-plus font-light flex align-items-center">
                                                 {item.description}
+                                                {item.link && (
+                                                    <span className="block ml-2 mt-1">
+                                                        <a
+                                                            href={item.link}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="text-blue-600 underline inline-flex items-center gap-1"
+                                                        >
+                                                            {t('schedule.mapLink', '')}
+                                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                                                                <path strokeLinecap="round" strokeLinejoin="round" d="M14 3h7m0 0v7m0-7L10 14" />
+                                                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21H3V3" />
+                                                            </svg>
+                                                        </a>
+                                                    </span>
+                                                )}
                                             </p>
                                         </div>
                                     </div>
@@ -90,7 +110,7 @@ const Schedule = () => {
                         <h2 className="font-display text-3xl md:text-4xl elegant-text mb-8">
                             {t('schedule.venueTitle')}
                         </h2>
-                        <div className="grid md:grid-cols-3 gap-8">
+                        <div className="grid md:grid-cols-2 gap-8">
                             <div className="text-center">
                                 <p className="text-sm muted-text uppercase tracking-wider mb-2">Location</p>
                                 <p className="font-display text-lg elegant-text">{t('home.location').replace('Location: ', '')}</p>
@@ -98,10 +118,6 @@ const Schedule = () => {
                             <div className="text-center">
                                 <p className="text-sm muted-text uppercase tracking-wider mb-2">Parking</p>
                                 <p className="font-display text-lg elegant-text">{t('schedule.parking')}</p>
-                            </div>
-                            <div className="text-center">
-                                <p className="text-sm muted-text uppercase tracking-wider mb-2">Dress Code</p>
-                                <p className="font-display text-lg elegant-text">{t('schedule.dressCode')}</p>
                             </div>
                         </div>
                     </div>

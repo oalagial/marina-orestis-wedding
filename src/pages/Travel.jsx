@@ -81,7 +81,7 @@ const Travel = () => {
                                 <p>• {t('travel.venue.direction2')}</p>
                                 <p>• {t('travel.venue.direction3')}</p>
                             </div>
-                            <button className="mt-4 btn-elegant btn-primary">
+                            <button className="mt-4 btn-elegant btn-primary" onClick={() => window.open('https://maps.app.goo.gl/bQZrmmLcg6djn7t28', '_blank')}>
                                 {t('travel.venue.mapButton')}
                             </button>
                         </div>

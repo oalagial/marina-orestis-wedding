@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const Home = () => {
@@ -30,7 +31,6 @@ const Home = () => {
                     <h1 className="font-display-bold text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tight">
                         {t('home.coupleNames')}
                     </h1>
-                    <div className="w-24 h-px bg-white/70 mx-auto mb-10"></div>
                     <p className="text-lg md:text-xl font-light tracking-widest mb-4 uppercase">
                         {t('header.date')}
                     </p>
@@ -39,11 +39,6 @@ const Home = () => {
                     </p>
                 </div>
                 
-                {/* Scroll Indicator */}
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                    <div className="w-px h-16 bg-white/50"></div>
-                    <div className="w-2 h-2 bg-white/70 rounded-full mx-auto -mt-1"></div>
-                </div>
             </div>
 
             {/* Main Content - Sophisticated */}
@@ -61,7 +56,7 @@ const Home = () => {
                     </div>
 
                     {/* Event Details */}
-                    <div className="mb-20">
+                    {/* <div className="mb-20">
                         <div className="bg-elegant rounded-none p-12 md:p-16 soft-shadow border border-elegant">
                             <div className="grid md:grid-cols-2 gap-16 items-center">
                                 <div className="text-center md:text-left">
@@ -92,10 +87,10 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     {/* Call to Action */}
-                    <div className="text-center mb-16">
+                    <div className="text-center mb-2">
                        <div className="mb-8">
                         <span className="text-lg muted-text mb-8 font-light">
                             {t('home.countdownMessagePart1')}
@@ -106,19 +101,19 @@ const Home = () => {
                        
                         
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                            <a
-                                href="/rsvp"
+                            <Link
+                                to="/rsvp"
                                 className="btn-elegant btn-primary inline-block"
                             >
                                 {t('home.rsvpButton')}
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     {/* Decorative Section */}
-                    <div className="text-center py-16 border-t border-elegant">
+                    {/* <div className="text-center py-16 border-t border-elegant">
                         <div className="w-24 h-px bg-gray-300 mx-auto"></div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </main>
