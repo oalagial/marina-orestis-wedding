@@ -338,15 +338,11 @@ const resources = {
                 general: {
                     when: {
                         question: "When is the wedding?",
-                        answer: "Our wedding will take place on Saturday, June 27th, 2026. The ceremony begins at 1:00 PM followed by reception and celebration."
+                        answer: "Our wedding will take place on Saturday, June 27th, 2026. The ceremony begins at 7:45 PM followed by reception and celebration."
                     },
                     where: {
                         question: "Where is the wedding venue?",
-                        answer: "We'll be celebrating at Ethereal Hall in Peraia, Thessaloniki. It's a beautiful seaside venue just 15 minutes from Thessaloniki Airport."
-                    },
-                    time: {
-                        question: "What time should I arrive?",
-                        answer: "Please arrive by 12:30 PM for the 1:00 PM ceremony start. This gives everyone time to find their seats and enjoy welcome drinks."
+                        answer: "We'll be celebrating at Ethereal Hall in Peraia, Thessaloniki. It's a beautiful venue just 15 minutes from Thessaloniki Airport."
                     }
                 },
                 attire: {
@@ -356,7 +352,7 @@ const resources = {
                     },
                     weather: {
                         question: "What's the weather like in June?",
-                        answer: "June in Thessaloniki is warm and sunny with average temperatures around 25°C (77°F). Perfect weather for our seaside celebration!"
+                        answer: "June in Thessaloniki is warm and sunny with average temperatures around 25°C. Perfect weather for our celebration!"
                     },
                     shoes: {
                         question: "What shoes should I wear?",
@@ -366,21 +362,21 @@ const resources = {
                 logistics: {
                     parking: {
                         question: "Is parking available?",
-                        answer: "Yes! Free parking is available on-site with complimentary valet service. No need to worry about finding a spot."
+                        answer: "Yes! Free parking is available on-site. No need to worry about finding a spot."
                     },
                     transport: {
                         question: "How do I get to the venue?",
-                        answer: "The venue is easily accessible by car, taxi, or public transport. We're just 15 minutes from the airport and 25 minutes from Thessaloniki city center."
+                        answer: "The venue is accessible by car or taxi. We're just 15 minutes from the airport and 35 minutes from Thessaloniki city center."
                     },
                     accommodation: {
                         question: "Where should I stay?",
-                        answer: "We've recommended several hotels on our Travel page, ranging from seaside resorts to city center options. Book early for the best rates!"
+                        answer: "Contact us for hotel recommendations in the area, from seaside options to city center choices. Book early for the best rates!"
                     }
                 },
                 ceremony: {
                     plusOne: {
                         question: "Can I bring a plus one?",
-                        answer: "Plus one details are specified on your invitation. If you're unsure or your situation has changed, please contact us directly."
+                        answer: "Absolutely! Please include your plus one's details in your RSVP."
                     },
                     children: {
                         question: "Are children welcome?",
@@ -388,7 +384,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Do you have a gift registry?",
-                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a small registry or a contribution to our honeymoon fund."
+                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts."
                     }
                 },
                 food: {
@@ -761,15 +757,11 @@ const resources = {
                 general: {
                     when: {
                         question: "Πότε είναι ο γάμος;",
-                        answer: "Ο γάμος μας θα γίνει το Σάββατο, 27 Ιουνίου 2026. Η τελετή αρχίζει στη 1:00 μμ ακολουθούμενη από δεξίωση και εορτασμό."
+                        answer: "Ο γάμος μας θα γίνει το Σάββατο, 27 Ιουνίου 2026. Η τελετή αρχίζει στις 19:45 ακολουθούμενη από δεξίωση και εορτασμό."
                     },
                     where: {
                         question: "Πού είναι ο χώρος του γάμου;",
-                        answer: "Θα γιορτάσουμε στο Ethereal Hall στην Περαία, Θεσσαλονίκη. Είναι ένας όμορφος παραθαλάσσιος χώρος μόλις 15 λεπτά από το αεροδρόμιο."
-                    },
-                    time: {
-                        question: "Τι ώρα πρέπει να φτάσω;",
-                        answer: "Παρακαλώ φτάστε μέχρι τις 12:30 μμ για την έναρξη της τελετής στη 1:00 μμ. Αυτό δίνει χρόνο σε όλους να βρουν τις θέσεις τους και να απολαύσουν ποτά καλωσορίσματος."
+                        answer: "Θα γιορτάσουμε στο Ethereal Hall στην Περαία, Θεσσαλονίκη. Είναι ένας όμορφος χώρος μόλις 15 λεπτά από το αεροδρόμιο."
                     }
                 },
                 attire: {
@@ -779,7 +771,7 @@ const resources = {
                     },
                     weather: {
                         question: "Πώς είναι ο καιρός τον Ιούνιο;",
-                        answer: "Ο Ιούνιος στη Θεσσαλονίκη είναι ζεστός και ηλιόλουστος με μέσες θερμοκρασίες γύρω στους 25°C. Τέλειος καιρός για τον παραθαλάσσιο εορτασμό μας!"
+                        answer: "Ο Ιούνιος στη Θεσσαλονίκη είναι ζεστός και ηλιόλουστος με μέσες θερμοκρασίες γύρω στους 25°C. Τέλειος καιρός για τον εορτασμό μας!"
                     },
                     shoes: {
                         question: "Τι παπούτσια να φορέσω;",
@@ -789,29 +781,30 @@ const resources = {
                 logistics: {
                     parking: {
                         question: "Υπάρχει στάθμευση;",
-                        answer: "Ναι! Δωρεάν στάθμευση διαθέσιμη στον χώρο με δωρεάν υπηρεσία valet. Δεν χρειάζεται να ανησυχείτε για εύρεση θέσης."
+                        answer: "Ναι! Δωρεάν στάθμευση διαθέσιμη στον χώρο. Δεν χρειάζεται να ανησυχείτε για εύρεση θέσης."
                     },
                     transport: {
                         question: "Πώς να φτάσω στον χώρο;",
-                        answer: "Ο χώρος είναι εύκολα προσβάσιμος με αυτοκίνητο, ταξί ή δημόσια μεταφορά. Είμαστε μόλις 15 λεπτά από το αεροδρόμιο και 25 λεπτά από το κέντρο Θεσσαλονίκης."
+                        answer: "Ο χώρος είναι εύκολα προσβάσιμος με αυτοκίνητο ή ταξί. Είμαστε μόλις 15 λεπτά από το αεροδρόμιο και 35 λεπτά από το κέντρο Θεσσαλονίκης."
                     },
                     accommodation: {
                         question: "Πού να μείνω;",
-                        answer: "Έχουμε προτείνει αρκετά ξενοδοχεία στη σελίδα Ταξιδιού μας, από παραθαλάσσια resort έως επιλογές στο κέντρο. Κάντε κράτηση νωρίς για τις καλύτερες τιμές!"
+                        answer: "Επικοινωνήστε μαζί μας για προτάσεις ξενοδοχείων στην περιοχή, από παραθαλάσσια επιλογές μέχρι επιλογές στο κέντρο της πόλης. Κάντε κράτηση νωρίς για τις καλύτερες τιμές!"
                     }
                 },
                 ceremony: {
                     plusOne: {
                         question: "Μπορώ να φέρω σύντροφο;",
-                        answer: "Οι λεπτομέρειες συντρόφου αναφέρονται στην πρόσκλησή σας. Αν δεν είστε σίγουροι ή η κατάσταση έχει αλλάξει, παρακαλώ επικοινωνήστε μαζί μας."
+                        answer: "Φυσικά! Συμπεριλάβετε τις λεπτομέρειες του συντρόφου σας στην επιβεβαίωση."
                     },
+
                     children: {
                         question: "Είναι ευπρόσδεκτα τα παιδιά;",
                         answer: "Ο εορτασμός μας είναι φιλικός προς την οικογένεια. Παρακαλώ ενημερώστε μας στην επιβεβαίωση αν φέρνετε μικρά παιδιά."
                     },
                     gifts: {
                         question: "Έχετε μητρώο δώρων;",
-                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε ένα μικρό μητρώο ή συνεισφορά στο ταξίδι του μέλιτος."
+                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα."
                     }
                 },
                 food: {
@@ -821,7 +814,7 @@ const resources = {
                     },
                     menu: {
                         question: "Τι φαγητό θα σερβιριστεί;",
-                        answer: "Θα έχουμε νόστιμο μεσογειακό μενού με φρέσκα τοπικά υλικά, θαλασσινά, παραδοσιακά ελληνικά πιάτα και διεθνείς επιλογές."
+                        answer: "Θα έχουμε νόστιμο μεσογειακό μενού με φρέσκα τοπικά υλικά, θαλασσινά, παραδοσιακά ελληνικά πιάτα και άλλες επιλογές."
                     },
                     drinks: {
                         question: "Θα υπάρχει open bar;",

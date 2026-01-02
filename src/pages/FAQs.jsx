@@ -16,10 +16,6 @@ const FAQs = () => {
                 {
                     question: t('faqs.general.where.question'),
                     answer: t('faqs.general.where.answer')
-                },
-                {
-                    question: t('faqs.general.time.question'),
-                    answer: t('faqs.general.time.answer')
                 }
             ]
         },
@@ -33,10 +29,6 @@ const FAQs = () => {
                 {
                     question: t('faqs.attire.weather.question'),
                     answer: t('faqs.attire.weather.answer')
-                },
-                {
-                    question: t('faqs.attire.shoes.question'),
-                    answer: t('faqs.attire.shoes.answer')
                 }
             ]
         },
