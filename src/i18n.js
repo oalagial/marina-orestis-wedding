@@ -225,6 +225,11 @@ const resources = {
                    
                     favorites: [
                         {
+                            name: "Walk along Thessaloniki Waterfront",
+                            description: "A beautiful beachside promenade with stunning sea views.",
+                            link: "https://maps.app.goo.gl/TiBvt33hxqpvr19X8"
+                        }
+                        {
                             name: "Perea Beach",
                             description: "Beautiful seaside promenade with cafes and restaurants.",
                             link: "https://www.google.com/maps/place/Perea+Beach/@40.5085701,22.922582,749m/data=!3m1!1e3!4m6!3m5!1s0x14a8152801505321:0x6048eac3a0033a3!8m2!3d40.5085701!4d22.922582!16s%2Fg%2F11fnx685q1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
@@ -642,6 +647,11 @@ const resources = {
                     title: "Θεσσαλονίκη",
                     description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας.",
                     favorites: [
+                        {
+                            name: "Βόλτα στην παραλία της Θεσσαλονίκης",
+                            description: "Πολύ όμορφη παραλία για περπάτημα με θέα στη θάλασσα.",
+                            link: "https://maps.app.goo.gl/TiBvt33hxqpvr19X8"
+                        },
                         {
                             name: "Παραλία Περαίας",
                             description: "Όμορφος πεζόδρομος κατά μήκος της θάλασσας με καφετέριες και εστιατόρια.",
