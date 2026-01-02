@@ -218,79 +218,38 @@ const resources = {
             thingsToDo: {
                 title: "Things To Do",
                 subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
-                exploreMessage: "Make the most of your trip to Greece!",
-                activitiesTitle: "Popular Activities",
-                categories: {
-                    culture: "Culture",
-                    nature: "Nature",
-                    food: "Food & Drink",
-                    adventure: "Adventure",
-                    entertainment: "Entertainment"
+                pozar: {
+                    title: "Λουτρά Πόζαρ",
+                    description: "Enjoy a relaxing getaway with a bath in natural hot springs (natural hot baths). Value for money accommodation we enjoy:",
+                    hotelLink: "Agnanti Hotel"
                 },
-                oldTown: {
-                    title: "Explore the Old Town",
-                    description: "Wander through the charming cobblestone streets, discover Byzantine walls, and enjoy the vibrant atmosphere of Thessaloniki's historic center",
-                    duration: "2-3 hours"
+                meteora: {
+                    title: "Meteora",
+                    description: "Day trip to Meteora with English speaking guide"
                 },
-                beach: {
-                    title: "Visit Peraia Beach",
-                    description: "Relax on the sandy shores just minutes from our venue, swim in crystal-clear waters, or try some exciting water sports",
-                    duration: "Half day"
-                },
-                cuisine: {
-                    title: "Enjoy Local Cuisine",
-                    description: "Taste traditional Greek dishes at nearby tavernas and experience authentic Mediterranean flavors and hospitality",
-                    duration: "2-3 hours"
-                },
-                boatTour: {
-                    title: "Take a Boat Tour",
-                    description: "See the beautiful coastline from a new perspective and visit nearby islands with stunning views of Mount Olympus",
-                    duration: "Full day"
-                },
-                museum: {
-                    title: "Archaeological Museum",
-                    description: "Discover ancient Greek artifacts and learn about the rich history of Macedonia and Thessaloniki",
-                    duration: "2 hours"
-                },
-                nightlife: {
-                    title: "Thessaloniki Nightlife",
-                    description: "Experience the vibrant nightlife with rooftop bars, traditional bouzoukia, and beachfront clubs",
-                    duration: "Evening"
-                },
-                recommendationsTitle: "Local Favorites",
-                recommendationsSubtitle: "Handpicked recommendations from locals who know the city best",
-                recommendations: {
-                    restaurant1: {
-                        title: "Molyvos Restaurant",
-                        description: "Traditional Greek taverna with fresh seafood and stunning sea views",
-                        type: "Restaurant"
+                chalkidiki: {
+                    title: "Chalkidiki",
+                    intro: "This is the paradise of Northern Greece. Many options to choose from:",
+                    kassandra: {
+                        title: "Kassandra",
+                        description: "Choose Kassandra if you are looking for partying and crystal clear waters."
                     },
-                    bar1: {
-                        title: "Rooftop Bar Thessaloniki",
-                        description: "Panoramic city views with creative cocktails and sophisticated atmosphere",
-                        type: "Bar"
+                    sithonia: {
+                        title: "Sithonia",
+                        description: "Choose Sithonia if you are looking for a relaxing vacation by the sea. Magical turquoise water and you can explore a different beach every day.",
+                        recommendations: "Recommendations:",
+                        beaches: {
+                            armenistis: "Armenistis Beach",
+                            vourvourou: "Vourvourou",
+                            kavourotripes: "Kavourotripes",
+                            aktiPortokali: "Akti Portokali",
+                            tristinika: "Tristinika"
+                        }
                     },
-                    attraction1: {
-                        title: "White Tower",
-                        description: "Iconic symbol of Thessaloniki with museum and observation deck",
-                        type: "Attraction"
+                    athos: {
+                        title: "Athos",
+                        description: "Choose Athos for a peaceful religious day (only males allowed)."
                     }
-                },
-                weather: {
-                    title: "Weather & Best Time to Visit",
-                    june: "Perfect June Weather",
-                    juneDesc: "Average temperature 25°C (77°F) with sunny skies and gentle sea breezes",
-                    tips: "What to Pack",
-                    tip1: "Light summer clothing and comfortable walking shoes",
-                    tip2: "Swimwear for beach activities",
-                    tip3: "Light jacket for evening seaside dining",
-                    tip4: "Sunscreen and sunglasses for outdoor activities"
-                },
-                cta: {
-                    title: "Ready to Explore?",
-                    description: "Check out our travel guide for more detailed information about getting here and where to stay",
-                    travelButton: "View Travel Info",
-                    rsvpButton: "RSVP Now"
                 }
             },
 
@@ -650,79 +609,38 @@ const resources = {
             thingsToDo: {
                 title: "Τι να Κάνετε",
                 subtitle: "Ανακαλύψτε την ομορφιά και τον πολιτισμό της Θεσσαλονίκης και των περιχώρων κατά την επίσκεψή σας",
-                exploreMessage: "Αξιοποιήστε στο έπακρο το ταξίδι σας στην Ελλάδα!",
-                activitiesTitle: "Δημοφιλείς Δραστηριότητες",
-                categories: {
-                    culture: "Πολιτισμός",
-                    nature: "Φύση",
-                    food: "Φαγητό & Ποτό",
-                    adventure: "Περιπέτεια",
-                    entertainment: "Διασκέδαση"
+                pozar: {
+                    title: "Λουτρά Πόζαρ",
+                    description: "Απολαύστε ένα χαλαρωτικό διήμερο με μπάνιο σε φυσικές ζεστές πηγές (natural hot baths). Value for money accommodation we enjoy:",
+                    hotelLink: "Agnanti Hotel"
                 },
-                oldTown: {
-                    title: "Εξερευνήστε την Παλιά Πόλη",
-                    description: "Περιπλανηθείτε στα γοητευτικά καλντερίμια, ανακαλύψτε βυζαντινά τείχη και απολαύστε τη ζωντανή ατμόσφαιρα του ιστορικού κέντρου",
-                    duration: "2-3 ώρες"
+                meteora: {
+                    title: "Μετέωρα",
+                    description: "Ημερήσια εκδρομή στα Μετέωρα με αγγλόφωνο ξεναγό"
                 },
-                beach: {
-                    title: "Επισκεφτείτε την Παραλία Περαίας",
-                    description: "Χαλαρώστε στις αμμουδιές λίγα λεπτά από τον χώρο μας, κολυμπήστε σε κρυστάλλινα νερά ή δοκιμάστε συναρπαστικά θαλάσσια σπορ",
-                    duration: "Μισή μέρα"
-                },
-                cuisine: {
-                    title: "Απολαύστε την Τοπική Κουζίνα",
-                    description: "Δοκιμάστε παραδοσιακά ελληνικά πιάτα σε κοντινές ταβέρνες και βιώστε αυθεντικές μεσογειακές γεύσεις",
-                    duration: "2-3 ώρες"
-                },
-                boatTour: {
-                    title: "Κάντε Βόλτα με Σκάφος",
-                    description: "Δείτε την όμορφη ακτογραμμή από νέα οπτική και επισκεφτείτε κοντινά νησιά με εκπληκτική θέα του Ολύμπου",
-                    duration: "Ολόκληρη μέρα"
-                },
-                museum: {
-                    title: "Αρχαιολογικό Μουσείο",
-                    description: "Ανακαλύψτε αρχαία ελληνικά αντικείμενα και μάθετε για την πλούσια ιστορία της Μακεδονίας",
-                    duration: "2 ώρες"
-                },
-                nightlife: {
-                    title: "Νυχτερινή Ζωή Θεσσαλονίκης",
-                    description: "Βιώστε τη ζωντανή νυχτερινή ζωή με rooftop μπαρ, παραδοσιακά μπουζούκια και beach clubs",
-                    duration: "Βράδυ"
-                },
-                recommendationsTitle: "Τοπικά Αγαπημένα",
-                recommendationsSubtitle: "Επιλογές από ντόπιους που γνωρίζουν καλύτερα την πόλη",
-                recommendations: {
-                    restaurant1: {
-                        title: "Εστιατόριο Μόλυβος",
-                        description: "Παραδοσιακή ελληνική ταβέρνα με φρέσκα θαλασσινά και εκπληκτική θέα θάλασσας",
-                        type: "Εστιατόριο"
+                chalkidiki: {
+                    title: "Χαλκιδική",
+                    intro: "Αυτός είναι ο παράδεισος της Βόρειας Ελλάδας. Πολλές επιλογές να διαλέξετε:",
+                    kassandra: {
+                        title: "Κασσάνδρα",
+                        description: "Διαλέξτε Κασσάνδρα αν ψάχνετε για διασκέδαση και κρυστάλλινα νερά."
                     },
-                    bar1: {
-                        title: "Rooftop Bar Thessaloniki",
-                        description: "Πανοραμική θέα πόλης με δημιουργικά κοκτέιλ και κομψή ατμόσφαιρα",
-                        type: "Μπαρ"
+                    sithonia: {
+                        title: "Σιθωνία",
+                        description: "Διαλέξτε Σιθωνία αν ψάχνετε για χαλαρωτικές διακοπές δίπλα στη θάλασσα. Μαγευτικά τιρκουάζ νερά και μπορείτε να εξερευνήσετε μια διαφορετική παραλία κάθε μέρα.",
+                        recommendations: "Προτάσεις:",
+                        beaches: {
+                            armenistis: "Παραλία Αρμενιστής",
+                            vourvourou: "Βουρβουρού",
+                            kavourotripes: "Καβουρότρυπες",
+                            aktiPortokali: "Ακτή Πορτοκαλί",
+                            tristinika: "Τριστινίκα"
+                        }
                     },
-                    attraction1: {
-                        title: "Λευκός Πύργος",
-                        description: "Εμβληματικό σύμβολο Θεσσαλονίκης με μουσείο και παρατηρητήριο",
-                        type: "Αξιοθέατο"
+                    athos: {
+                        title: "Άθως",
+                        description: "Διαλέξτε Άθως για μια ήρεμη θρησκευτική μέρα (μόνο άνδρες επιτρέπονται)."
                     }
-                },
-                weather: {
-                    title: "Καιρός & Καλύτερη Εποχή Επίσκεψης",
-                    june: "Τέλειος Καιρός Ιουνίου",
-                    juneDesc: "Μέση θερμοκρασία 25°C με ηλιόλουστο ουρανό και απαλές θαλάσσιες αύρες",
-                    tips: "Τι να Πάρετε Μαζί",
-                    tip1: "Ελαφριά καλοκαιρινά ρούχα και άνετα παπούτσια περπατήματος",
-                    tip2: "Μαγιό για παραλιακές δραστηριότητες",
-                    tip3: "Ελαφρύ σακάκι για βραδινό φαγητό δίπλα στη θάλασσα",
-                    tip4: "Αντηλιακό και γυαλιά ηλίου για υπαίθριες δραστηριότητες"
-                },
-                cta: {
-                    title: "Έτοιμοι για Εξερεύνηση;",
-                    description: "Δείτε τον οδηγό ταξιδιού μας για πιο λεπτομερείς πληροφορίες",
-                    travelButton: "Δείτε Πληροφορίες Ταξιδιού",
-                    rsvpButton: "Επιβεβαίωση Τώρα"
                 }
             },
 

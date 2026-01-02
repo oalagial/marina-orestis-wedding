@@ -4,198 +4,131 @@ import { useTranslation } from 'react-i18next';
 const ThingsToDo = () => {
     const { t } = useTranslation();
 
-    const activities = [
-        {
-            title: t('thingsToDo.oldTown.title'),
-            description: t('thingsToDo.oldTown.description'),
-            category: t('thingsToDo.categories.culture'),
-            color: "bg-white border-gray-200",
-            duration: t('thingsToDo.oldTown.duration')
-        },
-        {
-            title: t('thingsToDo.beach.title'),
-            description: t('thingsToDo.beach.description'),
-            category: t('thingsToDo.categories.nature'),
-            color: "bg-white border-gray-200",
-            duration: t('thingsToDo.beach.duration')
-        },
-        {
-            title: t('thingsToDo.cuisine.title'),
-            description: t('thingsToDo.cuisine.description'),
-            category: t('thingsToDo.categories.food'),
-            color: "bg-white border-gray-200",
-            duration: t('thingsToDo.cuisine.duration')
-        },
-        {
-            title: t('thingsToDo.boatTour.title'),
-            description: t('thingsToDo.boatTour.description'),
-            category: t('thingsToDo.categories.adventure'),
-            color: "bg-white border-gray-200",
-            duration: t('thingsToDo.boatTour.duration')
-        },
-        {
-            title: t('thingsToDo.museum.title'),
-            description: t('thingsToDo.museum.description'),
-            category: t('thingsToDo.categories.culture'),
-            color: "bg-white border-gray-200",
-            duration: t('thingsToDo.museum.duration')
-        },
-        {
-            title: t('thingsToDo.nightlife.title'),
-            description: t('thingsToDo.nightlife.description'),
-            category: t('thingsToDo.categories.entertainment'),
-            color: "bg-white border-gray-200",
-            duration: t('thingsToDo.nightlife.duration')
-        }
-    ];
-
-    const recommendations = [
-        {
-            title: t('thingsToDo.recommendations.restaurant1.title'),
-            description: t('thingsToDo.recommendations.restaurant1.description'),
-            type: t('thingsToDo.recommendations.restaurant1.type')
-        },
-        {
-            title: t('thingsToDo.recommendations.bar1.title'),
-            description: t('thingsToDo.recommendations.bar1.description'),
-            type: t('thingsToDo.recommendations.bar1.type')
-        },
-        {
-            title: t('thingsToDo.recommendations.attraction1.title'),
-            description: t('thingsToDo.recommendations.attraction1.description'),
-            type: t('thingsToDo.recommendations.attraction1.type')
-        }
-    ];
-
     return (
         <div className="section-padding">
             <div className="max-w-6xl mx-auto container-padding">
                 {/* Header Section */}
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-800 mb-4">
+                    <h1 className="font-display-bold text-4xl md:text-5xl elegant-text mb-4">
                         {t('thingsToDo.title')}
                     </h1>
-                    <p className="text-lg md:text-xl text-gray-600 font-light max-w-3xl mx-auto">
+                    <div className="w-16 h-px bg-gray-300 mx-auto mb-6"></div>
+                    <p className="text-lg md:text-xl muted-text font-light max-w-3xl mx-auto">
                         {t('thingsToDo.subtitle')}
                     </p>
-                    <div className="mt-8 inline-flex items-center px-6 py-3 rounded-full border border-gray-300" style={{backgroundColor: 'rgba(139, 111, 71, 0.1)'}}>
-                        <span className="font-serif text-lg" style={{color: '#8b6f47'}}>{t('thingsToDo.exploreMessage')}</span>
-                    </div>
                 </div>
 
-                {/* Activities Grid */}
-                <div className="mb-16">
-                    <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-12">
-                        {t('thingsToDo.activitiesTitle')}
-                    </h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {activities.map((activity, index) => (
-                            <div key={index} className={`rounded-xl p-6 border-2 ${activity.color} shadow-md hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
-                                <div className="text-center mb-4">
-                                    <span className="text-4xl mb-3 block">{activity.icon}</span>
-                                    <div className="inline-block bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-600 border border-gray-200 mb-3">
-                                        {activity.category}
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-serif font-bold text-gray-800 mb-3 text-center">
-                                    {activity.title}
-                                </h3>
-                                <p className="text-gray-600 leading-relaxed mb-4 text-center">
-                                    {activity.description}
+                {/* Activities */}
+                <div className="space-y-8 mb-16">
+                    {/* Loutra Pozar */}
+                    <div className="bg-white rounded-lg p-8 soft-shadow border border-gray-200">
+                        <h2 className="font-display text-2xl md:text-3xl elegant-text mb-4 flex items-center gap-2">
+                            {t('thingsToDo.pozar.title')}
+                            <a href="https://www.google.com/search?sca_esv=1db8b9ddc237ac31&rlz=1C1GCEA_enIE1155IE1155&sxsrf=AE3TifMBhjeV-2g6Dcq_mWH5SEjCiLqpdg:1767358598570&udm=2&fbs=AIIjpHyHEazDMB0bSBcqBbnIcz05X45wBxvoLMSAuvA7N5XagA_9NAAfDMVTsk3eaVxgX1n6kS-zJmkNguuisHgMw8YEqjx64njHjyGFMfRh3ZaEyw7X5M56RSaehxr5ecZgYdtvDwSdWaHU0WY-seyd3u2kqg3N9zF0bZzC-dABY0YIPGranZZY4UnC6VZSjJzJ6tBPRNeV4dDeOmKexlzELcJ0erF3nW3Onq9ApPRT9OFKOpuT0B0&q=%CE%9B%CE%BF%CF%85%CF%84%CE%B1+%CF%80%CE%BF%CE%B6%CE%B1%CF%81&sa=X&ved=2ahUKEwjpmdXr8-yRAxWiBdsEHSx7LB0QtKgLegQINhAB&biw=1536&bih=826&dpr=1.25" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </h2>
+                        <p className="muted-text leading-relaxed mb-4">
+                            {t('thingsToDo.pozar.description')}{' '}
+                            Hotel: Agnanti
+                            <a href="https://www.booking.com/hotel/gr/agnandi.el.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ml-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+
+                    {/* Meteora */}
+                    <div className="bg-white rounded-lg p-8 soft-shadow border border-gray-200">
+                        <h2 className="font-display text-2xl md:text-3xl elegant-text mb-4 flex items-center gap-2">
+                            {t('thingsToDo.meteora.title')}
+                            <a href="https://www.getyourguide.com/-l15524/?cmp=brand&campaign_id=16350394005&adgroup_id=141707910625&target_id=kwd-619254023419&loc_physical_ms=9197743&match_type=e&ad_id=628039778857&keyword=meteora%20get%20your%20guide&ad_position=&feed_item_id=&placement=&device=c&partner_id=CD951&gad_source=1&gad_campaignid=16350394005&gbraid=0AAAAADmzJCNjdAOSgKV7VxvSvKYrgmWSs&gclid=Cj0KCQiA9t3KBhCQARIsAJOcR7zk65PmxNaXJns1O3bbWTCOLsN4lMTWMI6YXJV0e-EpsyYMvNWiqj4aAgoXEALw_wcB" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                            </a>
+                        </h2>
+                        <p className="muted-text leading-relaxed">
+                            {t('thingsToDo.meteora.description')}
+                        </p>
+                    </div>
+
+                    {/* Chalkidiki */}
+                    <div className="bg-white rounded-lg p-8 soft-shadow border border-gray-200">
+                        <h2 className="font-display text-2xl md:text-3xl elegant-text mb-4">
+                            {t('thingsToDo.chalkidiki.title')}
+                        </h2>
+                        <p className="muted-text leading-relaxed mb-6">
+                            {t('thingsToDo.chalkidiki.intro')}
+                        </p>
+                        
+                        <div className="space-y-6">
+                            {/* Kassandra */}
+                            <div className="pl-4 border-l-4 border-gray-300">
+                                <h3 className="font-display text-xl elegant-text mb-2">{t('thingsToDo.chalkidiki.kassandra.title')}</h3>
+                                <p className="muted-text">{t('thingsToDo.chalkidiki.kassandra.description')}</p>
+                            </div>
+
+                            {/* Sithonia */}
+                            <div className="pl-4 border-l-4 border-gray-300">
+                                <h3 className="font-display text-xl elegant-text mb-2">{t('thingsToDo.chalkidiki.sithonia.title')}</h3>
+                                <p className="muted-text mb-3">
+                                    {t('thingsToDo.chalkidiki.sithonia.description')}
                                 </p>
-                                <div className="flex items-center justify-center text-sm text-gray-500">
-                                    <span className="mr-2">⏱️</span>
-                                    <span>{activity.duration}</span>
-                                </div>
+                                <p className="muted-text mb-2">{t('thingsToDo.chalkidiki.sithonia.recommendations')}</p>
+                                <ul className="list-none muted-text space-y-2">
+                                    <li className="flex items-center gap-2">
+                                        • {t('thingsToDo.chalkidiki.sithonia.beaches.armenistis')}
+                                        <a href="https://maps.app.goo.gl/armenistis" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        • {t('thingsToDo.chalkidiki.sithonia.beaches.vourvourou')}
+                                        <a href="https://maps.app.goo.gl/vourvourou" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        • {t('thingsToDo.chalkidiki.sithonia.beaches.kavourotripes')}
+                                        <a href="https://maps.app.goo.gl/kavourotripes" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        • {t('thingsToDo.chalkidiki.sithonia.beaches.aktiPortokali')}
+                                        <a href="https://maps.app.goo.gl/akti-portokali" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        • {t('thingsToDo.chalkidiki.sithonia.beaches.tristinika')}
+                                        <a href="https://maps.app.goo.gl/tristinika" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        ))}
-                    </div>
-                </div>
 
-                {/* Local Recommendations */}
-                <div className="mb-16">
-                    <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-8">
-                        {t('thingsToDo.recommendationsTitle')}
-                    </h2>
-                    <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                        {t('thingsToDo.recommendationsSubtitle')}
-                    </p>
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {recommendations.map((rec, index) => (
-                            <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-                                <div className="text-center mb-4">
-                                    <span className="text-3xl mb-3 block">{rec.icon}</span>
-                                    <div className="inline-block px-3 py-1 rounded-full text-sm font-medium border border-gray-300" style={{backgroundColor: 'rgba(139, 111, 71, 0.1)', color: '#8b6f47'}}>
-                                        {rec.type}
-                                    </div>
-                                </div>
-                                <h3 className="text-xl font-serif font-bold text-gray-800 mb-3 text-center">
-                                    {rec.title}
-                                </h3>
-                                <p className="text-gray-600 leading-relaxed text-center">
-                                    {rec.description}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Weather & Best Time */}
-                <div className="mb-16 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-2xl p-8 border border-blue-200">
-                    <h2 className="text-3xl font-serif font-bold text-gray-800 text-center mb-8">
-                        {t('thingsToDo.weather.title')}
-                    </h2>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="text-center">
-                            <span className="text-6xl mb-4 block">☀️</span>
-                            <h3 className="text-xl font-bold text-gray-800 mb-2">{t('thingsToDo.weather.june')}</h3>
-                            <p className="text-gray-700">{t('thingsToDo.weather.juneDesc')}</p>
-                        </div>
-                        <div className="bg-white rounded-lg p-6 shadow-md">
-                            <h3 className="text-xl font-bold text-gray-800 mb-4">{t('thingsToDo.weather.tips')}</h3>
-                            <div className="space-y-2 text-gray-700">
-                                <p>• {t('thingsToDo.weather.tip1')}</p>
-                                <p>• {t('thingsToDo.weather.tip2')}</p>
-                                <p>• {t('thingsToDo.weather.tip3')}</p>
-                                <p>• {t('thingsToDo.weather.tip4')}</p>
+                            {/* Athos */}
+                            <div className="pl-4 border-l-4 border-gray-300">
+                                <h3 className="font-display text-xl elegant-text mb-2">{t('thingsToDo.chalkidiki.athos.title')}</h3>
+                                <p className="muted-text">{t('thingsToDo.chalkidiki.athos.description')}</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                {/* Call to Action */}
-                <div className="text-center bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 border border-pink-200">
-                    <h2 className="text-2xl font-serif font-bold text-gray-800 mb-4">
-                        {t('thingsToDo.cta.title')}
-                    </h2>
-                    <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-                        {t('thingsToDo.cta.description')}
-                    </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a
-                            href="/travel"
-                            className="inline-block px-8 py-3 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                            style={{backgroundColor: '#8b6f47'}}
-                            onMouseEnter={(e) => e.target.style.backgroundColor = '#6d5535'}
-                            onMouseLeave={(e) => e.target.style.backgroundColor = '#8b6f47'}
-                        >
-                            {t('thingsToDo.cta.travelButton')}
-                        </a>
-                        <a
-                            href="/rsvp"
-                            className="inline-block px-8 py-3 bg-transparent font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-300"
-                            style={{color: '#8b6f47'}}
-                            onMouseEnter={(e) => {
-                                e.target.style.backgroundColor = '#8b6f47';
-                                e.target.style.color = 'white';
-                            }}
-                            onMouseLeave={(e) => {
-                                e.target.style.backgroundColor = 'transparent';
-                                e.target.style.color = '#8b6f47';
-                            }}
-                        >
-                            {t('thingsToDo.cta.rsvpButton')}
-                        </a>
                     </div>
                 </div>
             </div>
