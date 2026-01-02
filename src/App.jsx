@@ -25,7 +25,7 @@ function App() {
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/rsvp" element={<RPSV />} />
             <Route path="/admin" element={<AdminRSVPs />} />
-            <Route path="*" element={<div>Page Not Found</div>} />
+            <Route path="*" element={<div className="text-center p-8 text-xl font-semibold">Page Not Found</div>} />
           </Routes>
         </main>
         <Footer />
