@@ -220,7 +220,7 @@ const resources = {
                 subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
                 favouriteSpots: "Our Favorite Spots",
                 thessaloniki: {
-                    title: "Thessaloniki City",
+                    title: "Thessaloniki",
                     description: "Explore vibrant markets, historic sites, and delicious cuisine in Greece's second-largest city.",
                    
                     favorites: [
@@ -639,7 +639,7 @@ const resources = {
                 subtitle: "Ανακαλύψτε την ομορφιά και τον πολιτισμό της Θεσσαλονίκης και των περιχώρων κατά την επίσκεψή σας",
                 favouriteSpots: "Τα Αγαπημένα μας Σημεία",
                 thessaloniki: {
-                    title: "Πόλη της Θεσσαλονίκης",
+                    title: "Θεσσαλονίκη",
                     description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας.",
                     favorites: [
                         {
