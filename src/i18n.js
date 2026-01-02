@@ -228,7 +228,7 @@ const resources = {
                             name: "Walk along Thessaloniki Waterfront",
                             description: "A beautiful beachside promenade with stunning sea views.",
                             link: "https://maps.app.goo.gl/TiBvt33hxqpvr19X8"
-                        }
+                        },
                         {
                             name: "Perea Beach",
                             description: "Beautiful seaside promenade with cafes and restaurants.",
@@ -384,7 +384,7 @@ const resources = {
                     },
                     children: {
                         question: "Are children welcome?",
-                        answer: "We love children! Our celebration is family-friendly. Please let us know when you RSVP if you're bringing little ones so we can plan accordingly."
+                        answer: "Our celebration is family-friendly. Please let us know when you RSVP if you're bringing little ones so we can plan accordingly."
                     },
                     gifts: {
                         question: "Do you have a gift registry?",
@@ -807,7 +807,7 @@ const resources = {
                     },
                     children: {
                         question: "Είναι ευπρόσδεκτα τα παιδιά;",
-                        answer: "Αγαπάμε τα παιδιά! Ο εορτασμός μας είναι φιλικός προς την οικογένεια. Παρακαλώ ενημερώστε μας στην επιβεβαίωση αν φέρνετε μικρά παιδιά."
+                        answer: "Ο εορτασμός μας είναι φιλικός προς την οικογένεια. Παρακαλώ ενημερώστε μας στην επιβεβαίωση αν φέρνετε μικρά παιδιά."
                     },
                     gifts: {
                         question: "Έχετε μητρώο δώρων;",

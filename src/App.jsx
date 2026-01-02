@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,10 +11,22 @@ import Photos from "./pages/Gallery";
 import ThingsToDo from "./pages/ThingsToDo";
 import FAQs from "./pages/FAQs";
 
+// Scroll to top on every route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col bg-white text-gray-800 font-sans">
+        <ScrollToTop />
         <Header />
         <main className="flex-1">
           <Routes>
