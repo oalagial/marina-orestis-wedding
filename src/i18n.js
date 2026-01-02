@@ -9,7 +9,8 @@ const resources = {
             general: {
                 when: 'When',
                 where: 'Where',
-                submitting: "Submitting..."
+                submitting: "Submitting...",
+                location: 'Location',
             },
             // Navigation
             nav: {
@@ -39,6 +40,7 @@ const resources = {
                 coupleNames: "Orestis & Marina",
                 date: "Date: 27 June 2026",
                 location: "Location: Ethereal Hall, Peraia, Thessaloniki",
+                venueLocation: "Venue Location: Ethereal Hall, Peraia, Thessaloniki (next to Royal Hotel)",
                 rsvpButton: "RSVP Here",
                 viewSchedule: "View Schedule",
                 countdownMessagePart1: "Please confirm your attendance at the link below ",
@@ -127,6 +129,7 @@ const resources = {
                 dancingDesc: "Let's dance the night away! Traditional Greek music, modern hits, and lots of joy on the dance floor.",
                 coupleEntrance: "Couple Entrance & Party!",
                 coupleEntranceDesc: "",
+                youChoose: "You choose!",
                 farewell: "Farewell & Send-off",
                 farewellDesc: "A magical send-off with sparklers as we conclude this perfect day and begin our new adventure.",
                 venueTitle: "Venue Information",
@@ -436,7 +439,8 @@ const resources = {
             general: {
                 when: 'Πότε',
                 where: 'Πού',
-                submitting: "Υποβολή..."
+                submitting: "Υποβολή...",
+                location: 'Τοποθεσία',
             },
             // Navigation
             nav: {
@@ -466,6 +470,7 @@ const resources = {
                 coupleNames: "Ορέστης & Μαρίνα",
                 date: "Ημερομηνία: 27 Ιουνίου 2026",
                 location: "Τοποθεσία: Ethereal Hall, Περαία, Θεσσαλονίκη",
+                venueLocation: "Τοποθεσία Χώρου: Ethereal Hall, Περαία, Θεσσαλονίκη (δίπλα στο ξενοδοχείο Royal)",
                 rsvpButton: "Επιβεβαιωση Παρουσιας",
                 viewSchedule: "Δείτε το Πρόγραμμα",
                 countdownMessagePart1: "Παρακαλούμε επιβεβαιώστε την παρουσία σας στον παρακάτω σύνδεσμο ",
@@ -540,7 +545,7 @@ const resources = {
 
             // Schedule page
             schedule: {
-                title: "Πρόγραμμα Γάμου",
+                title: "Πρόγραμμα ημέρας Γάμου",
                 subtitle: "Ελάτε να γιορτάσουμε μαζί μας μια μέρα γεμάτη αγάπη, γέλιο και χαρά καθώς ξεκινάμε το ταξίδι μας μαζί",
                 guestsArriveGroom: "Άφιξη Καλεσμένων Σπίτι γαμπρού",
                 guestsArriveGroomDesc: "Προετοιμασία γαμπρού",
@@ -549,6 +554,7 @@ const resources = {
                 ceremony: "Γαμήλια Τελετή",
                 ceremonyDesc: "Τέλεση πολιτικού γάμου στον ελαιώνα του πολυχώρου Ethereal.",
                 dinner: "Γαμήλιο Δείπνο",
+                youChoose: "Εσείς επιλέγετε!",
                 dinnerDesc: "Welcome drink, γευστικό δείπνο σε μπουφέ και photobooth time.",
                 reception: "Δεξίωση & Γεύμα",
                 receptionDesc: "Γιορτάστε με ένα νόστιμο γεύμα, προπόσεις και υπέροχες συζητήσεις καθώς ξεκινούν οι εορτασμοί.",
