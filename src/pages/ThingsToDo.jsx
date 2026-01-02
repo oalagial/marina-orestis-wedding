@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 const ThingsToDo = () => {
     const { t } = useTranslation();
+    const favoriteSpots = t('thingsToDo.thessaloniki.favorites', { returnObjects: true });
 
     return (
         <div className="section-padding">
@@ -33,6 +34,31 @@ const ThingsToDo = () => {
                         <p className="muted-text leading-relaxed">
                             {t('thingsToDo.thessaloniki.description')}
                         </p>
+                        <h3 className="font-display text-2xl elegant-text mt-6 mb-2">{t('thingsToDo.favouriteSpots')}</h3>
+                        {Array.isArray(favoriteSpots) && favoriteSpots.length > 0 && (
+                            <div className="mt-4 space-y-2">
+                                {favoriteSpots.map((spot, idx) => (
+                                    <div key={idx} className="flex items-start gap-2 text-sm md:text-base">
+                                        <span className="text-gray-500">•</span>
+                                        <div className="flex-1">
+                                            <div className="flex items-center gap-2">
+                                                <span className="font-display elegant-text text-base md:text-lg">{spot.name}</span>
+                                                {spot.link && (
+                                                    <a href={spot.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                                        </svg>
+                                                    </a>
+                                                )}
+                                            </div>
+                                            {spot.description && (
+                                                <p className="muted-text text-sm md:text-base">{spot.description}</p>
+                                            )}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        )}
                     </div>  
 
                     {/* Meteora */}

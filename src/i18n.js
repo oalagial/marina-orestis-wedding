@@ -218,9 +218,32 @@ const resources = {
             thingsToDo: {
                 title: "Things To Do",
                 subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
+                favouriteSpots: "Favorite Spots",
                 thessaloniki: {
                     title: "Thessaloniki City",
-                    description: "Explore vibrant markets, historic sites, and delicious cuisine in Greece's second-largest city."
+                    description: "Explore vibrant markets, historic sites, and delicious cuisine in Greece's second-largest city.",
+                   
+                    favorites: [
+                        {
+                            name: "Ergon Agora",
+                            description: "Modern Greek food market and restaurant near the city center.",
+                            link: "https://maps.app.goo.gl/ergonagora"
+                        },
+                        {     
+                            name: "Galyfianakis",
+                            description: "Traditional pastry shop known for its Galaktoboureko dessert.",
+                            link: "https://maps.app.goo.gl/galyfianakis"
+                        },
+                        {   name: "Choureál | Choux & Profiterole",
+                            description: "Famous for its delicious Profiterole pastries.",
+                            link: "https://maps.app.goo.gl/B9RFhbwxX7PNTSA29"
+                        },
+                        {
+                            name: "Ladadika District",
+                            description: "Historic quarter packed with tavernas, bars, and nightlife.",
+                            link: "https://maps.app.goo.gl/ladadika"
+                        }
+                    ]
                 },
                 pozar: {
                     title: "Pozar Hot Springs",
@@ -614,9 +637,31 @@ const resources = {
             thingsToDo: {
                 title: "Τι να Κάνετε",
                 subtitle: "Ανακαλύψτε την ομορφιά και τον πολιτισμό της Θεσσαλονίκης και των περιχώρων κατά την επίσκεψή σας",
+                favouriteSpots: "Αγαπημένα Σημεία",
                 thessaloniki: {
                     title: "Πόλη της Θεσσαλονίκης",
-                    description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας."
+                    description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας.",
+                    favorites: [
+                        {
+                            name: "Ergon Agora",
+                            description: "Μοντέρνα αγορά και εστιατόριο ελληνικών γεύσεων στο κέντρο.",
+                            link: "https://maps.app.goo.gl/ergonagora"
+                        },
+                        {
+                            name: "Galyfianakis",
+                            description: "Παραδοσιακό ζαχαροπλαστείο γνωστό για το γλυκό του (γαλακτομπούρεκο).",
+                            link: "https://maps.app.goo.gl/galyfianakis"
+                        },
+                        {   name: "Choureál | Choux & Profiterole",
+                            description: "Διάσημο για τα νόστιμα προφιτερόλ του.",
+                            link: "https://maps.app.goo.gl/La4FUnfDnLPRHK5c8"
+                        },
+                        {
+                            name: "Λαδάδικα",
+                            description: "Ιστορική γειτονιά γεμάτη ταβέρνες, μπαρ και νυχτερινή ζωή.",
+                            link: "https://maps.app.goo.gl/ladadika"
+                        }
+                    ]
                 },
                 pozar: {
                     title: "Λουτρά Πόζαρ",
