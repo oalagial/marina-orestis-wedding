@@ -246,7 +246,7 @@ const resources = {
                         {
                             name: "Ladadika District",
                             description: "Historic quarter packed with tavernas, bars, and nightlife.",
-                            link: "https://maps.app.goo.gl/ladadika"
+                            link: "https://maps.app.goo.gl/AzKJbWvGh7MVxYqg8"
                         }
                     ]
                 },
@@ -669,7 +669,7 @@ const resources = {
                         {
                             name: "Λαδάδικα",
                             description: "Ιστορική γειτονιά γεμάτη ταβέρνες, μπαρ και νυχτερινή ζωή.",
-                            link: "https://maps.app.goo.gl/ladadika"
+                            link: "https://maps.app.goo.gl/AzKJbWvGh7MVxYqg8"
                         }
                     ]
                 },
