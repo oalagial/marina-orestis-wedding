@@ -58,7 +58,7 @@ export default function Header() {
               {[
                 { to: '/', label: t('nav.home') },
                 { to: '/schedule', label: t('nav.schedule') },
-                { to: '/travel', label: t('nav.travel') },
+                // { to: '/travel', label: t('nav.travel') },
                 { to: '/photos', label: t('nav.photos') },
                 { to: '/things-to-do', label: t('nav.thingsToDo') },
                 { to: '/faqs', label: t('nav.faqs') }
@@ -100,7 +100,7 @@ export default function Header() {
                   {[
                     { to: '/', label: t('nav.home') },
                     { to: '/schedule', label: t('nav.schedule') },
-                    { to: '/travel', label: t('nav.travel') },
+                    // { to: '/travel', label: t('nav.travel') },
                     { to: '/photos', label: t('nav.photos') },
                     { to: '/things-to-do', label: t('nav.thingsToDo') },
                     { to: '/faqs', label: t('nav.faqs') }
