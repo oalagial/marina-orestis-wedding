@@ -83,7 +83,7 @@ const resources = {
                 emailPlaceholder: "your.email@example.com",
                 phonePlaceholder: "+30 123 456 7890",
                 plusOnePlaceholder: "Enter plus one's name",
-                note: '* Please inform us of any changes in the number of attendees as soon as possible at +306946172421 '
+                note: 'Please inform us of any changes in the number of attendees as soon as possible at +306946172421 '
             },
 
             // Admin page
@@ -510,7 +510,7 @@ const resources = {
                 emailPlaceholder: "το.email@example.com",
                 phonePlaceholder: "+30 123 456 7890",
                 plusOnePlaceholder: "Εισάγετε το όνομα του συνοδού",
-                note: '* Παρακαλούμε ενημερώστε μας για τυχόν αλλαγές στον αριθμό των ατόμων το συντομότερο δυνατόν στο +306946172421 '
+                note: 'Παρακαλούμε ενημερώστε μας για τυχόν αλλαγές στον αριθμό των ατόμων το συντομότερο δυνατόν στο +306946172421 '
             },
 
             // Admin page

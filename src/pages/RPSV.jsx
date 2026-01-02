@@ -5,6 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 const RPSV = () => {
     const { t } = useTranslation();
+
+    React.useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'auto' });
+    }, []);
     const [formData, setFormData] = useState({
         guestName: '',
         phone: '',
@@ -139,7 +143,7 @@ const RPSV = () => {
                     {/* Number of People */}
                     <div>
                         <label htmlFor="numberOfPeople" className="block text-sm font-medium muted-text mb-3 tracking-wider">
-                            {t('rsvp.numberOfPeople')}
+                            {t('rsvp.numberOfPeople')} *
                         </label>
                         <div className="space-y-3">
                             <input
@@ -150,6 +154,7 @@ const RPSV = () => {
                                 max="10"
                                 value={formData.numberOfPeople}
                                 onChange={handleInputChange}
+                                required
                                 className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             />
                         </div>
@@ -158,7 +163,7 @@ const RPSV = () => {
                     {/* Number of Children */}
                     <div>
                         <label htmlFor="numberOfChildren" className="block text-sm font-medium muted-text mb-3 tracking-wider">
-                            {t('rsvp.numberOfChildren')}
+                            {t('rsvp.numberOfChildren')} *
                         </label>
                         <div className="space-y-3">
                             <input
@@ -169,6 +174,7 @@ const RPSV = () => {
                                 max="10"
                                 value={formData.numberOfChildren}
                                 onChange={handleInputChange}
+                                required
                                 className="w-full px-4 py-3 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 bg-white"
                             />
                         </div>
@@ -221,6 +227,7 @@ const RPSV = () => {
                     </div>
 
                     <p className="muted-text">{t('rsvp.note')}</p>
+                    <p className="muted-text mt-2 text-sm">*Υποχρεωτικό πεδίο.</p>
                 </form>
             </div>
         </div>
