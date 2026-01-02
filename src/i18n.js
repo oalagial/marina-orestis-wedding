@@ -218,16 +218,16 @@ const resources = {
             thingsToDo: {
                 title: "Things To Do",
                 subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
-                favouriteSpots: "Favorite Spots",
+                favouriteSpots: "Our Favorite Spots",
                 thessaloniki: {
                     title: "Thessaloniki City",
                     description: "Explore vibrant markets, historic sites, and delicious cuisine in Greece's second-largest city.",
                    
                     favorites: [
                         {
-                            name: "Ergon Agora",
-                            description: "Modern Greek food market and restaurant near the city center.",
-                            link: "https://maps.app.goo.gl/ergonagora"
+                            name: "Perea Beach",
+                            description: "Beautiful seaside promenade with cafes and restaurants.",
+                            link: "https://www.google.com/maps/place/Perea+Beach/@40.5085701,22.922582,749m/data=!3m1!1e3!4m6!3m5!1s0x14a8152801505321:0x6048eac3a0033a3!8m2!3d40.5085701!4d22.922582!16s%2Fg%2F11fnx685q1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
                         },
                         {     
                             name: "Galyfianakis",
@@ -637,18 +637,18 @@ const resources = {
             thingsToDo: {
                 title: "Τι να Κάνετε",
                 subtitle: "Ανακαλύψτε την ομορφιά και τον πολιτισμό της Θεσσαλονίκης και των περιχώρων κατά την επίσκεψή σας",
-                favouriteSpots: "Αγαπημένα Σημεία",
+                favouriteSpots: "Τα Αγαπημένα μας Σημεία",
                 thessaloniki: {
                     title: "Πόλη της Θεσσαλονίκης",
                     description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας.",
                     favorites: [
                         {
-                            name: "Ergon Agora",
-                            description: "Μοντέρνα αγορά και εστιατόριο ελληνικών γεύσεων στο κέντρο.",
-                            link: "https://maps.app.goo.gl/ergonagora"
+                            name: "Παραλία Περαίας",
+                            description: "Όμορφος πεζόδρομος κατά μήκος της θάλασσας με καφετέριες και εστιατόρια.",
+                            link: "https://www.google.com/maps/place/Perea+Beach/@40.5085701,22.922582,749m/data=!3m1!1e3!4m6!3m5!1s0x14a8152801505321:0x6048eac3a0033a3!8m2!3d40.5085701!4d22.922582!16s%2Fg%2F11fnx685q1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
                         },
                         {
-                            name: "Galyfianakis",
+                            name: "Γαλυφιανάκης",
                             description: "Παραδοσιακό ζαχαροπλαστείο γνωστό για το γλυκό του (γαλακτομπούρεκο).",
                             link: "https://maps.app.goo.gl/galyfianakis"
                         },
