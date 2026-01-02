@@ -219,7 +219,7 @@ const resources = {
                 title: "Things To Do",
                 subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
                 pozar: {
-                    title: "Λουτρά Πόζαρ",
+                    title: "Pozar Hot Springs",
                     description: "Enjoy a relaxing getaway with a bath in natural hot springs (natural hot baths). Value for money accommodation we enjoy:",
                     hotelLink: "Agnanti Hotel"
                 },
