@@ -17,7 +17,7 @@ const resources = {
                 home: "Home",
                 schedule: "Schedule",
                 travel: "Travel",
-                gallery: "Gallery",
+                photos: "Photos",
                 thingsToDo: "Things To Do",
                 faqs: "FAQs",
                 rsvp: "RSVP"
@@ -447,7 +447,7 @@ const resources = {
                 home: "Αρχική",
                 schedule: "Πρόγραμμα",
                 travel: "Ταξίδι",
-                gallery: "Φωτογραφίες",
+                photos: "Φωτογραφίες",
                 thingsToDo: "Τι να κάνετε",
                 faqs: "Συχνές Ερωτήσεις",
                 rsvp: "RSVP"

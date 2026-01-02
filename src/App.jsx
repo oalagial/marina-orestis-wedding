@@ -6,7 +6,7 @@ import Schedule from './pages/Schedule';
 import Travel from './pages/Travel';
 import RPSV from './pages/RPSV';
 import AdminRSVPs from './pages/AdminRSVPs';
-import Gallery from "./pages/Gallery";
+import Photos from "./pages/Gallery";
 import ThingsToDo from "./pages/ThingsToDo";
 import FAQs from "./pages/FAQs";
 
@@ -20,7 +20,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/travel" element={<Travel />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/photos" element={<Photos />} />
             <Route path="/things-to-do" element={<ThingsToDo />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/rsvp" element={<RPSV />} />
