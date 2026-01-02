@@ -218,6 +218,10 @@ const resources = {
             thingsToDo: {
                 title: "Things To Do",
                 subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
+                thessaloniki: {
+                    title: "Thessaloniki City",
+                    description: "Explore vibrant markets, historic sites, and delicious cuisine in Greece's second-largest city."
+                },
                 pozar: {
                     title: "Pozar Hot Springs",
                     description: "Enjoy a relaxing getaway with a bath in natural hot springs (natural hot baths). Value for money accommodation we enjoy:",
@@ -610,6 +614,10 @@ const resources = {
             thingsToDo: {
                 title: "Τι να Κάνετε",
                 subtitle: "Ανακαλύψτε την ομορφιά και τον πολιτισμό της Θεσσαλονίκης και των περιχώρων κατά την επίσκεψή σας",
+                thessaloniki: {
+                    title: "Πόλη της Θεσσαλονίκης",
+                    description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας."
+                },
                 pozar: {
                     title: "Λουτρά Πόζαρ",
                     description: "Απολαύστε ένα χαλαρωτικό διήμερο με μπάνιο σε φυσικές ζεστές πηγές (natural hot baths). Value for money accommodation we enjoy:",
