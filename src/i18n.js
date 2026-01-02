@@ -264,6 +264,7 @@ const resources = {
                     couple: "Couple",
                     venues: "Venues"
                 },
+                instructions: "The moments you shared with us",
                 engagement1: "Engagement Ring",
                 engagement2: "The Proposal",
                 couple1: "Together Forever",
@@ -655,6 +656,7 @@ const resources = {
                     couple: "Ζευγάρι",
                     venues: "Χώροι"
                 },
+                instructions: "Οι στιγμές που μοιραστήκατε εσείς μαζί μας",
                 engagement1: "Δαχτυλίδι Αρραβώνων",
                 engagement2: "Η Πρόταση",
                 couple1: "Μαζί για Πάντα",
