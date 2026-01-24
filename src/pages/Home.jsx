@@ -28,7 +28,7 @@ const Home = () => {
                 
                 {/* Hero Content */}
                 <div className="relative z-10 text-center text-white px-4 animate-fade-in">
-                    <h1 className="font-display-bold text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tight">
+                    <h1 className="font-script text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tight">
                         {t('home.coupleNames')}
                     </h1>
                     <p className="text-lg md:text-xl font-light tracking-widest mb-4 uppercase">
