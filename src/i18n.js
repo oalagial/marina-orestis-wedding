@@ -216,14 +216,14 @@ const resources = {
 
             // Things To Do page
             thingsToDo: {
-                title: "Things To Do",
-                subtitle: "Discover the beauty and culture of Thessaloniki and its surroundings during your visit",
-                favouriteSpots: "Our Favorite Spots",
+                title: "Our favourite places",
+                subtitle: "Discover our favourite spots in Thessaloniki and its surroundings, as well as some of our favourite trips nearby!",
+                favouriteSpots: "Our favourite Spots",
                 thessaloniki: {
                     title: "Thessaloniki",
-                    description: "Explore vibrant markets, historic sites, and delicious cuisine in Greece's second-largest city.",
+                    description: "Explore our city and our favourite places in it (lots of food!).",
                    
-                    favorites: [
+                    favourites: [
                         {
                             name: "Walk along Thessaloniki Waterfront",
                             description: "A beautiful beachside promenade with stunning sea views.",
@@ -236,12 +236,22 @@ const resources = {
                         },
                         {     
                             name: "Galyfianakis",
-                            description: "Traditional pastry shop known for its Galaktoboureko dessert.",
-                            link: "https://maps.app.goo.gl/galyfianakis"
+                            description: "Our favourite traditional pastry shop known for its Galaktoboureko dessert.",
+                            link: "https://maps.app.goo.gl/hnQRGko9YkzMTRES7"
                         },
                         {   name: "Choureál | Choux & Profiterole",
-                            description: "Famous for its delicious Profiterole pastries.",
+                            description: "Our favourite place famous for its delicious Profiterole pastries.",
                             link: "https://maps.app.goo.gl/B9RFhbwxX7PNTSA29"
+                        },
+                        {
+                            name: "Trigwna Elenidis",
+                            description: "Traditional sweet with cream",
+                            link: "https://maps.app.goo.gl/TrigwnaElenidis"
+                        },
+                        {
+                            name: "Giok Balik",
+                            description: "Our favourite place for gyro",
+                            link: "https://maps.app.goo.gl/vc1SDMhX9pkcPBak6"
                         },
                         {
                             name: "Ladadika District",
@@ -264,7 +274,7 @@ const resources = {
                     intro: "This is the paradise of Northern Greece. Many options to choose from:",
                     kassandra: {
                         title: "Kassandra",
-                        description: "Choose Kassandra if you are looking for partying and crystal clear waters."
+                        description: "Choose Kassandra if you are looking for partying and crystal clear waters or Aigaiopelagitika beach for swimming",
                     },
                     sithonia: {
                         title: "Sithonia",
@@ -296,7 +306,8 @@ const resources = {
                     couple: "Couple",
                     venues: "Venues"
                 },
-                instructions: "The moments you shared with us",
+                instructions1: "Upload here every photo you captured from this special day!",
+                instructions2: "The moments you shared with us",
                 engagement1: "Engagement Ring",
                 engagement2: "The Proposal",
                 couple1: "Together Forever",
@@ -320,6 +331,18 @@ const resources = {
                     description: "Help us capture every moment by sharing your photos from our wedding using our hashtag",
                     hashtag: "Use Our Wedding Hashtag",
                     hashtagDesc: "Tag your photos so we can find and cherish them forever"
+                },
+                bestDancer: {
+                    title: "Best Dancer Voting",
+                    desc: "Vote for the best dancer or add a new name.",
+                    placeholder: "Add a new name",
+                    add: "Add & Vote",
+                    vote: "Vote",
+                    voted: "✓ Voted",
+                    totalVotes: "Total votes: ",
+                    noOptions: "No votes yet — be the first!",
+                    loadError: "Failed to load votes.",
+                    voteError: "Failed to submit vote."
                 }
             },
 
@@ -436,8 +459,7 @@ const resources = {
                 schedule: "Πρόγραμμα",
                 travel: "Ταξίδι",
                 photos: "Φωτογραφίες",
-                thingsToDo: "Τι να κάνετε",
-                faqs: "Συχνές Ερωτήσεις",
+                thingsToDo: "Τι να κάνετε",                faqs: "Συχνές Ερωτήσεις",
                 rsvp: "RSVP"
             },
 
@@ -636,13 +658,13 @@ const resources = {
 
             // Things To Do page
             thingsToDo: {
-                title: "Τι να Κάνετε",
-                subtitle: "Ανακαλύψτε την ομορφιά και τον πολιτισμό της Θεσσαλονίκης και των περιχώρων κατά την επίσκεψή σας",
+                title: "Τα αγαπημένα μας μέρη",
+                subtitle: "Ανακαλύψτε τα αγαπημένα μας σημεία στη Θεσσαλονίκη και τις γύρω περιοχές, καθώς και μερικές από τις αγαπημένες μας εκδρομές κοντά!",
                 favouriteSpots: "Τα Αγαπημένα μας Σημεία",
                 thessaloniki: {
                     title: "Θεσσαλονίκη",
-                    description: "Εξερευνήστε ζωντανές αγορές, ιστορικά αξιοθέατα και νόστιμη κουζίνα στη δεύτερη μεγαλύτερη πόλη της Ελλάδας.",
-                    favorites: [
+                    description: "Εξερευνήστε την πόλη μας και τα αγαπημένα μας μέρη σε αυτήν (πολύ φαγητό!).",
+                    favourites: [
                         {
                             name: "Βόλτα στην παραλία της Θεσσαλονίκης",
                             description: "Πολύ όμορφη παραλία για περπάτημα με θέα στη θάλασσα.",
@@ -655,12 +677,22 @@ const resources = {
                         },
                         {
                             name: "Γαλυφιανάκης",
-                            description: "Παραδοσιακό ζαχαροπλαστείο γνωστό για το γλυκό του (γαλακτομπούρεκο).",
+                            description: "Το αγαπημένο μας παραδοσιακό ζαχαροπλαστείο γνωστό για το γλυκό του (γαλακτομπούρεκο).",
                             link: "https://maps.app.goo.gl/galyfianakis"
                         },
                         {   name: "Choureál | Choux & Profiterole",
-                            description: "Διάσημο για τα νόστιμα προφιτερόλ του.",
+                            description: "Το αγαπημένο μας μέρος διάσημο για τα νόστιμα προφιτερόλ του.",
                             link: "https://maps.app.goo.gl/La4FUnfDnLPRHK5c8"
+                        },
+                        {
+                            name: "Τριγώνα Ελενίδη",
+                            description: "Παραδοσιακό γλυκό με κρέμα",
+                            link: "https://maps.app.goo.gl/hnQRGko9YkzMTRES7"
+                        },
+                        {
+                            name: "Γιοκ Μπαλίκ",
+                            description: "Το αγαπημένο μας μέρος για γύρο",
+                            link: "https://maps.app.goo.gl/vc1SDMhX9pkcPBak6"
                         },
                         {
                             name: "Λαδάδικα",
@@ -715,7 +747,8 @@ const resources = {
                     couple: "Ζευγάρι",
                     venues: "Χώροι"
                 },
-                instructions: "Οι στιγμές που μοιραστήκατε εσείς μαζί μας",
+                instructions1: "Ανεβάστε εδώ κάθε φωτογραφία που τραβήξατε από αυτή την ξεχωριστή μέρα!",
+                instructions2: "Οι στιγμές που μοιραστήκατε εσείς μαζί μας",
                 engagement1: "Δαχτυλίδι Αρραβώνων",
                 engagement2: "Η Πρόταση",
                 couple1: "Μαζί για Πάντα",
@@ -739,6 +772,18 @@ const resources = {
                     description: "Βοηθήστε μας να αποτυπώσουμε κάθε στιγμή μοιράζοντας τις φωτογραφίες σας με το hashtag μας",
                     hashtag: "Χρησιμοποιήστε το Hashtag του Γάμου",
                     hashtagDesc: "Βάλτε tag στις φωτογραφίες σας για να τις βρούμε και να τις κρατήσουμε για πάντα"
+                },
+                bestDancer: {
+                    title: "Ψηφοφορία για τον Καλύτερο Χορευτή",
+                    desc: "Ψηφίστε για τον καλύτερο χορευτή ή προσθέστε ένα νέο όνομα.",
+                    placeholder: "Προσθέστε ένα νέο όνομα",
+                    add: "Προσθήκη & Ψήφος",
+                    vote: "Ψηφισε",
+                    voted: "✓ Ψηφισες",
+                    totalVotes: "Συνολικές ψήφοι: ",
+                    noOptions: "Κανείς δεν έχει ψηφίσει ακόμα — είστε οι πρώτοι!",
+                    loadError: "Αποτυχία φόρτωσης ψήφων.",
+                    voteError: "Αποτυχία υποβολής ψήφου."
                 }
             },
 
