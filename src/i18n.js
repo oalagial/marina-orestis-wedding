@@ -365,17 +365,17 @@ const resources = {
                     },
                     where: {
                         question: "Where is the wedding venue?",
-                        answer: "We'll be celebrating at Ethereal Hall in Peraia, Thessaloniki. It's a beautiful venue just 15 minutes from Thessaloniki Airport."
+                        answer: "We'll be celebrating at Ethereal Hall in Peraia, Thessaloniki."
                     }
                 },
                 attire: {
                     dress: {
                         question: "What should I wear?",
-                        answer: "The dress code is formal/cocktail attire. Think elegant and festive! Ladies can wear cocktail dresses or formal wear, gentlemen should wear suits or blazers."
+                        answer: "There's no strict dress code; just wear something you feel great in! Here are some friendly suggestions:\n\nLadies: Vibrant or pastel colours are perfect. We recommend avoiding white or very dark shades. Cocktail dresses or elegant outfits work beautifully.\n\nGentlemen: Polished casual is ideal - think shirts, trousers, or a blazer. Suits are optional if you'd like to dress up."
                     },
                     weather: {
                         question: "What's the weather like in June?",
-                        answer: "June in Thessaloniki is warm and sunny with average temperatures around 25°C. Perfect weather for our celebration!"
+                        answer: "June in Thessaloniki is typically warm and sunny, with average temperatures around 25°C. Our after-wedding party will be held indoors (with A/C)."
                     },
                     shoes: {
                         question: "What shoes should I wear?",
@@ -393,7 +393,7 @@ const resources = {
                     },
                     accommodation: {
                         question: "Where should I stay?",
-                        answer: "Contact us for hotel recommendations in the area, from seaside options to city center choices. Book early for the best rates!"
+                        answer: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or options in the city center. Be sure to book early for the best rates! \n For the wedding night, we especially recommend staying at the hotel next to the venue—it’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving. Contact us for details and to take advantage of the special rate we’ve arranged for this hotel."
                     }
                 },
                 ceremony: {
@@ -407,7 +407,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Do you have a gift registry?",
-                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts."
+                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: IE92 REVO 9903 6007 0177 09\n BIC/SWIFT: REVOIE23 \n\n Alpha Bank Account Details:\n IBAN: GR0201405170517002188001411\n BIC/SWIFT: CRBAGRAA \n\n Please include your name in the transfer notes so we can thank you!"
                     }
                 },
                 food: {
@@ -417,7 +417,7 @@ const resources = {
                     },
                     menu: {
                         question: "What food will be served?",
-                        answer: "We'll have a delicious Mediterranean menu featuring fresh local ingredients, seafood, traditional Greek dishes, and international options."
+                        answer: "We'll have a delicious Mediterranean menu featuring fresh local ingredients, traditional Greek dishes, and international options."
                     },
                     drinks: {
                         question: "Will there be an open bar?",
@@ -806,17 +806,17 @@ const resources = {
                     },
                     where: {
                         question: "Πού είναι ο χώρος του γάμου;",
-                        answer: "Θα γιορτάσουμε στο Ethereal Hall στην Περαία, Θεσσαλονίκη. Είναι ένας όμορφος χώρος μόλις 15 λεπτά από το αεροδρόμιο."
+                        answer: "Θα γιορτάσουμε στο Ethereal Hall στην Περαία, Θεσσαλονίκη."
                     }
                 },
                 attire: {
                     dress: {
                         question: "Τι να φορέσω;",
-                        answer: "Ο κώδικας ντυσίματος είναι επίσημο/κοκτέιλ. Σκεφτείτε κομψό και εορταστικό! Οι κυρίες μπορούν να φορέσουν φορέματα κοκτέιλ ή επίσημα φορέματα, οι κύριοι κοστούμια ή σακάκια."
+                        answer: "Δεν υπάρχει αυστηρός κώδικας ενδυμασίας· απλώς φορέστε κάτι που σας κάνει να νιώθετε υπέροχα! Εδώ είναι μερικές φιλικές προτάσεις:\n\nΚυρίες: Ζωντανά ή παστέλ χρώματα είναι τέλεια. Συνιστούμε να αποφύγετε το λευκό ή πολύ σκούρες αποχρώσεις. Φορέματα κοκτέιλ ή κομψά σύνολα λειτουργούν όμορφα.\n\nΚύριοι: Πολυτελής casual είναι ιδανικό - σκεφτείτε πουκάμισα, παντελόνια ή σακάκι. Τα κοστούμια είναι προαιρετικά αν θέλετε να ντυθείτε πιο επίσημα."
                     },
                     weather: {
                         question: "Πώς είναι ο καιρός τον Ιούνιο;",
-                        answer: "Ο Ιούνιος στη Θεσσαλονίκη είναι ζεστός και ηλιόλουστος με μέσες θερμοκρασίες γύρω στους 25°C. Τέλειος καιρός για τον εορτασμό μας!"
+                        answer: "Ο Ιούνιος στη Θεσσαλονίκη είναι συνήθως ζεστός και ηλιόλουστος, με μέσες θερμοκρασίες γύρω στους 25°C. Το πάρτι μετά τον γάμο θα γίνει σε εσωτερικό χώρο (με κλιματισμό)."
                     },
                     shoes: {
                         question: "Τι παπούτσια να φορέσω;",
@@ -834,7 +834,7 @@ const resources = {
                     },
                     accommodation: {
                         question: "Πού να μείνω;",
-                        answer: "Επικοινωνήστε μαζί μας για προτάσεις ξενοδοχείων στην περιοχή, από παραθαλάσσια επιλογές μέχρι επιλογές στο κέντρο της πόλης. Κάντε κράτηση νωρίς για τις καλύτερες τιμές!"
+                        answer: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε διαμονή δίπλα στη θάλασσα είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n Για τη νύχτα του γάμου, προτείνουμε ιδιαίτερα να μείνετε στο ξενοδοχείο δίπλα στον χώρο—είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το open bar χωρίς να ανησυχείτε για οδήγηση. Επικοινωνήστε μαζί μας για λεπτομέρειες και για να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο."
                     }
                 },
                 ceremony: {
@@ -849,7 +849,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Έχετε μητρώο δώρων;",
-                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα."
+                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: IE92 REVO 9903 6007 0177 09\n BIC/SWIFT: REVOIE23 \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: GR0201405170517002188001411\n BIC/SWIFT: CRBAGRAA \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
                     }
                 },
                 food: {
@@ -859,7 +859,7 @@ const resources = {
                     },
                     menu: {
                         question: "Τι φαγητό θα σερβιριστεί;",
-                        answer: "Θα έχουμε νόστιμο μεσογειακό μενού με φρέσκα τοπικά υλικά, θαλασσινά, παραδοσιακά ελληνικά πιάτα και άλλες επιλογές."
+                        answer: "Θα έχουμε ένα νόστιμο μεσογειακό μενού με φρέσκα τοπικά υλικά, παραδοσιακά ελληνικά πιάτα και διεθνείς επιλογές."
                     },
                     drinks: {
                         question: "Θα υπάρχει open bar;",

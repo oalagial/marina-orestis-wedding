@@ -136,7 +136,7 @@ const FAQs = () => {
                                         </button>
                                         {isOpen && (
                                             <div className="mt-4 pr-8 animate-fade-in">
-                                                <p className="text-gray-600 leading-relaxed">
+                                                <p className="text-gray-600 leading-relaxed whitespace-pre-line">
                                                     {faq.answer}
                                                 </p>
                                             </div>
