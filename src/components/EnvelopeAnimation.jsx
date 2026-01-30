@@ -16,7 +16,7 @@ const EnvelopeAnimation = ({ onOpen }) => {
   return (
     <div className={`h-full invitation-container ${isFading ? 'fade-out' : ''}`} onClick={handleClick}>
       <img 
-        src="/images/envelope2.png" 
+        src="/images/envelope6.png" 
         alt="Wedding Invitation" 
         className={`invitation-image ${isFading ? 'image-fade-out' : ''}`}
       />
