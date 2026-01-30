@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import EnvelopeAnimation from '../components/EnvelopeAnimation';
 
 const Home = () => {
     const { t } = useTranslation();
+    const [envelopeOpened, setEnvelopeOpened] = useState(false);
 
     return (
         <main className="min-h-screen">
+            <EnvelopeAnimation onOpen={() => setEnvelopeOpened(true)} />
+            
             {/* Hero Section - Elegant */}
             <div className="relative h-screen flex items-center justify-center overflow-hidden">
                 {/* Background Images */}

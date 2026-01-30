@@ -1,0 +1,179 @@
+/* Invitation Container - Full screen overlay */
+.invitation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  animation: fadeInInvitation 0.8s ease-out forwards;
+  overflow: hidden;
+}
+
+.invitation-container.fade-out {
+  animation: fadeOutInvitation 2s ease-out forwards;
+}
+
+@keyframes fadeInInvitation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutInvitation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Invitation Image - Full screen */
+.invitation-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  transition: opacity 2s ease-out;
+}
+
+.invitation-image.image-fade-out {
+  opacity: 0;
+}
+
+/* Click Hint */
+.click-hint {
+  position: absolute;
+  bottom: 400px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  letter-spacing: 1px;
+  animation: hintBounce 2s ease-in-out infinite;
+  z-index: 10000;
+}
+
+@keyframes hintBounce {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .click-hint {
+    font-size: 14px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .click-hint {
+    font-size: 12px;
+    bottom: 200px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Invitation Container - Full screen overlay */
+.invitation-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+  animation: fadeInInvitation 0.8s ease-out forwards;
+}
+
+.invitation-container.fade-out {
+  animation: fadeOutInvitation 2s ease-out forwards;
+}
+
+@keyframes fadeInInvitation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutInvitation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Invitation Image - Full screen */
+.invitation-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 2s ease-out;
+}
+
+.invitation-image.image-fade-out {
+  opacity: 0;
+}
+
+/* Click Hint */
+.click-hint {
+  position: absolute;
+  bottom: 20%;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  letter-spacing: 1px;
+  animation: hintBounce 2s ease-in-out infinite;
+  z-index: 10000;
+}
+
+@keyframes hintBounce {
+  0%, 100% {
+    opacity: 0.6;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .click-hint {
+    font-size: 14px;
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .click-hint {
+    font-size: 12px;
+    bottom: 20%;
+    letter-spacing: 0.5px;
+  }
+}
