@@ -11,20 +11,11 @@ const EnvelopeAnimation = ({ onOpen }) => {
     const isDesktop = window.innerWidth > 768;
     if (isDesktop) {
       setIsHidden(true);
-      sessionStorage.setItem('envelopeOpened', 'true');
-      return;
-    }
-
-    // Check if envelope was already opened
-    const hasOpened = sessionStorage.getItem('envelopeOpened');
-    if (hasOpened) {
-      setIsHidden(true);
     }
   }, []);
 
   const handleClick = () => {
     setIsFading(true);
-    sessionStorage.setItem('envelopeOpened', 'true');
     
     // Wait for fade animation to complete, then hide
     setTimeout(() => {
