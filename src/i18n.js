@@ -477,7 +477,7 @@ const resources = {
             home: {
                 welcomeTitle: "Καλώς ήρθατε στο Γάμο μας",
                 welcomeMessage: "Είμαστε στην ευχάριστη θέση να σας προσκαλέσουμε να γιορτάσετε μαζί μας αυτήν την ξεχωριστή μέρα!",
-                coupleNames: "Ορέστης & Μαρίνα",
+                coupleNames: "Orestis & Marina",
                 date: "Ημερομηνία: 27 Ιουνίου 2026",
                 location: "Τοποθεσία: Ethereal Hall, Περαία, Θεσσαλονίκη",
                 venueLocation: "Τοποθεσία Χώρου: Ethereal Hall, Περαία, Θεσσαλονίκη (δίπλα στο ξενοδοχείο Royal)",
@@ -586,7 +586,7 @@ const resources = {
                 tagline: "Ξεκινώντας το για πάντα μας μαζί",
                 questions: "Ερωτήσεις;",
                 contactInfo: "Για οποιεσδήποτε ερωτήσεις ή ανησυχίες, παρακαλώ επικοινωνήστε με το γαμήλιο πάρτι ή δείτε τη σελίδα συχνών ερωτήσεων.",
-                coupleNames: "Ορέστης & Μαρίνα",
+                coupleNames: "Orestis & Marina",
                 madeWithLove: "Φτιαγμένο με αγάπη για την ξεχωριστή μας μέρα"
             },
 
