@@ -7,6 +7,14 @@ const EnvelopeAnimation = ({ onOpen }) => {
   const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
+    // Check if screen is desktop (hide envelope on desktop)
+    const isDesktop = window.innerWidth > 768;
+    if (isDesktop) {
+      setIsHidden(true);
+      sessionStorage.setItem('envelopeOpened', 'true');
+      return;
+    }
+
     // Check if envelope was already opened
     const hasOpened = sessionStorage.getItem('envelopeOpened');
     if (hasOpened) {
