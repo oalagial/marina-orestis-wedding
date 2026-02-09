@@ -40,7 +40,7 @@ const resources = {
                 coupleNames: "Orestis & Marina",
                 date: "Date: 27 June 2026",
                 location: "Location: Ethereal Hall, Peraia, Thessaloniki",
-                venueLocation: "Venue Location: Ethereal Hall, Peraia, Thessaloniki (next to Royal Hotel)",
+                venueLocation: "Location: Ethereal Hall, Peraia, Thessaloniki (next to Royal Hotel)",
                 rsvpButton: "RSVP Here",
                 viewSchedule: "View Schedule",
                 countdownMessagePart1: "Please confirm your attendance at the link below ",
