@@ -139,7 +139,7 @@ const resources = {
             },
             cocktailPartySchedule: {
                 title: "Pre-Wedding Party",
-                secondTitle: "Cocktail Party + \"Krevati\"",
+                secondTitle: "Cocktail Party",
                 date: "June 25, 2026",
                 description: "Enjoy cocktails and finger food in our garden.",
             },

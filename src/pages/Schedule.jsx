@@ -126,9 +126,9 @@ const Schedule = () => {
                         {t('schedule.title')}
                     </h1>
                     <div className="w-16 h-px bg-gray-300 mx-auto mb-6"></div>
-                    <p className="text-lg md:text-xl muted-text font-light max-w-2xl mx-auto leading-relaxed-plus">
+                    {/* <p className="text-lg md:text-xl muted-text font-light max-w-2xl mx-auto leading-relaxed-plus">
                         {t('schedule.subtitle')}
-                    </p>
+                    </p> */}
                     <div className="mt-8 inline-flex items-center px-6 py-3 bg-elegant rounded-lg border border-gray-200">
                         <span className="font-medium elegant-text">{t('header.date')}</span>
                     </div>
