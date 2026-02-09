@@ -377,6 +377,10 @@ const resources = {
                     where: {
                         question: "Where is the wedding venue?",
                         answer: "We'll be celebrating at Ethereal Hall in Peraia, Thessaloniki."
+                    },
+                    gifts: {
+                        question: "Do we have a gift registry?",
+                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
                     }
                 },
                 attire: {
@@ -404,7 +408,7 @@ const resources = {
                     },
                     accommodation: {
                         question: "Where should I stay?",
-                        answer: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or options in the city center. Be sure to book early for the best rates! \n For the wedding night, we especially recommend staying at the hotel next to the venue (Royal Hotel Thessaloniki) —it’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving. Contact us for details and to take advantage of the special rate we’ve arranged for this hotel."
+                        answer: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or options in the city center. Be sure to book early for the best rates! \n For the wedding night, we especially recommend staying at the hotel next to the venue <b>(Royal Hotel Thessaloniki)</b> —it’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving. Contact us for details and to take advantage of the special rate we’ve arranged for this hotel."
                     }
                 },
                 ceremony: {
@@ -416,10 +420,6 @@ const resources = {
                         question: "Are children welcome?",
                         answer: "Our celebration is family-friendly. Please let us know when you RSVP if you're bringing little ones so we can plan accordingly."
                     },
-                    gifts: {
-                        question: "Do you have a gift registry?",
-                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: IE92 REVO 9903 6007 0177 09\n BIC/SWIFT: REVOIE23 \n\n Alpha Bank Account Details:\n IBAN: GR0201405170517002188001411\n BIC/SWIFT: CRBAGRAA \n\n Please include your name in the transfer notes so we can thank you!"
-                    }
                 },
                 food: {
                     dietary: {
@@ -830,6 +830,10 @@ const resources = {
                     where: {
                         question: "Πού είναι ο χώρος του γάμου;",
                         answer: "Θα γιορτάσουμε στο Ethereal Hall στην Περαία, Θεσσαλονίκη."
+                    },
+                    gifts: {
+                        question: "Eχουμε μητρώο δώρων;",
+                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: <b>GR0201405170517002188001411</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
                     }
                 },
                 attire: {
@@ -857,7 +861,7 @@ const resources = {
                     },
                     accommodation: {
                         question: "Πού να μείνω;",
-                        answer: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε διαμονή δίπλα στη θάλασσα είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n Για τη νύχτα του γάμου, προτείνουμε ιδιαίτερα να μείνετε στο ξενοδοχείο δίπλα στον χώρο (Royal Hotel Thessaloniki) —είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το open bar χωρίς να ανησυχείτε για οδήγηση. Επικοινωνήστε μαζί μας για λεπτομέρειες και για να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο."
+                        answer: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε διαμονή δίπλα στη θάλασσα είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n Για τη νύχτα του γάμου, προτείνουμε ιδιαίτερα να μείνετε στο ξενοδοχείο δίπλα στον χώρο <b>(Royal Hotel Thessaloniki)</b> —είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το open bar χωρίς να ανησυχείτε για οδήγηση. Επικοινωνήστε μαζί μας για λεπτομέρειες και για να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο."
                     }
                 },
                 ceremony: {
@@ -870,10 +874,6 @@ const resources = {
                         question: "Είναι ευπρόσδεκτα τα παιδιά;",
                         answer: "Ο εορτασμός μας είναι φιλικός προς την οικογένεια. Παρακαλώ ενημερώστε μας στην επιβεβαίωση αν φέρνετε μικρά παιδιά."
                     },
-                    gifts: {
-                        question: "Έχετε μητρώο δώρων;",
-                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: IE92 REVO 9903 6007 0177 09\n BIC/SWIFT: REVOIE23 \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: GR0201405170517002188001411\n BIC/SWIFT: CRBAGRAA \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
-                    }
                 },
                 food: {
                     dietary: {

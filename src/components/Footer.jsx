@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -49,6 +50,16 @@ export default function Footer() {
               {t('footer.contactInfo')}
             </p>
           </div> */}
+
+          {/* Gift Registry Button */}
+          <div className="mb-12">
+            <Link
+              to="/faqs"
+              className="btn-elegant btn-primary inline-block"
+            >
+              {t('faqs.general.gifts.question')}
+            </Link>
+          </div>
 
           {/* Bottom Bar */}
           <div className="border-t border-gray-200 pt-8">

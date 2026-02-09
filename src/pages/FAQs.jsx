@@ -16,6 +16,11 @@ const FAQs = () => {
                 {
                     question: t('faqs.general.where.question'),
                     answer: t('faqs.general.where.answer')
+                },
+                {
+                    question: t('faqs.general.gifts.question'),
+                    answer: t('faqs.general.gifts.answer'),
+                    alwaysOpen: true
                 }
             ]
         },
@@ -45,7 +50,8 @@ const FAQs = () => {
                 },
                 {
                     question: t('faqs.logistics.accommodation.question'),
-                    answer: t('faqs.logistics.accommodation.answer')
+                    answer: t('faqs.logistics.accommodation.answer'),
+                    alwaysOpen: true
                 }
             ]
         },
@@ -59,10 +65,6 @@ const FAQs = () => {
                 {
                     question: t('faqs.ceremony.children.question'),
                     answer: t('faqs.ceremony.children.answer')
-                },
-                {
-                    question: t('faqs.ceremony.gifts.question'),
-                    answer: t('faqs.ceremony.gifts.answer')
                 }
             ]
         },
@@ -120,24 +122,29 @@ const FAQs = () => {
                         {/* FAQ Items */}
                         <div className="divide-y divide-gray-100">
                             {category.faqs.map((faq, faqIndex) => {
-                                const isOpen = openFAQ === `${categoryIndex}-${faqIndex}`;
+                                const key = `${categoryIndex}-${faqIndex}`;
+                                const isOpen = faq.alwaysOpen || openFAQ === key;
                                 return (
                                     <div key={faqIndex} className="px-6 py-4">
                                         <button
-                                            onClick={() => toggleFAQ(categoryIndex, faqIndex)}
-                                            className="w-full text-left flex items-center justify-between hover:text-gray-600 transition-colors"
+                                            onClick={() => !faq.alwaysOpen && toggleFAQ(categoryIndex, faqIndex)}
+                                            className={`w-full text-left flex items-center justify-between ${!faq.alwaysOpen ? 'hover:text-gray-600' : ''} transition-colors`}
                                         >
                                             <h3 className="text-lg font-semibold text-gray-800 pr-4">
                                                 {faq.question}
                                             </h3>
-                                            <span className={`text-xl text-gray-400 transition-transform ${isOpen ? 'rotate-45' : ''}`}>
-                                                +
-                                            </span>
+                                            {!faq.alwaysOpen && (
+                                                <span className={`text-xl text-gray-400 transition-transform ${isOpen ? 'rotate-45' : ''}`}>
+                                                    +
+                                                </span>
+                                            )}
                                         </button>
                                         {isOpen && (
                                             <div className="mt-4 pr-8 animate-fade-in">
-                                                <p className="text-gray-600 leading-relaxed whitespace-pre-line">
-                                                    {faq.answer}
+                                                <p 
+                                                    className="text-gray-600 leading-relaxed whitespace-pre-line"
+                                                    dangerouslySetInnerHTML={{ __html: faq.answer }}
+                                                >
                                                 </p>
                                             </div>
                                         )}
