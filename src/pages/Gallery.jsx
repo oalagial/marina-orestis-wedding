@@ -14,7 +14,7 @@ const Photos = () => {
                 </p>
                 {/* QR Code placeholder */}
                 <div className="mb-6">
-                    <img src="../../public/images/knipsmig-event-qr.png" alt="QR Code" className="w-94 h-94 object-contain" />
+                    <img src="/images/knipsmig-event-qr.png" alt="QR Code" className="w-94 h-94 object-contain" />
                 </div>
                 {/* <p className="text-lg text-center muted-text mb-6">
                     {t('gallery.instructions2')}
