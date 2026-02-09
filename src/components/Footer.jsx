@@ -9,10 +9,10 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto container-padding py-16">
         <div className="text-center">
           {/* Main Content */}
-          <div className="mb-12">
-            <h3 className="font-display-bold text-3xl md:text-4xl elegant-text mb-4">
+          <div>
+            {/* <h3 className="font-display-bold text-3xl md:text-4xl elegant-text mb-4">
               {t('footer.coupleNames')}
-            </h3>
+            </h3> */}
             <div className="w-16 h-px bg-gray-300 mx-auto mb-4"></div>
             {/* <p className="muted-text font-light italic text-lg">
               {t('footer.tagline')}

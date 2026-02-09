@@ -139,9 +139,10 @@ const resources = {
             },
             cocktailPartySchedule: {
                 title: "Pre-Wedding Party",
+                subtitle: "Our wedding celebrations begin two days early in our garden in Trilofos, Thessaloniki. Join us for cocktails, laughter, and a special Greek tradition known as krevati.",
                 secondTitle: "Cocktail Party",
                 date: "June 25, 2026",
-                description: "Enjoy cocktails and finger food in our garden.",
+                description: "Enjoy cocktails, finger food, and relaxed moments as we gather, laugh, and kick off the wedding celebrations in our garden. \n \n Dress Code: Garden Cocktail Attire \n Kindly avoid stiletto heels, as the event will be held on grass.",
             },
             krevati: {
                 title: "\"Krevati\"",
@@ -403,7 +404,7 @@ const resources = {
                     },
                     accommodation: {
                         question: "Where should I stay?",
-                        answer: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or options in the city center. Be sure to book early for the best rates! \n For the wedding night, we especially recommend staying at the hotel next to the venue—it’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving. Contact us for details and to take advantage of the special rate we’ve arranged for this hotel."
+                        answer: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or options in the city center. Be sure to book early for the best rates! \n For the wedding night, we especially recommend staying at the hotel next to the venue (Royal Hotel Thessaloniki) —it’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving. Contact us for details and to take advantage of the special rate we’ve arranged for this hotel."
                     }
                 },
                 ceremony: {
@@ -591,9 +592,10 @@ const resources = {
             },
             cocktailPartySchedule: {
                 title: "Pre-Wedding Party",
+                subtitle: "Δύο μέρες πριν τον γάμο, σας περιμένουμε στον κήπο μας στον Τρίλοφο Θεσσαλονίκης για κοκτέιλ, γέλια και την ελληνική παράδοση του “κρεβατιού”.",
                 secondTitle: "Cocktail Party",
                 date: "25 Ιουνίου 2026",
-                description: "Απολαύστε κοκτέιλ και finger food στον κήπο μας.",
+                description: "Απολαύστε κοκτέιλ, finger food και χαλαρές στιγμές, καθώς γελάμε, χαλαρώνουμε και ξεκινάμε τους εορτασμούς του γάμου στον κήπο μας. \n \n Dress Code: Garden Cocktail \n Παρακαλούμε αποφύγετε τα τακούνια στιλέτο, καθώς η εκδήλωση θα πραγματοποιηθεί σε γρασίδι.",
             },
             krevati: {
                     title: "\"Κρεβάτι\"",
@@ -855,7 +857,7 @@ const resources = {
                     },
                     accommodation: {
                         question: "Πού να μείνω;",
-                        answer: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε διαμονή δίπλα στη θάλασσα είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n Για τη νύχτα του γάμου, προτείνουμε ιδιαίτερα να μείνετε στο ξενοδοχείο δίπλα στον χώρο—είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το open bar χωρίς να ανησυχείτε για οδήγηση. Επικοινωνήστε μαζί μας για λεπτομέρειες και για να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο."
+                        answer: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε διαμονή δίπλα στη θάλασσα είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n Για τη νύχτα του γάμου, προτείνουμε ιδιαίτερα να μείνετε στο ξενοδοχείο δίπλα στον χώρο (Royal Hotel Thessaloniki) —είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το open bar χωρίς να ανησυχείτε για οδήγηση. Επικοινωνήστε μαζί μας για λεπτομέρειες και για να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο."
                     }
                 },
                 ceremony: {
