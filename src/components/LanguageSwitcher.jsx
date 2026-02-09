@@ -10,18 +10,7 @@ const LanguageSwitcher = () => {
 
     return (
         <div className="flex items-center bg-white/50 backdrop-blur-sm rounded-full p-1 border border-white/20">
-            <button
-                onClick={() => changeLanguage('el')}
-                className={`px-3 py-1 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${i18n.language === 'el'
-                    ? 'text-white shadow-md'
-                    : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'
-                    }`}
-                style={i18n.language === 'el' ? { backgroundColor: 'black' } : {}}
-                title="Ελληνικά"
-            >
-                ΕΛ
-            </button>
-            <button
+                       <button
                 onClick={() => changeLanguage('en')}
                 className={`ml-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${i18n.language === 'en'
                     ? 'text-white shadow-md'
@@ -31,6 +20,17 @@ const LanguageSwitcher = () => {
                 title="English"
             >
                 EN
+            </button>
+            <button
+                onClick={() => changeLanguage('el')}
+                className={`ml-2 px-3 py-1 rounded-full text-xs font-semibold tracking-wider transition-all duration-300 ${i18n.language === 'el'
+                    ? 'text-white shadow-md'
+                    : 'text-gray-600 hover:text-gray-800 hover:bg-white/50'
+                    }`}
+                style={i18n.language === 'el' ? { backgroundColor: 'black' } : {}}
+                title="Ελληνικά"
+            >
+                ΕΛ
             </button>
         </div>
     );
