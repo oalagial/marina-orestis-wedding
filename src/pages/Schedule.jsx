@@ -69,7 +69,7 @@ const Schedule = () => {
                 </div>
                   {/* Cocktail Party Section - Conditional */}
                 {invitedToCocktailParty && (
-                    <div className="relative mb-16 mt-10">
+                    <div className="relative mb-16 mt-20">
                         {/* Elegant vertical line */}
                         <div className="absolute left-12 md:left-32 top-0 bottom-0 w-px bg-gray-200"></div>
                         
@@ -121,7 +121,7 @@ const Schedule = () => {
                 )}
 
                 {/* Header Section - Elegant */}
-                <div className="text-center mb-20 animate-fade-in">
+                <div className="text-center mb-20 animate-fade-in mt-20">
                     <h1 className="font-display-bold text-4xl md:text-5xl lg:text-6xl elegant-text mb-6">
                         {t('schedule.title')}
                     </h1>
