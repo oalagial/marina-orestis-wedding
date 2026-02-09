@@ -12,7 +12,7 @@ const Home = () => {
             <EnvelopeAnimation onOpen={() => setEnvelopeOpened(true)} />
             
             {/* Hero Section - Elegant */}
-            <div className="relative h-screen flex items-center justify-center overflow-hidden">
+            <div className="relative h-screen flex justify-center overflow-hidden">
                 {/* Background Images */}
                 <div className="absolute inset-0 grid grid-cols-1 md:grid-cols-2">
                     <img
@@ -31,16 +31,21 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/30 to-transparent"></div>
                 
                 {/* Hero Content */}
-                <div className="relative z-10 text-center text-white px-4 animate-fade-in">
-                    <h1 className="font-script text-5xl md:text-7xl lg:text-8xl mb-8 tracking-tight">
+                <div className="mt-20 relative z-10 text-center text-white px-4 animate-fade-in">
+                    
+                    <p className="text-base md:text-lg tracking-wide opacity-90 ">
+                        {t('home.welcomeMessage')}
+                    </p>
+                    <h1 className="font-script text-5xl md:text-7xl lg:text-8xl mt-4 tracking-tight">
                         {t('home.coupleNames')}
                     </h1>
-                    <p className="text-lg md:text-xl font-light tracking-widest mb-4 uppercase">
+                    <p className="text-lg md:text-xl font-light tracking-widest mb-4 uppercase mt-4">
                         {t('header.date')}
                     </p>
                     <p className="text-base md:text-lg font-light tracking-wide opacity-90">
                         {t('header.location')}
                     </p>
+                  
                 </div>
                 
             </div>
@@ -54,9 +59,7 @@ const Home = () => {
                             {t('home.welcomeMessage')}
                         </h2> */}
                         {/* <div className="w-16 h-px bg-gray-300 mx-auto mb-8"></div> */}
-                        <p className="text-xl md:text-3xl muted-text leading-relaxed-plus max-w-3xl mx-auto font-light">
-                            {t('home.welcomeMessage')}
-                        </p>
+                      
                     </div>
 
                     {/* Event Details */}
@@ -107,7 +110,7 @@ const Home = () => {
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                             <Link
                                 to="/rsvp"
-                                className="btn-elegant btn-primary inline-block"
+                                className="btn-elegant btn-primary inline-block whitespace-pre-line"
                             >
                                 {t('home.rsvpButton')}
                             </Link>

@@ -36,7 +36,7 @@ const resources = {
             // Home page
             home: {
                 welcomeTitle: "Welcome to Our Wedding",
-                welcomeMessage: "We are delighted to invite you to celebrate this special day with us!",
+                welcomeMessage: "You are warmly invited to the wedding of",
                 coupleNames: "Orestis & Marina",
                 date: "Date: 27 June 2026",
                 location: "Location: Ethereal Hall, Peraia, Thessaloniki",
@@ -136,6 +136,16 @@ const resources = {
                 parking: "Free parking available on-site",
                 dressCode: "Dress Code: Formal/Cocktail attire",
                 lookingForward: "We can't wait to celebrate this special day with all of you!"
+            },
+            cocktailPartySchedule: {
+                title: "Pre-Wedding Party",
+                secondTitle: "Cocktail Party + \"Krevati\"",
+                date: "June 25, 2026",
+                description: "Enjoy cocktails and finger food in our garden.",
+            },
+            krevati: {
+                title: "\"Krevati\"",
+                description: "The same evening, the Greek tradition of “krevati” will also take place."
             },
 
             // Footer
@@ -466,7 +476,7 @@ const resources = {
             // Header
             header: {
                 welcomeParty: "Στοιχεία για το καλωσόρισμα αναρτήθηκαν! Παρακαλούμε ελάτε στις 7:30μμ στις 18 Ιουνίου στο εστιατόριο Ανέστης",
-                date: "27 Ιουνίου 2026",
+                date: "27 Ιουνιου 2026",
                 datetime: "Σάββατο, στις 8:00 μ.μ.",
                 exactLocation: "Περαία, Θεσσαλονίκη",
                 location: "Θεσσαλονίκη, Ελλάδα",
@@ -476,12 +486,12 @@ const resources = {
             // Home page
             home: {
                 welcomeTitle: "Καλώς ήρθατε στο Γάμο μας",
-                welcomeMessage: "Είμαστε στην ευχάριστη θέση να σας προσκαλέσουμε να γιορτάσετε μαζί μας αυτήν την ξεχωριστή μέρα!",
+                welcomeMessage: "Με χαρά σας προσκαλούμε στον γάμο μας",
                 coupleNames: "Orestis & Marina",
                 date: "Ημερομηνία: 27 Ιουνίου 2026",
                 location: "Τοποθεσία: Ethereal Hall, Περαία, Θεσσαλονίκη",
                 venueLocation: "Τοποθεσία Χώρου: Ethereal Hall, Περαία, Θεσσαλονίκη (δίπλα στο ξενοδοχείο Royal)",
-                rsvpButton: "Επιβεβαιωση Παρουσιας",
+                rsvpButton: "Επιβεβαιωση Παρουσιας \n RSVP",
                 viewSchedule: "Δείτε το Πρόγραμμα",
                 countdownMessagePart1: "Παρακαλούμε επιβεβαιώστε την παρουσία σας στον παρακάτω σύνδεσμο ",
                 countdownMessagePart2: "έως το αργότερο 15/06/2026"
@@ -579,6 +589,17 @@ const resources = {
                 dressCode: "Ντύσιμο: Επίσημο/Κοκτέιλ",
                 lookingForward: "Ανυπομονούμε να γιορτάσουμε αυτή την ξεχωριστή μέρα με όλους εσάς!"
             },
+            cocktailPartySchedule: {
+                title: "Pre-Wedding Party",
+                secondTitle: "Cocktail Party",
+                date: "25 Ιουνίου 2026",
+                description: "Απολαύστε κοκτέιλ και finger food στον κήπο μας.",
+            },
+            krevati: {
+                    title: "\"Κρεβάτι\"",
+                    description: "Την ίδια βραδιά θα λάβει χώρα και το ελληνικό έθιμο του “κρεβατιού”."
+            },
+            
 
             // Footer
             footer: {
