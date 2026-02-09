@@ -465,11 +465,11 @@ const resources = {
             },
             // Navigation
             nav: {
-                home: "Αρχική",
-                schedule: "Πρόγραμμα",
-                travel: "Ταξίδι",
-                photos: "Φωτογραφίες",
-                thingsToDo: "Τι να κάνετε",                faqs: "Συχνές Ερωτήσεις",
+                home: "Αρχικη",
+                schedule: "Προγραμμα",
+                travel: "Ταξιδι",
+                photos: "Φωτογραφιες",
+                thingsToDo: "Τι να κανετε",                faqs: "Συχνές Ερωτήσεις",
                 rsvp: "RSVP"
             },
 
