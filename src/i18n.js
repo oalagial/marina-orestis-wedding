@@ -20,7 +20,8 @@ const resources = {
                 photos: "Photos",
                 thingsToDo: "Things To Do",
                 faqs: "FAQs",
-                rsvp: "RSVP"
+                rsvp: "RSVP",
+                giftsButtonLabel: "Gift Registry"
             },
 
             // Header
@@ -471,7 +472,8 @@ const resources = {
                 travel: "Ταξιδι",
                 photos: "Φωτογραφιες",
                 thingsToDo: "Τι να κανετε",                faqs: "Συχνές Ερωτήσεις",
-                rsvp: "RSVP"
+                rsvp: "RSVP",
+                giftsButtonLabel: "ΛΙΣΤΑ ΔΩΡΩΝ"
             },
 
             // Header

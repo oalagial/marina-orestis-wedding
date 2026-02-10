@@ -59,7 +59,7 @@ export default function Footer() {
               onClick={() => setIsGiftModalOpen(true)}
               className="btn-elegant btn-primary inline-block"
             >
-              {t('faqs.general.gifts.question')}
+              🎁 {t('nav.giftsButtonLabel')}
             </button>
           </div>
 

@@ -58,7 +58,7 @@ export default function GiftModal({ isOpen, onClose }) {
               <div className="space-y-2 text-sm font-light">
                 <div>
                   <p className="text-gray-600">IBAN:</p>
-                  <p className="font-mono text-base break-all">GR0201405170517002188001411</p>
+                  <p className="font-mono text-base break-all">GR02 0140 5170 5170 0218 8001 411</p>
                 </div>
                 <div>
                   <p className="text-gray-600">BIC/SWIFT:</p>
