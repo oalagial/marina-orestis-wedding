@@ -11,11 +11,13 @@ const FAQs = () => {
             faqs: [
                 {
                     question: t('faqs.general.when.question'),
-                    answer: t('faqs.general.when.answer')
+                    answer: t('faqs.general.when.answer'),
+                    alwaysOpen: true
                 },
                 {
                     question: t('faqs.general.where.question'),
-                    answer: t('faqs.general.where.answer')
+                    answer: t('faqs.general.where.answer'),
+                    alwaysOpen: true
                 },
                 {
                     question: t('faqs.general.gifts.question'),
