@@ -21,7 +21,7 @@ const resources = {
                 thingsToDo: "Things To Do",
                 faqs: "FAQs",
                 rsvp: "RSVP",
-                giftsButtonLabel: "Gift Registry"
+                giftsButtonLabel: "GIFT REGISTRY (optional)"
             },
 
             // Header
@@ -473,7 +473,7 @@ const resources = {
                 photos: "Φωτογραφιες",
                 thingsToDo: "Τι να κανετε",                faqs: "Συχνές Ερωτήσεις",
                 rsvp: "RSVP",
-                giftsButtonLabel: "ΛΙΣΤΑ ΔΩΡΩΝ"
+                giftsButtonLabel: "ΛΙΣΤΑ ΓΑΜΟΥ (προαιρετική)"
             },
 
             // Header
