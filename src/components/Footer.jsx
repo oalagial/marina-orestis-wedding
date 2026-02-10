@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import GiftModal from './GiftModal';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const [isGiftModalOpen, setIsGiftModalOpen] = useState(false);
 
   return (
     <footer className="bg-elegant border-t border-elegant mt-20">
@@ -53,12 +55,12 @@ export default function Footer() {
 
           {/* Gift Registry Button */}
           <div className="mb-12">
-            <Link
-              to="/faqs"
+            <button
+              onClick={() => setIsGiftModalOpen(true)}
               className="btn-elegant btn-primary inline-block"
             >
               {t('faqs.general.gifts.question')}
-            </Link>
+            </button>
           </div>
 
           {/* Bottom Bar */}
@@ -69,6 +71,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Gift Modal */}
+      <GiftModal isOpen={isGiftModalOpen} onClose={() => setIsGiftModalOpen(false)} />
     </footer>
   );
 }
