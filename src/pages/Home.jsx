@@ -33,7 +33,7 @@ const Home = () => {
                 {/* Hero Content */}
                 <div className="mt-20 relative z-10 text-center text-white px-4 animate-fade-in">
                     
-                    <p className="text-base md:text-lg tracking-wide opacity-90 ">
+                    <p className="text-lg tracking-wide opacity-90 ">
                         {t('home.welcomeMessage')}
                     </p>
                     <h1 className="font-script text-5xl md:text-7xl lg:text-8xl mt-4 tracking-tight">
