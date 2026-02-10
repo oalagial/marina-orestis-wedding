@@ -160,6 +160,19 @@ const resources = {
                 madeWithLove: "Made with love for our special day"
             },
 
+            giftModal: {
+                title: "Gift Information",
+                closeAriaLabel: "Close modal",
+                mainMessage: "Your presence is the greatest gift!",
+                secondaryMessage: "If you'd like to give something, we've set up a bank account for gifts.",
+                revolutTitle: "Revolut Account Details:",
+                alphaTitle: "Alpha Bank Account Details:",
+                ibanLabel: "IBAN:",
+                bicLabel: "BIC/SWIFT:",
+                noteEmphasis: "Please include your name in the transfer notes",
+                noteSuffix: "so we can thank you!"
+            },
+
             // Travel page
             travel: {
                 title: "Travel & Accommodations",
@@ -473,7 +486,7 @@ const resources = {
                 photos: "Φωτογραφιες",
                 thingsToDo: "Τι να κανετε",                faqs: "Συχνές Ερωτήσεις",
                 rsvp: "RSVP",
-                giftsButtonLabel: "ΛΙΣΤΑ ΓΑΜΟΥ (προαιρετική)"
+                giftsButtonLabel: "ΛΙΣΤΑ ΓΑΜΟΥ (ΠΡΟΑΙΡΕΤΙΚΗ)"
             },
 
             // Header
@@ -613,6 +626,19 @@ const resources = {
                 contactInfo: "Για οποιεσδήποτε ερωτήσεις ή ανησυχίες, παρακαλώ επικοινωνήστε με το γαμήλιο πάρτι ή δείτε τη σελίδα συχνών ερωτήσεων.",
                 coupleNames: "Orestis & Marina",
                 madeWithLove: "Φτιαγμένο με αγάπη για την ξεχωριστή μας μέρα"
+            },
+
+            giftModal: {
+                title: "Πληροφορίες Δώρου",
+                closeAriaLabel: "Κλείσιμο παραθύρου",
+                mainMessage: "Η παρουσία σας είναι το μεγαλύτερο δώρο!",
+                secondaryMessage: "Αν θα θέλατε να προσφέρετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα.",
+                revolutTitle: "Στοιχεία Λογαριασμού Revolut:",
+                alphaTitle: "Στοιχεία Λογαριασμού Alpha Bank:",
+                ibanLabel: "IBAN:",
+                bicLabel: "BIC/SWIFT:",
+                noteEmphasis: "Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις μεταφοράς",
+                noteSuffix: "ώστε να μπορούμε να σας ευχαριστήσουμε!"
             },
 
             // Travel page
