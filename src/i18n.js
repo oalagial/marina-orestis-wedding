@@ -262,7 +262,7 @@ const resources = {
                         {     
                             name: "Galyfianakis",
                             description: "Our favourite traditional pastry shop known for its Galaktoboureko dessert.",
-                            link: "https://maps.app.goo.gl/hnQRGko9YkzMTRES7"
+                            link: "https://maps.app.goo.gl/841EbBgvdvAZ58AH6"
                         },
                         {   name: "Choureál | Choux & Profiterole",
                             description: "Our favourite place famous for its delicious Profiterole pastries.",
@@ -484,7 +484,8 @@ const resources = {
                 schedule: "Προγραμμα",
                 travel: "Ταξιδι",
                 photos: "Φωτογραφιες",
-                thingsToDo: "Τι να κανετε",                faqs: "Συχνές Ερωτήσεις",
+                thingsToDo: "Τι να κανετε",                
+                faqs: "Συχνες Ερωτησεις",
                 rsvp: "RSVP",
                 giftsButtonLabel: "ΛΙΣΤΑ ΓΑΜΟΥ (ΠΡΟΑΙΡΕΤΙΚΗ)"
             },
@@ -729,7 +730,7 @@ const resources = {
                         {
                             name: "Γαλυφιανάκης",
                             description: "Το αγαπημένο μας παραδοσιακό ζαχαροπλαστείο γνωστό για το γλυκό του (γαλακτομπούρεκο).",
-                            link: "https://maps.app.goo.gl/galyfianakis"
+                            link: "https://maps.app.goo.gl/841EbBgvdvAZ58AH6"
                         },
                         {   name: "Choureál | Choux & Profiterole",
                             description: "Το αγαπημένο μας μέρος διάσημο για τα νόστιμα προφιτερόλ του.",
