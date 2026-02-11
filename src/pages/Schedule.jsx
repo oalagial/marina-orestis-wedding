@@ -55,12 +55,12 @@ const Schedule = () => {
 
 
     return (
-        <div className="section-padding">
+        <div>
             <div className="max-w-4xl mx-auto container-padding">
                  {/* Header Section - Elegant */}
                 
                 {invitedToCocktailParty && (
-                    <div>
+                    <div className="mt-30">
                         <div className="text-center animate-fade-in">
                             <h1 className="font-display-bold text-4xl md:text-5xl lg:text-6xl elegant-text mb-6">
                                 {t('cocktailPartySchedule.title')}
@@ -75,7 +75,7 @@ const Schedule = () => {
                         </div>
                         {/* Cocktail Party Section - Conditional */}
                         
-                        <div className="relative mb-16 mt-20">
+                        <div className="relative mb-16 mt-12">
                             {/* Elegant vertical line */}
                             <div className="absolute left-12 md:left-32 top-0 bottom-0 w-px bg-gray-200"></div>
                             
@@ -128,7 +128,7 @@ const Schedule = () => {
                 )}
 
                 {/* Header Section - Elegant */}
-                <div className="text-center mb-20 animate-fade-in mt-20">
+                <div className="text-center mb-12 animate-fade-in mt-30">
                     <h1 className="font-display-bold text-4xl md:text-5xl lg:text-6xl elegant-text mb-6">
                         {t('schedule.title')}
                     </h1>
