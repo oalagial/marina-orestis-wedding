@@ -63,12 +63,12 @@ const RPSV = () => {
         return (
             <div className="section-padding">
                 <div className="max-w-2xl mx-auto container-padding text-center">
-                    <h1 className="font-display-bold text-4xl elegant-text mb-6">Thank You!</h1>
+                    <h1 className="font-display-bold text-4xl elegant-text mb-6">{t('rsvp.thankYou')}</h1>
                     <div className="w-16 h-px bg-gray-300 mx-auto mb-6"></div>
                     <p className="text-lg muted-text">
-                        Your RSVP has been submitted successfully. We can't wait to celebrate with you!
+                        {t('rsvp.thankYouMessage')}
                     </p>
-                    <div className="mt-8">
+                    {/* <div className="mt-8">
                         <button
                             onClick={() => {
                                 setSubmitted(false);
@@ -85,7 +85,7 @@ const RPSV = () => {
                         >
                             Submit another RSVP
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         );
@@ -95,7 +95,7 @@ const RPSV = () => {
         <div className="section-padding">
             <div className="max-w-2xl mx-auto container-padding">
                 <div className="text-center mb-12">
-                    <h1 className="font-display-bold text-4xl md:text-5xl elegant-text mb-4">RSVP</h1>
+                    <h1 className="font-display-bold text-4xl md:text-5xl elegant-text mb-4">{t('rsvp.title')}</h1>
                     <div className="w-16 h-px bg-gray-300 mx-auto mb-6"></div>
                     <p className="text-lg muted-text">
                         {t('rsvp.subtitle')}
@@ -227,7 +227,7 @@ const RPSV = () => {
                     </div>
 
                     <p className="muted-text">{t('rsvp.note')}</p>
-                    <p className="muted-text mt-2 text-sm">*Υποχρεωτικό πεδίο.</p>
+                    <p className="muted-text mt-2 text-sm">{t('rsvp.requiredField')}</p>
                 </form>
             </div>
         </div>
