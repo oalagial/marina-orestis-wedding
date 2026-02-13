@@ -93,7 +93,7 @@ function BestDancerVoting() {
     };
 
     return (
-        <div className="max-w-2xl w-full bg-white rounded-lg p-8 mt-8 soft-shadow border border-elegant animate-slide-up" style={{animationDelay: '0.2s'}}>
+        <div className="max-w-2xl w-[90%] bg-white rounded-lg p-8 mt-8 soft-shadow border border-elegant animate-slide-up" style={{animationDelay: '0.2s'}}>
             <h2 className="font-display-bold text-2xl elegant-text mb-2">
                 {t('gallery.bestDancer.title')}
             </h2>
