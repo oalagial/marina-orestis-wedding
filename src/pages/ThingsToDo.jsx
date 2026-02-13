@@ -87,13 +87,13 @@ const ThingsToDo = () => {
                         
                         <div className="space-y-6">
                             {/* Kassandra */}
-                            <div className="pl-4 border-l-4">
+                            <div className="pl-4 border-l-2">
                                 <h3 className="font-display text-xl elegant-text mb-2">{t('thingsToDo.chalkidiki.kassandra.title')}</h3>
                                 <p className="muted-text">{t('thingsToDo.chalkidiki.kassandra.description')}</p>
                             </div>
 
                             {/* Sithonia */}
-                            <div className="pl-4 border-l-4">
+                            <div className="pl-4 border-l-2">
                                 <h3 className="font-display text-xl elegant-text mb-2">{t('thingsToDo.chalkidiki.sithonia.title')}</h3>
                                 <p className="muted-text mb-3">
                                     {t('thingsToDo.chalkidiki.sithonia.description')}
@@ -144,7 +144,7 @@ const ThingsToDo = () => {
                             </div>
 
                             {/* Athos */}
-                            <div className="pl-4 border-l-4">
+                            <div className="pl-4 border-l-2">
                                 <h3 className="font-display text-xl elegant-text mb-2">{t('thingsToDo.chalkidiki.athos.title')}</h3>
                                 <p className="muted-text">{t('thingsToDo.chalkidiki.athos.description')}</p>
                             </div>
