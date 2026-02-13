@@ -8,7 +8,7 @@ const Photos = () => {
 
     return (
         <div className="section-padding min-h-screen flex flex-col items-center">
-            <div className="bg-white rounded-lg p-8 soft-shadow flex flex-col items-center">
+            <div className="bg-white rounded-lg p-8 soft-shadow flex flex-col items-center animate-fade-in" style={{animationDelay: '0s'}}>
                 <p className="text-lg text-center font-bold elegant-text mb-12">
                     {t('gallery.instructions1')}
                 </p>
@@ -93,7 +93,7 @@ function BestDancerVoting() {
     };
 
     return (
-        <div className="max-w-2xl w-full bg-white rounded-lg p-8 mt-8 soft-shadow border border-elegant">
+        <div className="max-w-2xl w-full bg-white rounded-lg p-8 mt-8 soft-shadow border border-elegant animate-slide-up" style={{animationDelay: '0.2s'}}>
             <h2 className="font-display-bold text-2xl elegant-text mb-2">
                 {t('gallery.bestDancer.title')}
             </h2>
@@ -139,7 +139,7 @@ function BestDancerVoting() {
                             const medals = ['🥇', '🥈', '🥉'];
                             const medal = idx < 3 ? medals[idx] : '';
                             return (
-                                <li key={opt.id} className="bg-gradient-to-r from-elegant to-white rounded-lg p-4 border border-elegant hover:shadow-lg transition-shadow">
+                                <li key={opt.id} className="bg-gradient-to-r from-elegant to-white rounded-lg p-4 border border-elegant hover:shadow-lg transition-shadow animate-fade-in" style={{animationDelay: `${0.3 + idx * 0.1}s`}}>
                                     <div className="flex items-start justify-between mb-2">
                                         <div className="flex items-center gap-3">
                                             {medal && <span className="text-2xl">{medal}</span>}
