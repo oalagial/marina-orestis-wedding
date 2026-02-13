@@ -158,6 +158,7 @@ function BestDancerVoting() {
                                         {!votedFor.has(opt.name) && (
                                             <button 
                                                 className="btn-elegant btn-primary text-xs whitespace-nowrap ml-2 opacity-50 cursor-not-allowed" 
+                                                style={{padding: '0.6rem 0.7rem'}}
                                                 onClick={() => voteFor(opt.name)}
                                                 disabled={true}
                                             >
