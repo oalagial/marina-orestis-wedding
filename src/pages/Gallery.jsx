@@ -101,20 +101,27 @@ function BestDancerVoting() {
                 {t('gallery.bestDancer.desc')}
             </p>
 
+            {/* Coming Soon Message */}
+            <div className="bg-elegant/10 border border-elegant rounded-lg p-4 mb-6 text-center">
+                <p className="elegant-text font-medium">
+                    🎉 Coming Soon! Voting will be open on the wedding night 🎉
+                </p>
+            </div>
+
             {/* Add new option */}
-            <div className="flex gap-3 mb-6">
+            <div className="flex gap-3 mb-6 opacity-50">
                 <input
                     type="text"
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
                     placeholder={t('gallery.bestDancer.placeholder')}
                     className="form-input-rounded flex-1"
-                    disabled={votedFor.has(newName.trim())}
+                    disabled={true}
                 />
                 <button
                     className="btn-elegant btn-primary"
                     onClick={() => voteFor(newName)}
-                    disabled={!newName.trim() || votedFor.has(newName.trim())}
+                    disabled={true}
                 >
                     {t('gallery.bestDancer.add')}
                 </button>
@@ -150,8 +157,9 @@ function BestDancerVoting() {
                                         </div>
                                         {!votedFor.has(opt.name) && (
                                             <button 
-                                                className="btn-elegant btn-primary text-xs whitespace-nowrap ml-2" 
+                                                className="btn-elegant btn-primary text-xs whitespace-nowrap ml-2 opacity-50 cursor-not-allowed" 
                                                 onClick={() => voteFor(opt.name)}
+                                                disabled={true}
                                             >
                                                 👍 {t('gallery.bestDancer.vote')}
                                             </button>
