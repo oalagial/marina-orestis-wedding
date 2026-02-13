@@ -109,7 +109,7 @@ function BestDancerVoting() {
             </div>
 
             {/* Add new option */}
-            <div className="flex gap-3 mb-6 opacity-50">
+            <div className="flex gap-3 mb-6 opacity-50 mt-10">
                 <input
                     type="text"
                     value={newName}
@@ -135,7 +135,7 @@ function BestDancerVoting() {
             ) : options.length === 0 ? (
                 <div className="text-center muted-text">{t('gallery.bestDancer.noOptions')}</div>
             ) : (
-                <div>
+                <div className='mt-6'>
                     <div className="text-sm muted-text mb-4 text-center font-medium">
                         {t('gallery.bestDancer.totalVotes')}{options.reduce((sum, opt) => sum + (opt.count || 0), 0)}
                     </div>
