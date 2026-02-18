@@ -28,7 +28,7 @@ const resources = {
             // Header
             header: {
                 welcomeParty: "Welcome Party details posted! Please join us at 7:30pm on June 18th at Anestis Restaurant",
-                date: "June 27, 2026",
+                date: "June 27, 2026 \n 19:45",
                 datetime: "Saturday, at 8:00 PM",
                 location: "Thessaloniki, Greece",
                 exactLocation: "Peraia, Thessaloniki",
@@ -504,7 +504,7 @@ const resources = {
             // Header
             header: {
                 welcomeParty: "Στοιχεία για το καλωσόρισμα αναρτήθηκαν! Παρακαλούμε ελάτε στις 7:30μμ στις 18 Ιουνίου στο εστιατόριο Ανέστης",
-                date: "27 Ιουνιου 2026",
+                date: "27 Ιουνιου 2026 \n 19:45",
                 datetime: "Σάββατο, στις 8:00 μ.μ.",
                 exactLocation: "Περαία, Θεσσαλονίκη",
                 location: "Θεσσαλονίκη, Ελλάδα",

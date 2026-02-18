@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="grid md:grid-cols-2 gap-12 mb-12 max-w-3xl mx-auto">
             <div className="text-center">
               <p className="text-sm muted-text tracking-widest mb-3 font-medium">{t('general.when')}</p>
-              <p className="font-display text-xl elegant-text">{t('header.date')}</p>
+              <p className="font-display text-xl elegant-text whitespace-pre-line">{t('header.date')}</p>
             </div>
             <div className="text-center">
               <p className="text-sm muted-text tracking-widest mb-3 font-medium">{t('general.where')}</p>
