@@ -10,6 +10,7 @@ import AdminRSVPs from './pages/AdminRSVPs';
 import Photos from "./pages/Gallery";
 import ThingsToDo from "./pages/ThingsToDo";
 import FAQs from "./pages/FAQs";
+import Accomodation from "./pages/Accomodation";
 
 // Scroll to top on every route change
 const ScrollToTop = () => {
@@ -35,6 +36,7 @@ function App() {
             {/* <Route path="/travel" element={<Travel />} /> */}
             <Route path="/photos" element={<Photos />} />
             <Route path="/things-to-do" element={<ThingsToDo />} />
+            <Route path="/accommodation" element={<Accomodation />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/rsvp" element={<RPSV />} />
             <Route path="/admin" element={<AdminRSVPs />} />

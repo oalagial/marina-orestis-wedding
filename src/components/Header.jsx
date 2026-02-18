@@ -61,6 +61,7 @@ export default function Header() {
                 // { to: '/travel', label: t('nav.travel') },
                 { to: '/photos', label: t('nav.photos') },
                 { to: '/things-to-do', label: t('nav.thingsToDo') },
+                { to: '/accommodation', label: t('nav.accommodation') },
                 { to: '/faqs', label: t('nav.faqs') }
               ].map((item) => (
                 <NavLink
@@ -103,6 +104,7 @@ export default function Header() {
                     // { to: '/travel', label: t('nav.travel') },
                     { to: '/photos', label: t('nav.photos') },
                     { to: '/things-to-do', label: t('nav.thingsToDo') },
+                    { to: '/accommodation', label: t('nav.accommodation') },
                     { to: '/faqs', label: t('nav.faqs') }
                   ].map((item) => (
                     <NavLink
