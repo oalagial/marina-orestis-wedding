@@ -243,7 +243,7 @@ const resources = {
 
             accommodationPage: {
                 title: "Accommodation",
-                text1: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or city centre options. Be sure to book early for the best rates! For the wedding night, we especially recommend staying at the 4-star hotel next to the venue (Royal Hotel Thessaloniki). It’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving.",
+                text1: "We’d be happy to help with hotel recommendations, whether you prefer seaside stays or city centre options. Be sure to book early for the best rates! \n \n For the wedding night, we especially recommend staying at the 4-star hotel next to the venue (Royal Hotel Thessaloniki). It’s convenient, and you’ll be able to fully enjoy our open bar without worrying about driving.",
                 text2: "Contact us if you wish to take advantage of the special rate we’ve arranged for this hotel, or contact the hotel directly and refer to the wedding as “Antoniadou 27 of June”.",
                 text3: "Special rate: <strong>90€</strong> per night including breakfast \n(single, double or triple rooms available for the same price)",
                 mapLinkLabel: "View Royal Hotel Thessaloniki on Google Maps",
@@ -722,7 +722,7 @@ const resources = {
 
             accommodationPage: {
                 title: "Διαμονή",
-               text1: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε παραθαλάσσιες διαμονές είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! Για τη νύχτα του γάμου, σας προτείνουμε ιδιαίτερα να μείνετε στο 4 αστέρων ξενοδοχείο δίπλα στον χώρο (Royal Hotel Thessaloniki). Είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το ανοιχτό μπαρ μας χωρίς να ανησυχείτε για την οδήγηση.",
+               text1: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε παραθαλάσσιες διαμονές είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n \n Για τη νύχτα του γάμου, σας προτείνουμε ιδιαίτερα να μείνετε στο 4 αστέρων ξενοδοχείο δίπλα στον χώρο (Royal Hotel Thessaloniki). Είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το ανοιχτό μπαρ μας χωρίς να ανησυχείτε για την οδήγηση.",
                 text2: "Επικοινωνήστε μαζί μας αν θέλετε να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο, ή επικοινωνήστε απευθείας με το ξενοδοχείο και αναφέρετε τον γάμο ως “Antoniadou 27 Ιουνίου”.",
                 text3: "Ειδική τιμή: <strong>90€</strong> ανά διανυκτέρευση συμπεριλαμβανομένου πρωινού \n(διαθέσιμα μονόκλινα, δίκλινα ή τρίκλινα δωμάτια στην ίδια τιμή)",
                 mapLinkLabel: "Δείτε το Royal Hotel Thessaloniki στους Χάρτες Google",

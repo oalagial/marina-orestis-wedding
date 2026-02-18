@@ -18,7 +18,7 @@ const Accomodation = () => {
 
 				<div className="bg-elegant rounded-lg p-8 border border-gray-200 soft-shadow space-y-8">
 					<div>
-						<p className="muted-text leading-relaxed">
+						<p className="muted-text leading-relaxed whitespace-pre-line">
 							{t('accommodationPage.text1')}
 						</p>
 						<p className="muted-text leading-relaxed mt-4">
