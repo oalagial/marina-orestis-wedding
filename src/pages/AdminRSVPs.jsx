@@ -45,6 +45,11 @@ const AdminRSVPs = () => {
                     timestamp: doc.data().timestamp?.toDate?.() || doc.data().timestamp || null
                 });
             });
+            rsvpData.sort((a, b) => {
+                const aTime = a.timestamp ? new Date(a.timestamp).getTime() : 0;
+                const bTime = b.timestamp ? new Date(b.timestamp).getTime() : 0;
+                return bTime - aTime;
+            });
             setRsvps(rsvpData);
         } catch (err) {
             console.error('Error fetching RSVPs:', err);
