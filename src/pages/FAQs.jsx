@@ -166,12 +166,14 @@ const FAQs = () => {
                 <p className="text-gray-600 mb-4">
                     {t('faqs.rsvpReminder.description')}
                 </p>
-                <a
-                    href="/rsvp"
-                    className="btn-elegant"
-                >
-                    {t('faqs.rsvpReminder.button')}
-                </a>
+                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <Link
+                        to="/rsvp"
+                        className="btn-elegant btn-primary inline-block whitespace-pre-line"
+                    >
+                        {t('faqs.rsvpReminder.button')}
+                    </Link>
+                </div>
             </div>
             </div>
         </div>
