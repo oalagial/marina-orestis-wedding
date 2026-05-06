@@ -124,7 +124,7 @@ const resources = {
                 guestsArriveGroomDesc: "Groom preparation (optional)",
                 guestsArriveBride: "Guests Arrive at Bride's Residence",
                 guestsArriveBrideDesc: "Bride preparation (optional)",
-                ceremony: "Wedding Ceremony", 
+                ceremony: "Wedding Ceremony",
                 ceremonyDesc: "Civil wedding ceremony in the olive grove of Ethereal Hall.",
                 dinner: "Wedding Dinner",
                 dinnerDesc: "Welcome drink, delicious buffet dinner, and photobooth time.",
@@ -259,7 +259,7 @@ const resources = {
                 thessaloniki: {
                     title: "Thessaloniki",
                     description: "Explore our city and our favourite places in it (lots of food!).",
-                   
+
                     favourites: [
                         {
                             name: "Walk along Thessaloniki Waterfront",
@@ -271,12 +271,13 @@ const resources = {
                             description: "Beautiful seaside promenade with cafes and restaurants.",
                             link: "https://www.google.com/maps/place/Perea+Beach/@40.5085701,22.922582,749m/data=!3m1!1e3!4m6!3m5!1s0x14a8152801505321:0x6048eac3a0033a3!8m2!3d40.5085701!4d22.922582!16s%2Fg%2F11fnx685q1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
                         },
-                        {     
+                        {
                             name: "Galyfianakis",
                             description: "Our favourite traditional pastry shop known for its Galaktoboureko dessert.",
                             link: "https://maps.app.goo.gl/841EbBgvdvAZ58AH6"
                         },
-                        {   name: "Choureál | Choux & Profiterole",
+                        {
+                            name: "Choureál | Choux & Profiterole",
                             description: "Our favourite place famous for its delicious Profiterole pastries.",
                             link: "https://maps.app.goo.gl/B9RFhbwxX7PNTSA29"
                         },
@@ -358,7 +359,7 @@ const resources = {
                     description: "After our special day, this gallery will be filled with beautiful moments from our celebration",
                     ceremony: "Ceremony Photos",
                     ceremonyDesc: "The sacred moments",
-                    reception: "Reception Highlights", 
+                    reception: "Reception Highlights",
                     receptionDesc: "Celebration & joy",
                     party: "Party Time",
                     partyDesc: "Dancing & fun"
@@ -391,7 +392,7 @@ const resources = {
                 categories: {
                     general: "General Information",
                     attire: "Attire & Style",
-                    logistics: "Travel & Logistics", 
+                    logistics: "Travel & Logistics",
                     ceremony: "Ceremony Details",
                     food: "Food & Dining"
                 },
@@ -406,7 +407,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Do we have a gift registry?",
-                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
+                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Beneficiary: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n Beneficiary: <b>Orestis Alagialoglou & Marina</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
                     }
                 },
                 attire: {
@@ -469,7 +470,7 @@ const resources = {
                     email: "Email Us",
                     emailDesc: "Best for detailed questions",
                     sendEmail: "Send Email",
-                    phone: "Call Us", 
+                    phone: "Call Us",
                     phoneDesc: "For urgent questions",
                     callUs: "Call Now"
                 },
@@ -496,8 +497,8 @@ const resources = {
                 schedule: "Προγραμμα",
                 travel: "Ταξιδι",
                 photos: "Φωτογραφιες & Ψηφοφορια",
-                thingsToDo: "Τι να κανετε",    
-                accommodation: "Διαμονη",            
+                thingsToDo: "Τι να κανετε",
+                accommodation: "Διαμονη",
                 faqs: "Συχνες Ερωτησεις",
                 rsvp: "RSVP",
                 giftsButtonLabel: "ΛΙΣΤΑ ΓΑΜΟΥ (ΠΡΟΑΙΡΕΤΙΚΗ)"
@@ -628,10 +629,10 @@ const resources = {
                 description: "Απολαύστε κοκτέιλ, finger food και χαλαρές στιγμές, καθώς γελάμε, χαλαρώνουμε και ξεκινάμε τους εορτασμούς του γάμου στον κήπο μας. \n \n Dress Code: Garden Cocktail \n Παρακαλούμε αποφύγετε τα τακούνια στιλέτο, καθώς η εκδήλωση θα πραγματοποιηθεί σε γρασίδι.",
             },
             krevati: {
-                    title: "\"Κρεβάτι\"",
-                    description: "Την ίδια βραδιά θα λάβει χώρα και το ελληνικό έθιμο του “κρεβατιού”."
+                title: "\"Κρεβάτι\"",
+                description: "Την ίδια βραδιά θα λάβει χώρα και το ελληνικό έθιμο του “κρεβατιού”."
             },
-            
+
 
             // Footer
             footer: {
@@ -652,7 +653,7 @@ const resources = {
                 alphaTitle: "Στοιχεία Λογαριασμού Alpha Bank:",
                 ibanLabel: "IBAN:",
                 beneficiaryLabel: "Δικαιούχος:",
-                beneficiaryName: "Orestis Alagialoglou & Marina",
+                beneficiaryName: "Orestis Alagialoglou",
                 bicLabel: "BIC/SWIFT:",
                 noteEmphasis: "Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις μεταφοράς",
                 noteSuffix: "ώστε να μπορούμε να σας ευχαριστήσουμε!"
@@ -726,7 +727,7 @@ const resources = {
 
             accommodationPage: {
                 title: "Διαμονή",
-               text1: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε παραθαλάσσιες διαμονές είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n \n Για τη νύχτα του γάμου, σας προτείνουμε ιδιαίτερα να μείνετε στο 4 αστέρων ξενοδοχείο δίπλα στον χώρο (Royal Hotel Thessaloniki). Είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το ανοιχτό μπαρ μας χωρίς να ανησυχείτε για την οδήγηση.",
+                text1: "Θα χαρούμε να βοηθήσουμε με προτάσεις ξενοδοχείων, είτε προτιμάτε παραθαλάσσιες διαμονές είτε επιλογές στο κέντρο της πόλης. Φροντίστε να κάνετε κράτηση νωρίς για τις καλύτερες τιμές! \n \n Για τη νύχτα του γάμου, σας προτείνουμε ιδιαίτερα να μείνετε στο 4 αστέρων ξενοδοχείο δίπλα στον χώρο (Royal Hotel Thessaloniki). Είναι βολικό και θα μπορείτε να απολαύσετε πλήρως το ανοιχτό μπαρ μας χωρίς να ανησυχείτε για την οδήγηση.",
                 text2: "Επικοινωνήστε μαζί μας αν θέλετε να επωφεληθείτε από την ειδική τιμή που έχουμε κανονίσει για αυτό το ξενοδοχείο, ή επικοινωνήστε απευθείας με το ξενοδοχείο και αναφέρετε τον γάμο ως “Antoniadou 27 Ιουνίου”.",
                 text3: "Ειδική τιμή: <strong>90€</strong> ανά διανυκτέρευση συμπεριλαμβανομένου πρωινού \n(διαθέσιμα μονόκλινα, δίκλινα ή τρίκλινα δωμάτια στην ίδια τιμή)",
                 mapLinkLabel: "Δείτε το Royal Hotel Thessaloniki στους Χάρτες Google",
@@ -757,7 +758,8 @@ const resources = {
                             description: "Το αγαπημένο μας παραδοσιακό ζαχαροπλαστείο γνωστό για το γλυκό του (γαλακτομπούρεκο).",
                             link: "https://maps.app.goo.gl/841EbBgvdvAZ58AH6"
                         },
-                        {   name: "Choureál | Choux & Profiterole",
+                        {
+                            name: "Choureál | Choux & Profiterole",
                             description: "Το αγαπημένο μας μέρος διάσημο για τα νόστιμα προφιτερόλ του.",
                             link: "https://maps.app.goo.gl/La4FUnfDnLPRHK5c8"
                         },
@@ -887,7 +889,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Eχουμε λίστα δώρων γάμου;",
-                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: <b>GR0201405170517002188001411</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
+                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Δικαιούχος: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: <b>GR0201405170517002188001411</b>\n Δικαιούχος: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
                     }
                 },
                 attire: {
