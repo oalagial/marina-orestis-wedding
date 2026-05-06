@@ -45,7 +45,7 @@ export default function GiftModal({ isOpen, onClose }) {
                 </div>
                 <div>
                   <p className="text-gray-600">{t('giftModal.beneficiaryLabel')}</p>
-                  <p className="text-base break-words">Orestis Alagialoglou</p>
+                  <p className="font-mono text-base break-words">Orestis Alagialoglou</p>
                 </div>
                 <div>
                   <p className="text-gray-600">{t('giftModal.bicLabel')}</p>
@@ -66,7 +66,7 @@ export default function GiftModal({ isOpen, onClose }) {
                 </div>
                 <div>
                   <p className="text-gray-600">{t('giftModal.beneficiaryLabel')}</p>
-                  <p className="text-base break-words">Orestis Alagialoglou</p>
+                  <p className="font-mono text-base break-words">Orestis Alagialoglou</p>
                 </div>
                 <div>
                   <p className="text-gray-600">{t('giftModal.bicLabel')}</p>
