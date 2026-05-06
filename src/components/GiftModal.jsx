@@ -44,6 +44,10 @@ export default function GiftModal({ isOpen, onClose }) {
                   <p className="font-mono text-base break-all">IE92 REVO 9903 6007 0177 09</p>
                 </div>
                 <div>
+                  <p className="text-gray-600">{t('giftModal.beneficiaryLabel')}</p>
+                  <p className="text-base break-words">Orestis Alagialoglou</p>
+                </div>
+                <div>
                   <p className="text-gray-600">{t('giftModal.bicLabel')}</p>
                   <p className="font-mono text-base">REVOIE23</p>
                 </div>
@@ -59,6 +63,10 @@ export default function GiftModal({ isOpen, onClose }) {
                 <div>
                   <p className="text-gray-600">{t('giftModal.ibanLabel')}</p>
                   <p className="font-mono text-base break-all">GR02 0140 5170 5170 0218 8001 411</p>
+                </div>
+                <div>
+                  <p className="text-gray-600">{t('giftModal.beneficiaryLabel')}</p>
+                  <p className="text-base break-words">Orestis Alagialoglou</p>
                 </div>
                 <div>
                   <p className="text-gray-600">{t('giftModal.bicLabel')}</p>

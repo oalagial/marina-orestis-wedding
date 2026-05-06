@@ -170,6 +170,8 @@ const resources = {
                 revolutTitle: "Revolut Account Details:",
                 alphaTitle: "Alpha Bank Account Details:",
                 ibanLabel: "IBAN:",
+                beneficiaryLabel: "Beneficiary:",
+                beneficiaryName: "Orestis Alagialoglou & Marina",
                 bicLabel: "BIC/SWIFT:",
                 noteEmphasis: "Please include your name in the transfer notes",
                 noteSuffix: "so we can thank you!"
@@ -649,6 +651,8 @@ const resources = {
                 revolutTitle: "Στοιχεία Λογαριασμού Revolut:",
                 alphaTitle: "Στοιχεία Λογαριασμού Alpha Bank:",
                 ibanLabel: "IBAN:",
+                beneficiaryLabel: "Δικαιούχος:",
+                beneficiaryName: "Orestis Alagialoglou & Marina",
                 bicLabel: "BIC/SWIFT:",
                 noteEmphasis: "Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις μεταφοράς",
                 noteSuffix: "ώστε να μπορούμε να σας ευχαριστήσουμε!"
