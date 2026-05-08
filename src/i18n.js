@@ -407,7 +407,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Do we have a gift registry?",
-                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Beneficiary: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n Beneficiary: <b>Orestis Triantafyllos Alagialoglou & Marina</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
+                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Beneficiary: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n Beneficiary: <b>Orestis Triantafyllos Alagialoglou</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
                     }
                 },
                 attire: {
