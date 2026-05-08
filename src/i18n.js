@@ -171,7 +171,7 @@ const resources = {
                 alphaTitle: "Alpha Bank Account Details:",
                 ibanLabel: "IBAN:",
                 beneficiaryLabel: "Beneficiary:",
-                beneficiaryName: "Orestis Alagialoglou & Marina",
+                beneficiaryName: "Orestis Alagialoglou",
                 bicLabel: "BIC/SWIFT:",
                 noteEmphasis: "Please include your name in the transfer notes",
                 noteSuffix: "so we can thank you!"
@@ -407,7 +407,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Do we have a gift registry?",
-                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Beneficiary: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n Beneficiary: <b>Orestis Alagialoglou & Marina</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
+                        answer: "Your presence is the greatest gift! If you'd like to give something, we've set up a bank account for gifts. \n\n Revolut Account Details:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Beneficiary: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Alpha Bank Account Details:\n <b>IBAN: GR0201405170517002188001411</b>\n Beneficiary: <b>Orestis Triantafyllos Alagialoglou & Marina</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Please include your name in the transfer notes so we can thank you!"
                     }
                 },
                 attire: {
@@ -521,7 +521,7 @@ const resources = {
                 coupleNames: "Orestis & Marina",
                 date: "Ημερομηνία: 27 Ιουνίου 2026",
                 location: "Τοποθεσία: Ethereal Hall, Περαία, Θεσσαλονίκη",
-                venueLocation: "Τοποθεσία Χώρου: Ethereal Hall, Περαία, Θεσσαλονίκη (δίπλα στο ξενοδοχείο Royal)",
+                venueLocation: "Ethereal Hall, Περαία, Θεσσαλονίκη (δίπλα στο ξενοδοχείο Royal)",
                 rsvpButton: "Επιβεβαιωση Παρουσιας \n RSVP",
                 viewSchedule: "Δείτε το Πρόγραμμα",
                 countdownMessagePart1: "Παρακαλούμε επιβεβαιώστε την παρουσία σας στον παρακάτω σύνδεσμο ",
@@ -889,7 +889,7 @@ const resources = {
                     },
                     gifts: {
                         question: "Eχουμε λίστα δώρων γάμου;",
-                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Δικαιούχος: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: <b>GR0201405170517002188001411</b>\n Δικαιούχος: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
+                        answer: "Η παρουσία σας είναι το μεγαλύτερο δώρο! Αν θέλετε να δώσετε κάτι, έχουμε δημιουργήσει έναν τραπεζικό λογαριασμό για δώρα. \n\n Στοιχεία Λογαριασμού Revolut:\n IBAN: <b>IE92 REVO 9903 6007 0177 09</b>\n Δικαιούχος: <b>Orestis Alagialoglou</b>\n BIC/SWIFT: <b>REVOIE23</b> \n\n Στοιχεία Λογαριασμού Alpha Bank:\n IBAN: <b>GR0201405170517002188001411</b>\n Δικαιούχος: <b>Orestis Triantafyllos Alagialoglou</b>\n BIC/SWIFT: <b>CRBAGRAA</b> \n\n Παρακαλούμε συμπεριλάβετε το όνομά σας στις σημειώσεις της μεταφοράς ώστε να μπορέσουμε να σας ευχαριστήσουμε!"
                     }
                 },
                 attire: {
