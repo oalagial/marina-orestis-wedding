@@ -298,6 +298,15 @@ const resources = {
                         }
                     ]
                 },
+                nearVenue: {
+                    title: "Close to the venue",
+                    description: "A couple of favourites near Peraia and our celebration.",
+                    tavernLabel: "Good tavern",
+                    tavernName: "Aigialos",
+                    tavernLink: "https://share.google/uMtCA1AYF4k4rsgzY",
+                    swimLabel: "Place to swim",
+                    swimLink: "https://maps.app.goo.gl/MppdtkGc6SnqzDoJ9"
+                },
                 pozar: {
                     title: "Pozar Hot Springs",
                     description: "Enjoy a relaxing getaway with a bath in natural hot springs (natural hot baths). Value for money accommodation we enjoy:",
@@ -779,6 +788,15 @@ const resources = {
                             link: "https://maps.app.goo.gl/AzKJbWvGh7MVxYqg8"
                         }
                     ]
+                },
+                nearVenue: {
+                    title: "Κοντά στον χώρο",
+                    description: "Μερικά αγαπημένα μας κοντά στην Περαία και τον εορτασμό μας.",
+                    tavernLabel: "Καλή ταβέρνα",
+                    tavernName: "Aigialos",
+                    tavernLink: "https://share.google/uMtCA1AYF4k4rsgzY",
+                    swimLabel: "Μέρος για κολύμπι",
+                    swimLink: "https://maps.app.goo.gl/MppdtkGc6SnqzDoJ9"
                 },
                 pozar: {
                     title: "Λουτρά Πόζαρ",

@@ -59,7 +59,45 @@ const ThingsToDo = () => {
                                 ))}
                             </div>
                         )}
-                    </div>  
+                    </div>
+
+                    {/* Near the venue */}
+                    <div className="bg-white rounded-lg p-8 soft-shadow-lg ">
+                        <h2 className="font-display text-2xl md:text-3xl elegant-text mb-4">
+                            {t('thingsToDo.nearVenue.title')}
+                        </h2>
+                        <p className="muted-text leading-relaxed mb-4">
+                            {t('thingsToDo.nearVenue.description')}
+                        </p>
+                        <ul className="list-none muted-text space-y-3">
+                            <li className="flex items-start gap-2">
+                                <span className="text-gray-500 shrink-0">•</span>
+                                <div className="flex flex-wrap items-center gap-2">
+                                    <span className="font-display elegant-text text-base md:text-lg">
+                                        {t('thingsToDo.nearVenue.tavernLabel')}: {t('thingsToDo.nearVenue.tavernName')}
+                                    </span>
+                                    <a href={t('thingsToDo.nearVenue.tavernLink')} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li className="flex items-start gap-2">
+                                <span className="text-gray-500 shrink-0">•</span>
+                                <div className="flex flex-wrap items-center gap-2">
+                                    <span className="font-display elegant-text text-base md:text-lg">
+                                        {t('thingsToDo.nearVenue.swimLabel')}
+                                    </span>
+                                    <a href={t('thingsToDo.nearVenue.swimLink')} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
 
                     {/* Meteora */}
                     <div className="bg-white rounded-lg p-8 soft-shadow-lg ">
